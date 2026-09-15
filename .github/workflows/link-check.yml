@@ -1,0 +1,30 @@
+name: Weekly link check
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Mondays 06:00 UTC
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - id: run
+        run: python scripts/check_links.py
+        continue-on-error: true
+      - name: Open or update an issue when links are broken
+        if: steps.run.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          existing=$(gh issue list --label link-rot --state open --json number --jq '.[0].number')
+          gh label create link-rot --color B4641E --description "Broken resource links" 2>/dev/null || true
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file link_report.md
+          else
+            gh issue create --title "Broken links found $(date -u +%F)" --label link-rot --body-file link_report.md
+          fi

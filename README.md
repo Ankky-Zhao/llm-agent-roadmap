@@ -2,7 +2,7 @@
 
 **中文 | English** · A bilingual, community-maintainable roadmap for learning LLM agents, from the first tool-calling loop to frontier research, ending in a project of your own.
 
-🌐 Live page: `https://ankky-zhao.github.io/agent-atlas/` (enable GitHub Pages, see below)
+🌐 Live page: `https://ankky-zhao.github.io/llm-agent-roadmap/` (enable GitHub Pages, see below)
 
 ## 这是什么 / What it is
 
@@ -41,6 +41,11 @@ python3 build.py        # 生成 index.html（无第三方依赖，Python 3.8+�
 3. `.github/workflows/pages.yml` 会在每次 push 到 `main` 时重新构建并发布。
 
 或者更简单：Source 选 **Deploy from a branch** → `main` / root，直接发布已提交的 `index.html`。
+
+## 自动维护 / Maintenance
+
+- `.github/workflows/link-check.yml` 每周一检查所有链接，发现 404 或无法连接时自动开一个 `link-rot` issue（403/429 只记为无法验证，不算坏链）。也可以在 Actions 页手动运行。
+- 内容更新（新论文、新资源）需要人工审阅后合并，见 CONTRIBUTING.md。
 
 ## 贡献 / Contributing
 
