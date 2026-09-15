@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Agent Atlas</title>
+<meta name="description" content="A bilingual (中文 / English) roadmap for learning LLM agents: from foundations to frontier research, with verified resources, a paper timeline and a project ladder.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600&display=swap">
+<style>
+:root{
+  --bg:#F6F7F4; --surface:#FFFFFF; --surface-2:#EEF1EC; --ink:#151A1E; --muted:#5B6670; --line:#D6DCD8; --line-soft:#E6EAE6;
+  --accent:#1E6B4F; --accent-ink:#175640; --accent-soft:#DDEEE5; --accent-2:#3E5A8C; --accent-2-soft:#E1E8F4;
+  --pin:#B4641E; --pin-soft:#F7E8D8; --l1:#7FA394; --l2:#1E6B4F; --l3:#0F3D2C; --done:#2E7D4F;
+  --job:#3E5A8C; --research:#7A4E9A;
+  --shadow:0 1px 2px rgba(21,26,30,.05),0 10px 30px -18px rgba(21,26,30,.28);
+  --display:"Sora","Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --body:"Source Sans 3","Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0F1412; --surface:#171D1A; --surface-2:#1F2622; --ink:#E7ECE8; --muted:#97A39C; --line:#2B3530; --line-soft:#222B26;
+  --accent:#5FC199; --accent-ink:#8ED9B8; --accent-soft:#173226; --accent-2:#8FA9DC; --accent-2-soft:#1D2739;
+  --pin:#E2A05E; --pin-soft:#33261A; --l1:#7FA394; --l2:#5FC199; --l3:#B9E6D0; --done:#7BD19E; --job:#8FA9DC; --research:#C39BE0;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -18px rgba(0,0,0,.7);}}
+:root[data-theme="dark"]{
+  --bg:#0F1412; --surface:#171D1A; --surface-2:#1F2622; --ink:#E7ECE8; --muted:#97A39C; --line:#2B3530; --line-soft:#222B26;
+  --accent:#5FC199; --accent-ink:#8ED9B8; --accent-soft:#173226; --accent-2:#8FA9DC; --accent-2-soft:#1D2739;
+  --pin:#E2A05E; --pin-soft:#33261A; --l1:#7FA394; --l2:#5FC199; --l3:#B9E6D0; --done:#7BD19E; --job:#8FA9DC; --research:#C39BE0;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 30px -18px rgba(0,0,0,.7);}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent-ink);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:currentColor}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+[hidden]{display:none!important}
+.wrap{max-width:1200px;margin:0 auto;padding-block:0 96px;padding-inline:20px}
+h1,h2,h3,h4{font-family:var(--display);text-wrap:balance;letter-spacing:-.01em}
+.mono{font-family:var(--mono)}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
+.top .in{max-width:1200px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
+.brand i{width:10px;height:10px;border-radius:2px;background:var(--accent);display:inline-block;transform:rotate(45deg)}
+.topnav{display:flex;gap:2px 14px;flex-wrap:wrap;font-size:14px;margin-left:auto}
+.topnav a{color:var(--muted);border:0}
+.topnav a:hover{color:var(--ink)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;font-size:13px}
+.seg button{border:0;background:var(--surface);color:var(--ink);padding:5px 11px;cursor:pointer;font:inherit;font-size:13px}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+@media (max-width:760px){.topnav{display:none}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:40px;align-items:end;padding:56px 0 36px;border-bottom:1px solid var(--line)}
+@media (max-width:860px){.hero{grid-template-columns:1fr;gap:24px;padding-top:36px}}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink)}
+h1{font-size:clamp(36px,5.2vw,60px);line-height:1.02;margin:10px 0 16px;font-weight:700}
+h1 span{color:var(--accent)}
+.lede{font-size:18px;color:var(--muted);max-width:56ch;margin:0 0 22px}
+.stats{display:flex;flex-wrap:wrap;gap:8px 28px}
+.stat b{font-family:var(--display);font-size:26px;font-weight:600;display:block;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--muted)}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 20px;box-shadow:var(--shadow)}
+.panel h4{margin:0 0 10px;font-size:14px;font-weight:600}
+.prog .num{font-family:var(--mono);font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;font-variant-numeric:tabular-nums}
+.bar{height:8px;background:var(--surface-2);border-radius:4px;overflow:hidden;margin:6px 0 12px}
+.bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+.tracks{display:grid;gap:8px;margin-top:8px}
+.track{text-align:left;display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:start;padding:10px 12px;border-radius:8px;border:1px solid var(--line-soft);cursor:pointer;font-size:14px;background:var(--surface)}
+.track[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-soft)}
+.track i{width:10px;height:10px;border-radius:50%;margin-top:7px;display:block}
+.track b{display:block;font-weight:600}
+.track span{color:var(--muted);font-size:13px}
+
+/* sections */
+section.sec{padding-top:56px}
+.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 18px;margin-bottom:8px}
+.sec-h h2{font-size:30px;margin:0;font-weight:600}
+.sec-h .k{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+.sec-p{color:var(--muted);max-width:72ch;margin:0 0 22px}
+
+/* controls */
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 22px;background:var(--bg);padding:8px 0}
+@media (min-width:900px){.controls{position:sticky;top:calc(env(safe-area-inset-top,0px) + 50px);z-index:10}}
+.controls .lbl{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer;line-height:1.2}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.chip.pin[aria-pressed="true"]{background:var(--pin);border-color:var(--pin)}
+.sep{width:1px;height:20px;background:var(--line)}
+
+/* landscape */
+.atlas{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:14px}
+@media (max-width:760px){.atlas{grid-template-columns:1fr}}
+.layer{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-bottom:10px;display:grid;grid-template-columns:150px minmax(0,1fr);gap:10px;align-items:center}
+@media (max-width:640px){.layer{grid-template-columns:1fr}}
+.layer .ln{font-family:var(--mono);font-size:12px;color:var(--muted);letter-spacing:.04em}
+.nodes{display:flex;flex-wrap:wrap;gap:8px}
+.node{display:inline-block;padding:6px 11px;border-radius:7px;background:var(--accent-soft);color:var(--accent-ink);font-size:14px;font-weight:500;border:1px solid transparent}
+.node:hover{border-color:var(--accent)}
+.side{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;align-self:stretch;border-left:4px solid var(--accent-2)}
+.side .ln{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.side .node{background:var(--accent-2-soft);color:var(--accent-2)}
+.arrow{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:center;margin:-4px 0 6px}
+
+/* stages */
+.stage{margin-top:40px}
+.stage-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;border-top:2px solid var(--ink);padding-top:12px}
+.stage-h h3{font-size:24px;margin:0;font-weight:600}
+.stage-h .wk{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.stage-h p{width:100%;margin:2px 0 0;color:var(--muted);font-size:15px;max-width:80ch}
+.module{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px 24px;margin-top:18px;box-shadow:var(--shadow)}
+@media (max-width:600px){.module{padding:16px}}
+.mod-h{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 14px;align-items:baseline}
+.mod-h h4{font-size:21px;margin:0;font-weight:600}
+.mod-h .en{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.mod-h .mp{font-family:var(--mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;margin-left:auto}
+.tr{font-family:var(--mono);font-size:11px;padding:1px 7px;border-radius:4px;border:1px solid var(--line)}
+.tr.job{color:var(--job);border-color:var(--job)}
+.tr.research{color:var(--research);border-color:var(--research)}
+.why{margin:10px 0 14px;max-width:78ch}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:14px}
+@media (max-width:700px){.cols{grid-template-columns:1fr}}
+.box h5{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 6px;font-weight:500}
+.box ul{margin:0;padding-left:18px;font-size:14.5px}
+.box li{margin:3px 0}
+.box.q li{font-style:italic}
+.open{background:var(--accent-2-soft);border-radius:8px;padding:10px 14px;font-size:14px;margin-bottom:12px}
+.open h5{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-2);margin:0 0 4px;font-weight:500}
+.open ul{margin:0;padding-left:18px}
+.tier{border-top:1px solid var(--line-soft);padding-top:10px;margin-top:10px}
+.tier.empty{display:none}
+.tier-h{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.tier-h .dot{width:10px;height:10px;border-radius:50%}
+.tier-h b{font-size:13px;font-weight:600}
+.tier-h span{font-size:12.5px;color:var(--muted)}
+.res{display:grid;grid-template-columns:22px minmax(0,1fr);gap:0 10px;padding:7px 0;align-items:start}
+.res + .res{border-top:1px dashed var(--line-soft)}
+.res input{margin:5px 0 0;width:16px;height:16px;accent-color:var(--done);cursor:pointer}
+.res .t{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline}
+.res .t a{font-weight:500}
+.res.done .t a{color:var(--muted);text-decoration:line-through}
+.tag{font-family:var(--mono);font-size:11px;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:0 5px;line-height:1.6}
+.tag.h{border:0;padding:0}
+.tag.pin{color:var(--pin);border-color:var(--pin);background:var(--pin-soft)}
+.tag.zh{color:var(--accent-2);border-color:var(--accent-2)}
+.res .w{font-size:13.5px;color:var(--muted);margin:1px 0 0}
+.task{margin-top:14px;background:var(--accent-soft);border-radius:8px;padding:12px 14px;font-size:14.5px}
+.task b{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink);display:block;margin-bottom:4px;font-weight:500}
+.module.dim{opacity:.55}
+
+/* timeline */
+.tl-ctl{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.tl{position:relative;padding-left:0}
+.year{display:grid;grid-template-columns:90px minmax(0,1fr);gap:16px;padding:14px 0;border-top:1px solid var(--line-soft)}
+@media (max-width:600px){.year{grid-template-columns:1fr;gap:4px}}
+.year .y{font-family:var(--display);font-size:28px;font-weight:600;color:var(--accent);line-height:1;font-variant-numeric:tabular-nums}
+.year .y small{display:block;font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:4px;font-weight:400}
+.paper{display:grid;grid-template-columns:52px minmax(0,1fr);gap:10px;padding:6px 0;align-items:baseline}
+.paper + .paper{border-top:1px dashed var(--line-soft)}
+.paper .d{font-family:var(--mono);font-size:11.5px;color:var(--muted)}
+.paper .pt{font-weight:500}
+.paper .pa{font-size:12.5px;color:var(--muted);margin-left:6px}
+.paper .pw{font-size:13.5px;color:var(--muted);margin:1px 0 0}
+.area{font-family:var(--mono);font-size:10.5px;padding:0 5px;border-radius:3px;background:var(--surface-2);color:var(--muted);margin-left:6px;vertical-align:middle}
+.paper[hidden]{display:none}
+.year.empty{display:none}
+
+/* projects */
+.ladder{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
+.rung{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:6px}
+.rung .lv{font-family:var(--mono);font-size:11.5px;color:var(--pin);letter-spacing:.04em}
+.rung h4{margin:0;font-size:18px;font-weight:600}
+.rung p{margin:0;font-size:14.5px}
+.rung .learn{color:var(--muted);font-size:13.5px}
+.rung .links{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
+.rung .links a{font-family:var(--mono);font-size:11.5px;border:1px solid var(--line);border-radius:4px;padding:1px 7px;color:var(--muted)}
+
+/* research path */
+.steps{counter-reset:s;display:grid;gap:8px;max-width:78ch;padding:0;margin:0;list-style:none}
+.steps li{display:grid;grid-template-columns:36px 1fr;gap:10px;align-items:baseline;font-size:15.5px}
+.steps li::before{counter-increment:s;content:counter(s);font-family:var(--display);font-weight:600;color:var(--accent);font-size:20px}
+
+/* checklist */
+.check{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px 22px;box-shadow:var(--shadow)}
+.check ul{margin:0;padding:0;list-style:none}
+.check li{display:grid;grid-template-columns:22px 1fr;gap:10px;padding:7px 0;border-top:1px dashed var(--line-soft);font-size:15px}
+.check li:first-child{border-top:0}
+.check input{margin:4px 0 0;width:16px;height:16px;accent-color:var(--done)}
+
+.foot{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);font-size:13.5px;color:var(--muted);max-width:80ch}
+.foot a{color:var(--accent-ink)}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+[data-lang="zh"] .en-only,[data-lang="en"] .zh-only{display:none!important}
+</style>
+</head>
+<body>
+<div class="top"><div class="in">
+  <a class="brand" href="#top"><i></i>Agent Atlas</a>
+  <nav class="topnav" aria-label="sections">
+    <a href="#how" data-i="nav_how"></a><a href="#map" data-i="nav_map"></a><a href="#path" data-i="nav_path"></a><a href="#papers" data-i="nav_papers"></a><a href="#projects" data-i="nav_projects"></a><a href="#research" data-i="nav_research"></a><a href="#check" data-i="nav_check"></a>
+  </nav>
+  <div class="seg" id="langSeg" role="group" aria-label="language"><button data-lang="zh">中文</button><button data-lang="en">English</button></div>
+</div></div>
+
+<div class="wrap" id="top">
+  <header class="hero">
+    <div>
+      <div class="eyebrow" data-i="eyebrow"></div>
+      <h1 data-i="title"></h1>
+      <p class="lede" data-i="lede"></p>
+      <div class="stats">
+        <div class="stat"><b id="sMods">0</b><span data-i="st_mods"></span></div>
+        <div class="stat"><b id="sRes">0</b><span data-i="st_res"></span></div>
+        <div class="stat"><b id="sPapers">0</b><span data-i="st_papers"></span></div>
+        <div class="stat"><b id="sMust">0 h</b><span data-i="st_must"></span></div>
+      </div>
+    </div>
+    <div class="panel prog">
+      <h4 data-i="prog_h"></h4>
+      <div class="num"><span id="pDone"></span><span id="pHours"></span></div>
+      <div class="bar"><i id="pBar"></i></div>
+      <h4 data-i="track_h" style="margin-top:6px"></h4>
+      <div class="tracks" id="trackSel">
+        <button class="track" data-track="both"><i style="background:var(--accent)"></i><div><b data-i="tr_both"></b><span data-i="tr_both_d"></span></div></button>
+        <button class="track" data-track="job"><i style="background:var(--job)"></i><div><b data-i="tr_job"></b><span data-i="tr_job_d"></span></div></button>
+        <button class="track" data-track="research"><i style="background:var(--research)"></i><div><b data-i="tr_research"></b><span data-i="tr_research_d"></span></div></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="sec" id="how">
+    <div class="sec-h"><span class="k">01</span><h2 data-i="how_h"></h2></div>
+    <div class="cols" style="margin-bottom:0">
+      <div><p class="sec-p" data-i="how_p1"></p><p class="sec-p" data-i="how_p2"></p></div>
+      <div><p class="sec-p" data-i="how_p3"></p><p class="sec-p" data-i="how_p4"></p></div>
+    </div>
+  </section>
+
+  <section class="sec" id="map">
+    <div class="sec-h"><span class="k">02</span><h2 data-i="map_h"></h2></div>
+    <p class="sec-p" id="mapIntro"></p>
+    <div class="atlas"><div id="layers"></div><div class="side" id="sideLayer"></div></div>
+  </section>
+
+  <section class="sec" id="path">
+    <div class="sec-h"><span class="k">03</span><h2 data-i="path_h"></h2></div>
+    <p class="sec-p" data-i="path_p"></p>
+    <div class="controls" id="controls">
+      <span class="lbl" data-i="filter"></span>
+      <button class="chip pin" data-f="must" aria-pressed="false" data-i="f_must"></button>
+      <span class="sep"></span>
+      <button class="chip" data-f="level:intro" aria-pressed="false" data-i="lv_intro"></button>
+      <button class="chip" data-f="level:core" aria-pressed="false" data-i="lv_core"></button>
+      <button class="chip" data-f="level:deep" aria-pressed="false" data-i="lv_deep"></button>
+      <span class="sep"></span>
+      <button class="chip" data-f="type:official" aria-pressed="false" data-i="t_official"></button>
+      <button class="chip" data-f="type:course" aria-pressed="false" data-i="t_course"></button>
+      <button class="chip" data-f="type:video" aria-pressed="false" data-i="t_video"></button>
+      <button class="chip" data-f="type:blog" aria-pressed="false" data-i="t_blog"></button>
+      <button class="chip" data-f="type:paper" aria-pressed="false" data-i="t_paper"></button>
+      <button class="chip" data-f="type:code" aria-pressed="false" data-i="t_code"></button>
+      <button class="chip" data-f="type:book" aria-pressed="false" data-i="t_book"></button>
+      <span class="sep"></span>
+      <button class="chip" data-f="lang:zh" aria-pressed="false" data-i="f_zh"></button>
+      <button class="chip" data-f="hideDone" aria-pressed="false" data-i="f_hide"></button>
+    </div>
+    <div id="stages"></div>
+  </section>
+
+  <section class="sec" id="papers">
+    <div class="sec-h"><span class="k">04</span><h2 data-i="papers_h"></h2></div>
+    <p class="sec-p" data-i="papers_p"></p>
+    <div class="tl-ctl" id="areaCtl"></div>
+    <div class="tl" id="timeline"></div>
+  </section>
+
+  <section class="sec" id="projects">
+    <div class="sec-h"><span class="k">05</span><h2 data-i="proj_h"></h2></div>
+    <p class="sec-p" data-i="proj_p"></p>
+    <div class="ladder" id="ladder"></div>
+  </section>
+
+  <section class="sec" id="research">
+    <div class="sec-h"><span class="k">06</span><h2 data-i="res_h"></h2></div>
+    <p class="sec-p" data-i="res_p"></p>
+    <ol class="steps" id="steps"></ol>
+  </section>
+
+  <section class="sec" id="check">
+    <div class="sec-h"><span class="k">07</span><h2 data-i="check_h"></h2></div>
+    <p class="sec-p" data-i="check_p"></p>
+    <div class="check" id="checklist"></div>
+  </section>
+
+  <footer class="foot">
+    <p data-i="foot1"></p>
+    <p data-i="foot2"></p>
+  </footer>
+</div>
+
+<script id="data" type="application/json">__DATA__</script>
+<script>
+(function(){
+  const D = JSON.parse(document.getElementById('data').textContent);
+  const UI = {
+    eyebrow:{zh:'LLM Agent 学习地图 · 从入门到前沿',en:'A roadmap for LLM agents · from first loop to frontier'},
+    title:{zh:'Agent <span>Atlas</span>',en:'Agent <span>Atlas</span>'},
+    lede:{zh:'一张面向工程师与研究者的 agent 学习地图：领域全景、七个阶段的学习路线、经核验的资源、关键论文时间线和一条通向你自己项目的阶梯。',en:'A learning map for engineers and researchers: the landscape of the field, a seven-stage path, verified resources, a timeline of key papers and a ladder that ends in a project of your own.'},
+    st_mods:{zh:'个模块',en:'modules'}, st_res:{zh:'条核验资源',en:'verified resources'}, st_papers:{zh:'篇关键论文',en:'key papers'}, st_must:{zh:'必读核心路径',en:'core reading path'},
+    prog_h:{zh:'我的进度（保存在本机浏览器）',en:'My progress (stored in this browser)'}, track_h:{zh:'选择路线',en:'Choose a track'},
+    tr_both:{zh:'全部',en:'Everything'}, tr_both_d:{zh:'不做筛选',en:'no filtering'},
+    tr_job:{zh:'求职 / 工程',en:'Industry / engineering'}, tr_job_d:{zh:'阶段 1 到 4，加一个上线项目',en:'stages 1–4 plus a deployed project'},
+    tr_research:{zh:'科研',en:'Research'}, tr_research_d:{zh:'阶段 1 到 3，加前沿方向与复现',en:'stages 1–3 plus frontiers and reproduction'},
+    nav_how:{zh:'用法',en:'How to use'}, nav_map:{zh:'领域地图',en:'Landscape'}, nav_path:{zh:'学习路线',en:'Path'}, nav_papers:{zh:'论文时间线',en:'Papers'}, nav_projects:{zh:'项目阶梯',en:'Projects'}, nav_research:{zh:'科研入门',en:'Research'}, nav_check:{zh:'自检',en:'Checklist'},
+    how_h:{zh:'怎么用这张地图',en:'How to use this map'},
+    how_p1:{zh:'这不是一份要从头读到尾的清单。先看领域地图找到自己的位置，再按阶段推进；每个模块分了解、掌握、深入三层，标了「必读」的资源构成约 150 小时的核心路径。',en:'This is not a list to read end to end. Find your position on the landscape first, then move through the stages; each module has intro, core and deep tiers, and the resources marked "must" form a core path of roughly 150 hours.'},
+    how_p2:{zh:'每个模块都以一个动手任务结尾。读完不动手，等于没学。',en:'Every module ends with a hands-on task. Reading without building does not count.'},
+    how_p3:{zh:'__TRJOB_ZH__ __TRRES_ZH__',en:'__TRJOB_EN__ __TRRES_EN__'},
+    how_p4:{zh:'所有链接在 2026 年 9 月逐条访问核验。资源会过时，欢迎通过 GitHub 提交更正与补充。',en:'Every link was fetched and verified in September 2026. Resources go stale; corrections and additions via GitHub are welcome.'},
+    map_h:{zh:'领域地图',en:'The landscape'},
+    path_h:{zh:'学习路线',en:'The learning path'},
+    path_p:{zh:'七个阶段，每个模块含「为什么重要」「要能说清楚的概念」「自检问题」、三层资源与动手任务。前沿模块另附开放问题。',en:'Seven stages. Each module has why it matters, the concepts to be able to explain, self-check questions, three tiers of resources and a hands-on task. Frontier modules add open problems.'},
+    filter:{zh:'筛选',en:'Filter'}, f_must:{zh:'只看必读',en:'Must-read only'}, f_zh:{zh:'中文资源',en:'Chinese-language'}, f_hide:{zh:'隐藏已完成',en:'Hide done'},
+    lv_intro:{zh:'了解',en:'Intro'}, lv_core:{zh:'掌握',en:'Core'}, lv_deep:{zh:'深入',en:'Deep'},
+    t_official:{zh:'官方文档',en:'Docs'}, t_course:{zh:'课程',en:'Courses'}, t_video:{zh:'视频',en:'Videos'}, t_blog:{zh:'博客',en:'Blogs'}, t_paper:{zh:'论文',en:'Papers'}, t_code:{zh:'代码',en:'Code'}, t_book:{zh:'书',en:'Books'},
+    papers_h:{zh:'关键论文时间线',en:'Key papers timeline'},
+    papers_p:{zh:'从 GPT-3 到 2026 年的 agentic RL 与 computer-use 模型，按首次发布时间排列。每篇一句话说明它改变了什么。选研究方向时先沿一条线读完，再横向比较。',en:'From GPT-3 to the agentic RL and computer-use models of 2026, ordered by first release. One sentence per paper on what it changed. When choosing a research direction, read along one line first, then compare across lines.'},
+    proj_h:{zh:'项目阶梯',en:'Project ladder'},
+    proj_p:{zh:'从一个周末到两个月，每一级都是可以公开的完整项目。第 4 级起按路线分岔。',en:'From one weekend to two months, each rung is a complete, publishable project. From rung 4 the ladder forks by track.'},
+    res_h:{zh:'科研入门六步',en:'Six steps into research'},
+    res_p:{zh:'想以 agent 为研究方向的人，可以按这个顺序走，大约需要一个学期。',en:'For those who want agents as a research direction, this order takes roughly one semester.'},
+    check_h:{zh:'自检清单',en:'Self-check'},
+    check_p:{zh:'全部打勾时，你已经具备申请 agent 工程岗位或进入 agent 研究的基础。',en:'When every box is ticked you have the foundation to apply for agent engineering roles or to begin agent research.'},
+    foot1:{zh:'Agent Atlas 由 Anqi Zhao 整理，内容以 CC BY 4.0 协议发布，代码以 MIT 协议发布。资源核验日期 2026-09-15。',en:'Agent Atlas is curated by Anqi Zhao. Content is CC BY 4.0, code is MIT. Resources verified 2026-09-15.'},
+    foot2:{zh:'纠错与补充：在 GitHub 仓库的 data/ 目录修改 JSON 并提交 PR。',en:'Corrections and additions: edit the JSON under data/ in the GitHub repository and open a pull request.'},
+    tier:{intro:{zh:['了解','能用正确的词描述它'],en:['Intro','describe it in the right words']},core:{zh:['掌握','能动手做并解释取舍'],en:['Core','build it and explain the trade-offs']},deep:{zh:['深入','能讨论边界、失败与替代方案'],en:['Deep','discuss limits, failures and alternatives']}},
+    type:{official:{zh:'官方',en:'docs'},course:{zh:'课程',en:'course'},video:{zh:'视频',en:'video'},blog:{zh:'博客',en:'blog'},paper:{zh:'论文',en:'paper'},code:{zh:'代码',en:'code'},book:{zh:'书',en:'book'}},
+    must:{zh:'必读',en:'must'}, zh:{zh:'中文',en:'zh'}, done:{zh:'已完成',en:'done'}, hours:{zh:'h',en:'h'},
+    concepts:{zh:'要能说清楚的概念',en:'Concepts to be able to explain'}, questions:{zh:'自检问题',en:'Self-check questions'}, open:{zh:'开放问题',en:'Open problems'}, task:{zh:'动手任务',en:'Hands-on task'},
+    trk:{job:{zh:'求职',en:'industry'},research:{zh:'科研',en:'research'},both:{zh:'',en:''}},
+    learn:{zh:'学到',en:'You learn'}, all:{zh:'全部',en:'All'},
+    areas:{foundations:{zh:'基础模型',en:'foundations'},reasoning:{zh:'推理',en:'reasoning'},'tool-use':{zh:'工具使用',en:'tool use'},memory:{zh:'记忆',en:'memory'},'multi-agent':{zh:'多智能体',en:'multi-agent'},coding:{zh:'编程',en:'coding'},'computer-use':{zh:'计算机操作',en:'computer use'},rl:{zh:'强化学习',en:'RL'},evals:{zh:'评估',en:'evals'},safety:{zh:'安全',en:'safety'},protocol:{zh:'协议',en:'protocol'}},
+  };
+  const LKEY='agent-atlas-v1';
+  let state={lang:null,track:'both',done:{},filters:{},area:'all'};
+  try{const s=localStorage.getItem(LKEY); if(s) state=Object.assign(state,JSON.parse(s));}catch(e){}
+  const q=new URLSearchParams(location.search).get('lang'); if(q==='zh'||q==='en') state.lang=q;
+  if(!state.lang) state.lang=(navigator.language||'').toLowerCase().startsWith('zh')?'zh':'en';
+  const save=()=>{try{localStorage.setItem(LKEY,JSON.stringify(state));}catch(e){}};
+  const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const L=()=>state.lang; const T=o=>o?(o[L()]??o.en??''):'';
+  const idOf=u=>'r_'+u.replace(/[^a-z0-9]/gi,'_').slice(-80);
+  const resByTopic={}; D.resources.forEach(r=>(resByTopic[r.topic]=resByTopic[r.topic]||[]).push(r));
+
+  function render(){
+    document.documentElement.lang = L()==='zh'?'zh-CN':'en';
+    document.documentElement.dataset.lang=L();
+    document.querySelectorAll('[data-i]').forEach(el=>{const v=UI[el.dataset.i]; if(v) el.innerHTML=T(v);});
+    document.querySelectorAll('#langSeg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===L()));
+    document.title='Agent Atlas';
+    // landscape
+    document.getElementById('mapIntro').textContent=T(D.landscape.intro);
+    const layers=D.landscape.layers.filter(l=>!l.side), side=D.landscape.layers.find(l=>l.side);
+    document.getElementById('layers').innerHTML=layers.map((l,i)=>`<div class="layer"><div class="ln">${esc(T(l.name))}</div><div class="nodes">${l.nodes.map(n=>`<a class="node" href="#${n.mod}">${esc(T(n.label))}</a>`).join('')}</div></div>${i<layers.length-1?'<div class="arrow">▲</div>':''}`).join('');
+    document.getElementById('sideLayer').innerHTML=`<div class="ln">${esc(T(side.name))}</div>`+side.nodes.map(n=>`<a class="node" href="#${n.mod}">${esc(T(n.label))}</a>`).join('');
+    // stages
+    let html='';
+    D.stages.forEach(s=>{
+      html+=`<div class="stage" id="${s.id}"><div class="stage-h"><h3>${esc(T(s.name))}</h3><span class="wk">${esc(T(s.weeks))}</span><p>${esc(T(s.note))}</p></div>`;
+      s.modules.forEach(k=>{
+        const m=D.modules[k]; const rs=resByTopic[k]||[];
+        html+=`<article class="module" id="${k}" data-mod="${k}" data-track="${m.track}">
+          <div class="mod-h"><h4>${esc(T(m.title))}</h4><span class="en">${esc(L()==='zh'?m.title.en:m.title.zh)}</span>${m.track!=='both'?`<span class="tr ${m.track}">${esc(T(UI.trk[m.track]))}</span>`:''}<span class="mp" data-modprog="${k}"></span></div>
+          <p class="why">${esc(T(m.why))}</p>
+          <div class="cols"><div class="box"><h5>${esc(T(UI.concepts))}</h5><ul>${m.concepts.map(c=>`<li>${esc(T(c))}</li>`).join('')}</ul></div>
+          <div class="box q"><h5>${esc(T(UI.questions))}</h5><ul>${m.questions.map(c=>`<li>${esc(T(c))}</li>`).join('')}</ul></div></div>
+          ${m.open?`<div class="open"><h5>${esc(T(UI.open))}</h5><ul>${m.open.map(c=>`<li>${esc(T(c))}</li>`).join('')}</ul></div>`:''}`;
+        ['intro','core','deep'].forEach(lv=>{
+          const list=rs.filter(r=>r.level===lv); if(!list.length) return;
+          const tt=UI.tier[lv][L()];
+          html+=`<div class="tier" data-tier="${lv}"><div class="tier-h"><span class="dot" style="background:var(--l${lv==='intro'?1:lv==='core'?2:3})"></span><b>${tt[0]}</b><span>${tt[1]}</span></div>`;
+          list.forEach(r=>{const id=idOf(r.url);
+            html+=`<div class="res" data-id="${id}" data-level="${r.level}" data-type="${r.type}" data-lang="${r.lang}" data-track="${r.track}" data-must="${r.must?1:0}" data-hours="${r.hours}">
+              <input type="checkbox" id="${id}" aria-label="${esc(T(UI.done))} ${esc(r.title)}">
+              <div><div class="t"><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a><span class="tag">${esc(T(UI.type[r.type]||{en:r.type}))}</span><span class="tag h">${r.hours} h</span>${r.must?`<span class="tag pin">${esc(T(UI.must))}</span>`:''}${r.lang==='zh'?`<span class="tag zh">${esc(T(UI.zh))}</span>`:''}</div><p class="w">${esc(T(r.why))}</p></div></div>`;
+          });
+          html+='</div>';
+        });
+        html+=`<div class="task"><b>${esc(T(UI.task))}</b>${esc(T(m.task))}</div></article>`;
+      });
+      html+='</div>';
+    });
+    document.getElementById('stages').innerHTML=html;
+    // timeline
+    const areas=['all',...Array.from(new Set(D.papers.map(p=>p.area)))];
+    document.getElementById('areaCtl').innerHTML=areas.map(a=>`<button class="chip" data-area="${a}" aria-pressed="${state.area===a}">${a==='all'?esc(T(UI.all)):esc(T(UI.areas[a]||{en:a}))}</button>`).join('');
+    const byYear={}; D.papers.forEach(p=>(byYear[p.date.slice(0,4)]=byYear[p.date.slice(0,4)]||[]).push(p));
+    document.getElementById('timeline').innerHTML=Object.keys(byYear).sort().map(y=>`<div class="year" data-year="${y}"><div class="y">${y}<small>${byYear[y].length} papers</small></div><div>${byYear[y].map(p=>`<div class="paper" data-area="${p.area}"><span class="d">${p.date.slice(5)}</span><div><a class="pt" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a><span class="area">${esc(T(UI.areas[p.area]||{en:p.area}))}</span><span class="pa">${esc(p.authors)}</span><p class="pw">${esc(T(p.why))}</p></div></div>`).join('')}</div></div>`).join('');
+    // projects
+    document.getElementById('ladder').innerHTML=D.projects.map(p=>`<div class="rung"><span class="lv">${esc(T(p.level))}</span><h4>${esc(T(p.name))}</h4><p>${esc(T(p.desc))}</p><p class="learn">${esc(T(UI.learn))}: ${esc(T(p.learn))}</p><div class="links">${p.mods.map(k=>`<a href="#${k}">${esc(T(D.modules[k].title))}</a>`).join('')}</div></div>`).join('');
+    document.getElementById('steps').innerHTML=D.research_path.map(s=>`<li>${esc(T(s))}</li>`).join('');
+    document.getElementById('checklist').innerHTML='<ul>'+D.checklist.map((c,i)=>`<li><input type="checkbox" id="c_${i}" data-final="c_${i}"><label for="c_${i}">${esc(T(c))}</label></li>`).join('')+'</ul>';
+    document.getElementById('sMods').textContent=Object.keys(D.modules).length;
+    document.getElementById('sRes').textContent=D.resources.length;
+    document.getElementById('sPapers').textContent=D.papers.length;
+    document.getElementById('sMust').textContent=Math.round(D.resources.filter(r=>r.must).reduce((a,r)=>a+r.hours,0))+' h';
+    refresh();
+  }
+
+  function refresh(){
+    const all=Array.from(document.querySelectorAll('.res'));
+    let done=0,doneH=0; const perMod={}; const f=state.filters;
+    all.forEach(el=>{
+      const d=!!state.done[el.dataset.id]; el.querySelector('input').checked=d; el.classList.toggle('done',d);
+      const mod=el.closest('.module').dataset.mod; perMod[mod]=perMod[mod]||{d:0,t:0}; perMod[mod].t++;
+      if(d){done++;doneH+=parseFloat(el.dataset.hours);perMod[mod].d++;}
+      let show=true;
+      if(f.must&&el.dataset.must!=='1') show=false;
+      const lv=Object.keys(f).filter(k=>k.startsWith('level:')&&f[k]).map(k=>k.slice(6)); if(lv.length&&!lv.includes(el.dataset.level)) show=false;
+      const ty=Object.keys(f).filter(k=>k.startsWith('type:')&&f[k]).map(k=>k.slice(5)); if(ty.length&&!ty.includes(el.dataset.type)) show=false;
+      if(f['lang:zh']&&el.dataset.lang!=='zh') show=false;
+      if(f.hideDone&&d) show=false;
+      if(state.track!=='both'&&el.dataset.track!=='both'&&el.dataset.track!==state.track) show=false;
+      el.hidden=!show;
+    });
+    document.querySelectorAll('.tier').forEach(t=>t.classList.toggle('empty',!t.querySelector('.res:not([hidden])')));
+    document.querySelectorAll('.module').forEach(m=>m.classList.toggle('dim',state.track!=='both'&&m.dataset.track!=='both'&&m.dataset.track!==state.track));
+    const total=all.length, totalH=all.reduce((a,el)=>a+parseFloat(el.dataset.hours),0);
+    document.getElementById('pDone').textContent=`${done} / ${total} ${T(UI.done)}`;
+    document.getElementById('pHours').textContent=`${doneH.toFixed(1)} / ${totalH.toFixed(0)} h`;
+    document.getElementById('pBar').style.width=(total?done/total*100:0)+'%';
+    Object.keys(perMod).forEach(k=>{const el=document.querySelector(`[data-modprog="${k}"]`); if(el) el.textContent=`${perMod[k].d} / ${perMod[k].t}`;});
+    document.querySelectorAll('[data-final]').forEach(cb=>cb.checked=!!state.done[cb.dataset.final]);
+    document.querySelectorAll('#controls .chip').forEach(b=>b.setAttribute('aria-pressed',!!f[b.dataset.f]));
+    document.querySelectorAll('#trackSel .track').forEach(b=>b.setAttribute('aria-pressed',b.dataset.track===state.track));
+    document.querySelectorAll('#areaCtl .chip').forEach(b=>b.setAttribute('aria-pressed',b.dataset.area===state.area));
+    document.querySelectorAll('.paper').forEach(p=>p.hidden=state.area!=='all'&&p.dataset.area!==state.area);
+    document.querySelectorAll('.year').forEach(y=>y.classList.toggle('empty',!y.querySelector('.paper:not([hidden])')));
+  }
+
+  document.addEventListener('change',e=>{const cb=e.target; if(cb.type!=='checkbox') return; const key=cb.dataset.final||cb.closest('.res')?.dataset.id; if(!key) return; if(cb.checked) state.done[key]=1; else delete state.done[key]; save(); refresh();});
+  document.getElementById('controls').addEventListener('click',e=>{const b=e.target.closest('.chip'); if(!b) return; state.filters[b.dataset.f]=!state.filters[b.dataset.f]; save(); refresh();});
+  document.getElementById('trackSel').addEventListener('click',e=>{const b=e.target.closest('.track'); if(!b) return; state.track=b.dataset.track; save(); refresh();});
+  document.getElementById('areaCtl').addEventListener('click',e=>{const b=e.target.closest('.chip'); if(!b) return; state.area=b.dataset.area; save(); refresh();});
+  document.getElementById('langSeg').addEventListener('click',e=>{const b=e.target.closest('button'); if(!b) return; state.lang=b.dataset.lang; save(); render();});
+  render();
+})();
+</script>
+</body>
+</html>

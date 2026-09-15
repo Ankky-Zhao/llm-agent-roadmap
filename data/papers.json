@@ -1,0 +1,1190 @@
+[
+ {
+  "date": "2020-05",
+  "title": "Language Models are Few-Shot Learners",
+  "authors": "Tom B. Brown et al. (OpenAI)",
+  "url": "https://arxiv.org/abs/2005.14165",
+  "arxiv": "2005.14165",
+  "area": "foundations",
+  "why": {
+   "en": "GPT-3 showed in-context few-shot learning at scale, the capability every prompt-driven agent relies on.",
+   "zh": "GPT-3展示大规模上下文少样本学习，提示型agent的基础能力"
+  }
+ },
+ {
+  "date": "2021-07",
+  "title": "Evaluating Large Language Models Trained on Code",
+  "authors": "Mark Chen et al. (OpenAI)",
+  "url": "https://arxiv.org/abs/2107.03374",
+  "arxiv": "2107.03374",
+  "area": "coding",
+  "why": {
+   "en": "Introduced Codex and HumanEval, establishing functional-correctness evaluation for code-generating models.",
+   "zh": "提出Codex与HumanEval，确立代码生成的功能正确性评测"
+  }
+ },
+ {
+  "date": "2021-12",
+  "title": "WebGPT: Browser-assisted question-answering with human feedback",
+  "authors": "Reiichiro Nakano et al. (OpenAI)",
+  "url": "https://arxiv.org/abs/2112.09332",
+  "arxiv": "2112.09332",
+  "area": "tool-use",
+  "why": {
+   "en": "First LLM trained to browse the web and cite sources, prototyping tool-using research agents.",
+   "zh": "首个训练浏览网页并引用来源的LLM，工具型研究agent雏形"
+  }
+ },
+ {
+  "date": "2022-01",
+  "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+  "authors": "Jason Wei et al. (Google)",
+  "url": "https://arxiv.org/abs/2201.11903",
+  "arxiv": "2201.11903",
+  "area": "reasoning",
+  "why": {
+   "en": "Showed intermediate reasoning steps unlock multi-step problem solving, the basis of agent planning loops.",
+   "zh": "中间推理步骤解锁多步解题，是agent规划循环的基础"
+  }
+ },
+ {
+  "date": "2022-03",
+  "title": "Training language models to follow instructions with human feedback",
+  "authors": "Long Ouyang et al. (OpenAI)",
+  "url": "https://arxiv.org/abs/2203.02155",
+  "arxiv": "2203.02155",
+  "area": "foundations",
+  "why": {
+   "en": "InstructGPT established RLHF instruction-following, making LLMs steerable enough to act as assistants and agents.",
+   "zh": "InstructGPT确立RLHF指令跟随，让LLM可作为助手与agent"
+  }
+ },
+ {
+  "date": "2022-04",
+  "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+  "authors": "Michael Ahn et al. (Google/Everyday Robots)",
+  "url": "https://arxiv.org/abs/2204.01691",
+  "arxiv": "2204.01691",
+  "area": "tool-use",
+  "why": {
+   "en": "SayCan grounded LLM plans in executable robot skills via affordance scoring, an early embodied agent.",
+   "zh": "SayCan用可行性评分将LLM计划落地为机器人技能，早期具身agent"
+  }
+ },
+ {
+  "date": "2022-05",
+  "title": "MRKL Systems",
+  "authors": "Ehud Karpas et al. (AI21 Labs)",
+  "url": "https://arxiv.org/abs/2205.00445",
+  "arxiv": "2205.00445",
+  "area": "tool-use",
+  "why": {
+   "en": "Proposed routing LLM queries to expert modules and tools, the architecture behind LangChain-style agents.",
+   "zh": "提出将LLM查询路由至专家模块与工具，LangChain类架构源头"
+  }
+ },
+ {
+  "date": "2022-07",
+  "title": "Inner Monologue: Embodied Reasoning through Planning with Language Models",
+  "authors": "Wenlong Huang et al. (Google)",
+  "url": "https://arxiv.org/abs/2207.05608",
+  "arxiv": "2207.05608",
+  "area": "reasoning",
+  "why": {
+   "en": "Fed environment feedback back into the LLM's planning loop, enabling closed-loop replanning for agents.",
+   "zh": "将环境反馈接入LLM规划循环，实现agent闭环重规划"
+  }
+ },
+ {
+  "date": "2022-10",
+  "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+  "authors": "Shunyu Yao et al. (Princeton/Google)",
+  "url": "https://arxiv.org/abs/2210.03629",
+  "arxiv": "2210.03629",
+  "area": "reasoning",
+  "why": {
+   "en": "Interleaved thought, action and observation; the default loop of virtually every LLM agent framework.",
+   "zh": "交替思考、行动与观察，几乎是所有agent框架的默认循环"
+  }
+ },
+ {
+  "date": "2022-12",
+  "title": "Constitutional AI: Harmlessness from AI Feedback",
+  "authors": "Yuntao Bai et al. (Anthropic)",
+  "url": "https://arxiv.org/abs/2212.08073",
+  "arxiv": "2212.08073",
+  "area": "safety",
+  "why": {
+   "en": "Introduced AI-feedback alignment guided by written principles, shaping how agent behavior is constrained.",
+   "zh": "提出以书面原则引导的AI反馈对齐，塑造agent行为约束方式"
+  }
+ },
+ {
+  "date": "2023-02",
+  "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+  "authors": "Timo Schick et al. (Meta AI)",
+  "url": "https://arxiv.org/abs/2302.04761",
+  "arxiv": "2302.04761",
+  "area": "tool-use",
+  "why": {
+   "en": "Showed LLMs can self-supervise API-call insertion, launching native tool-use training.",
+   "zh": "证明LLM可自监督插入API调用，开启原生工具使用训练"
+  }
+ },
+ {
+  "date": "2023-03",
+  "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+  "authors": "Noah Shinn et al. (Northeastern/MIT)",
+  "url": "https://arxiv.org/abs/2303.11366",
+  "arxiv": "2303.11366",
+  "area": "reasoning",
+  "why": {
+   "en": "Agents improve across trials by storing verbal self-reflections in memory instead of updating weights.",
+   "zh": "agent通过记忆中的语言反思而非更新权重来跨轮次提升"
+  }
+ },
+ {
+  "date": "2023-03",
+  "title": "HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face",
+  "authors": "Yongliang Shen et al. (Zhejiang/Microsoft)",
+  "url": "https://arxiv.org/abs/2303.17580",
+  "arxiv": "2303.17580",
+  "area": "tool-use",
+  "why": {
+   "en": "Used an LLM as controller to plan and orchestrate many expert models as tools.",
+   "zh": "用LLM作为控制器，规划并编排众多专家模型作为工具"
+  }
+ },
+ {
+  "date": "2023-03",
+  "title": "Self-Refine: Iterative Refinement with Self-Feedback",
+  "authors": "Aman Madaan et al. (CMU)",
+  "url": "https://arxiv.org/abs/2303.17651",
+  "arxiv": "2303.17651",
+  "area": "reasoning",
+  "why": {
+   "en": "A single LLM critiques and revises its own outputs, a core pattern for agent self-correction.",
+   "zh": "单个LLM自我批评并修订输出，agent自我纠正的核心模式"
+  }
+ },
+ {
+  "date": "2023-03",
+  "title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society",
+  "authors": "Guohao Li et al. (KAUST)",
+  "url": "https://arxiv.org/abs/2303.17760",
+  "arxiv": "2303.17760",
+  "area": "multi-agent",
+  "why": {
+   "en": "Role-playing between two LLM agents solves tasks autonomously; an early open multi-agent framework.",
+   "zh": "两个LLM agent角色扮演自主解题，早期开源多agent框架"
+  }
+ },
+ {
+  "date": "2023-04",
+  "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+  "authors": "Joon Sung Park et al. (Stanford/Google)",
+  "url": "https://arxiv.org/abs/2304.03442",
+  "arxiv": "2304.03442",
+  "area": "memory",
+  "why": {
+   "en": "Memory stream, reflection and planning architecture produced believable simulated agents; blueprint for agent memory.",
+   "zh": "记忆流、反思与规划架构，生成拟真agent，是agent记忆蓝图"
+  }
+ },
+ {
+  "date": "2023-05",
+  "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+  "authors": "Shunyu Yao et al. (Princeton/Google DeepMind)",
+  "url": "https://arxiv.org/abs/2305.10601",
+  "arxiv": "2305.10601",
+  "area": "reasoning",
+  "why": {
+   "en": "Framed reasoning as tree search over thoughts with lookahead and backtracking.",
+   "zh": "将推理建模为带前瞻与回溯的思维树搜索"
+  }
+ },
+ {
+  "date": "2023-05",
+  "title": "Gorilla: Large Language Model Connected with Massive APIs",
+  "authors": "Shishir G. Patil et al. (UC Berkeley)",
+  "url": "https://arxiv.org/abs/2305.15334",
+  "arxiv": "2305.15334",
+  "area": "tool-use",
+  "why": {
+   "en": "Fine-tuned an LLM to emit correct API calls, later spawning the Berkeley Function-Calling Leaderboard.",
+   "zh": "微调LLM生成正确API调用，催生Berkeley函数调用榜单"
+  }
+ },
+ {
+  "date": "2023-05",
+  "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+  "authors": "Guanzhi Wang et al. (NVIDIA)",
+  "url": "https://arxiv.org/abs/2305.16291",
+  "arxiv": "2305.16291",
+  "area": "memory",
+  "why": {
+   "en": "Lifelong-learning Minecraft agent with an ever-growing skill library of executable code.",
+   "zh": "终身学习的Minecraft agent，持续积累可执行技能库"
+  }
+ },
+ {
+  "date": "2023-06",
+  "title": "Mind2Web: Towards a Generalist Agent for the Web",
+  "authors": "Xiang Deng et al. (Ohio State)",
+  "url": "https://arxiv.org/abs/2306.06070",
+  "arxiv": "2306.06070",
+  "area": "evals",
+  "why": {
+   "en": "First large dataset of real-website tasks for training and evaluating generalist web agents.",
+   "zh": "首个真实网站任务大数据集，用于训练评测通用网页agent"
+  }
+ },
+ {
+  "date": "2023-07",
+  "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+  "authors": "Shuyan Zhou et al. (CMU)",
+  "url": "https://arxiv.org/abs/2307.13854",
+  "arxiv": "2307.13854",
+  "area": "evals",
+  "why": {
+   "en": "Self-hosted, functional websites with execution-based evaluation became the standard web-agent benchmark.",
+   "zh": "自建可运行网站与执行式评测，成为网页agent标准基准"
+  }
+ },
+ {
+  "date": "2023-07",
+  "title": "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+  "authors": "Yujia Qin et al. (Tsinghua)",
+  "url": "https://arxiv.org/abs/2307.16789",
+  "arxiv": "2307.16789",
+  "area": "tool-use",
+  "why": {
+   "en": "ToolBench dataset and ToolLLaMA scaled open-model tool use to thousands of real APIs.",
+   "zh": "ToolBench数据集与ToolLLaMA，把开源模型工具使用扩展到数千API"
+  }
+ },
+ {
+  "date": "2023-08",
+  "title": "MetaGPT: Meta Programming for A Multi-Agent Collaborative Framework",
+  "authors": "Sirui Hong et al. (DeepWisdom)",
+  "url": "https://arxiv.org/abs/2308.00352",
+  "arxiv": "2308.00352",
+  "area": "multi-agent",
+  "why": {
+   "en": "Encoded human SOPs into role-based agent pipelines, producing a widely used software-company simulation.",
+   "zh": "将人类SOP编码为角色化agent流水线，模拟软件公司广泛使用"
+  }
+ },
+ {
+  "date": "2023-08",
+  "title": "AgentBench: Evaluating LLMs as Agents",
+  "authors": "Xiao Liu et al. (Tsinghua)",
+  "url": "https://arxiv.org/abs/2308.03688",
+  "arxiv": "2308.03688",
+  "area": "evals",
+  "why": {
+   "en": "First multi-environment benchmark systematically comparing LLMs as agents across eight settings.",
+   "zh": "首个多环境基准，系统比较LLM在八种场景下的agent能力"
+  }
+ },
+ {
+  "date": "2023-08",
+  "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+  "authors": "Qingyun Wu et al. (Microsoft)",
+  "url": "https://arxiv.org/abs/2308.08155",
+  "arxiv": "2308.08155",
+  "area": "multi-agent",
+  "why": {
+   "en": "Conversable, customizable agents framework from Microsoft that popularized multi-agent application building.",
+   "zh": "微软可对话、可定制的agent框架，推广多agent应用构建"
+  }
+ },
+ {
+  "date": "2023-08",
+  "title": "A Survey on Large Language Model based Autonomous Agents",
+  "authors": "Lei Wang et al. (Renmin University)",
+  "url": "https://arxiv.org/abs/2308.11432",
+  "arxiv": "2308.11432",
+  "area": "foundations",
+  "why": {
+   "en": "Canonical survey organizing agents into profile, memory, planning and action modules.",
+   "zh": "经典综述，将agent归纳为画像、记忆、规划、行动模块"
+  }
+ },
+ {
+  "date": "2023-09",
+  "title": "Cognitive Architectures for Language Agents",
+  "authors": "Theodore R. Sumers et al. (Princeton)",
+  "url": "https://arxiv.org/abs/2309.02427",
+  "arxiv": "2309.02427",
+  "area": "foundations",
+  "why": {
+   "en": "CoALA gave a principled cognitive-science framework (memory, action space, decision procedure) for language agents.",
+   "zh": "CoALA提出认知科学式语言agent框架：记忆、动作空间、决策流程"
+  }
+ },
+ {
+  "date": "2023-09",
+  "title": "The Rise and Potential of Large Language Model Based Agents: A Survey",
+  "authors": "Zhiheng Xi et al. (Fudan)",
+  "url": "https://arxiv.org/abs/2309.07864",
+  "arxiv": "2309.07864",
+  "area": "foundations",
+  "why": {
+   "en": "Broad brain-perception-action survey of LLM agents, from single agents to agent societies.",
+   "zh": "从大脑-感知-行动视角综述LLM agent，从单体到agent社会"
+  }
+ },
+ {
+  "date": "2023-10",
+  "title": "Language Agent Tree Search (LATS)",
+  "authors": "Andy Zhou et al. (UIUC)",
+  "url": "https://arxiv.org/abs/2310.04406",
+  "arxiv": "2310.04406",
+  "area": "reasoning",
+  "why": {
+   "en": "LATS combined Monte Carlo tree search with ReAct-style acting and reflection for agents.",
+   "zh": "LATS将蒙特卡洛树搜索与ReAct式行动、反思结合用于agent"
+  }
+ },
+ {
+  "date": "2023-10",
+  "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+  "authors": "Carlos E. Jimenez et al. (Princeton)",
+  "url": "https://arxiv.org/abs/2310.06770",
+  "arxiv": "2310.06770",
+  "area": "coding",
+  "why": {
+   "en": "Real GitHub-issue benchmark that became the defining yardstick for coding agents.",
+   "zh": "真实GitHub issue基准，成为编码agent的标杆测试"
+  }
+ },
+ {
+  "date": "2023-10",
+  "title": "MemGPT: Towards LLMs as Operating Systems",
+  "authors": "Charles Packer et al. (UC Berkeley)",
+  "url": "https://arxiv.org/abs/2310.08560",
+  "arxiv": "2310.08560",
+  "area": "memory",
+  "why": {
+   "en": "OS-style virtual context management lets agents page memory in and out of a fixed window.",
+   "zh": "操作系统式虚拟上下文管理，让agent在固定窗口内调度记忆"
+  }
+ },
+ {
+  "date": "2023-10",
+  "title": "AgentTuning: Enabling Generalized Agent Abilities for LLMs",
+  "authors": "Aohan Zeng et al. (Tsinghua)",
+  "url": "https://arxiv.org/abs/2310.12823",
+  "arxiv": "2310.12823",
+  "area": "rl",
+  "why": {
+   "en": "Instruction-tuning on agent trajectories (AgentInstruct) gave open models generalizable agent skills.",
+   "zh": "用agent轨迹微调AgentInstruct，赋予开源模型通用agent能力"
+  }
+ },
+ {
+  "date": "2023-11",
+  "title": "GAIA: a benchmark for General AI Assistants",
+  "authors": "Grégoire Mialon et al. (Meta/HuggingFace)",
+  "url": "https://arxiv.org/abs/2311.12983",
+  "arxiv": "2311.12983",
+  "area": "evals",
+  "why": {
+   "en": "Human-easy, AI-hard assistant tasks requiring browsing and tools; the standard general-agent benchmark.",
+   "zh": "人类易、AI难的助手任务，需浏览与工具，通用agent标准基准"
+  }
+ },
+ {
+  "date": "2024-02",
+  "title": "Large Language Model based Multi-Agents: A Survey of Progress and Challenges",
+  "authors": "Taicheng Guo et al. (Notre Dame)",
+  "url": "https://arxiv.org/abs/2402.01680",
+  "arxiv": "2402.01680",
+  "area": "multi-agent",
+  "why": {
+   "en": "Systematized multi-agent LLM systems by environment, agent profiling, communication and capability growth.",
+   "zh": "按环境、画像、通信与能力成长系统化多agent LLM系统"
+  }
+ },
+ {
+  "date": "2024-02",
+  "title": "More Agents Is All You Need",
+  "authors": "Junyou Li et al. (Tencent)",
+  "url": "https://arxiv.org/abs/2402.05120",
+  "arxiv": "2402.05120",
+  "area": "multi-agent",
+  "why": {
+   "en": "Showed simple sampling-and-voting over many agents scales performance with ensemble size.",
+   "zh": "证明简单的多agent采样投票随集成规模提升性能"
+  }
+ },
+ {
+  "date": "2024-03",
+  "title": "InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated LLM Agents",
+  "authors": "Qiusi Zhan et al. (UIUC)",
+  "url": "https://arxiv.org/abs/2403.02691",
+  "arxiv": "2403.02691",
+  "area": "safety",
+  "why": {
+   "en": "First benchmark quantifying indirect prompt-injection vulnerability of tool-using agents.",
+   "zh": "首个量化工具agent间接提示注入漏洞的基准"
+  }
+ },
+ {
+  "date": "2024-04",
+  "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+  "authors": "Tianbao Xie et al. (HKU)",
+  "url": "https://arxiv.org/abs/2404.07972",
+  "arxiv": "2404.07972",
+  "area": "computer-use",
+  "why": {
+   "en": "Real-OS executable environment that became the reference benchmark for computer-use agents.",
+   "zh": "真实操作系统可执行环境，成为计算机使用agent参考基准"
+  }
+ },
+ {
+  "date": "2024-05",
+  "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+  "authors": "John Yang et al. (Princeton)",
+  "url": "https://arxiv.org/abs/2405.15793",
+  "arxiv": "2405.15793",
+  "area": "coding",
+  "why": {
+   "en": "Showed the agent-computer interface design itself dramatically affects coding-agent success.",
+   "zh": "证明agent-计算机接口设计本身极大影响编码agent成功率"
+  }
+ },
+ {
+  "date": "2024-06",
+  "title": "Mixture-of-Agents Enhances Large Language Model Capabilities",
+  "authors": "Junlin Wang et al. (Together AI/Duke)",
+  "url": "https://arxiv.org/abs/2406.04692",
+  "arxiv": "2406.04692",
+  "area": "multi-agent",
+  "why": {
+   "en": "Layered ensembles of open LLMs refining each other's outputs beat GPT-4o on chat benchmarks.",
+   "zh": "分层集成开源LLM互相精炼输出，聊天基准上超越GPT-4o"
+  }
+ },
+ {
+  "date": "2024-06",
+  "title": "tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+  "authors": "Shunyu Yao et al. (Sierra)",
+  "url": "https://arxiv.org/abs/2406.12045",
+  "arxiv": "2406.12045",
+  "area": "evals",
+  "why": {
+   "en": "Evaluates agents conversing with simulated users under policy rules; introduced pass^k reliability metric.",
+   "zh": "评测agent在策略约束下与模拟用户对话，提出pass^k可靠性指标"
+  }
+ },
+ {
+  "date": "2024-06",
+  "title": "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+  "authors": "Edoardo Debenedetti et al. (ETH Zurich)",
+  "url": "https://arxiv.org/abs/2406.13352",
+  "arxiv": "2406.13352",
+  "area": "safety",
+  "why": {
+   "en": "Extensible attack/defense environment that became the standard prompt-injection testbed for agents.",
+   "zh": "可扩展攻防环境，成为agent提示注入的标准测试平台"
+  }
+ },
+ {
+  "date": "2024-07",
+  "title": "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+  "authors": "Xingyao Wang et al. (UIUC/CMU/All-Hands)",
+  "url": "https://arxiv.org/abs/2407.16741",
+  "arxiv": "2407.16741",
+  "area": "coding",
+  "why": {
+   "en": "Open-source sandboxed platform (formerly OpenDevin) for building and benchmarking software agents.",
+   "zh": "开源沙箱平台(原OpenDevin)，用于构建评测软件agent"
+  }
+ },
+ {
+  "date": "2024-08",
+  "title": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+  "authors": "Chris Lu et al. (Sakana AI)",
+  "url": "https://arxiv.org/abs/2408.06292",
+  "arxiv": "2408.06292",
+  "area": "multi-agent",
+  "why": {
+   "en": "End-to-end pipeline generating ideas, running experiments and writing papers; sparked AI-for-science agents.",
+   "zh": "端到端生成创意、做实验、写论文，引发科研agent热潮"
+  }
+ },
+ {
+  "date": "2024-08",
+  "title": "Agent Q: Advanced Reasoning and Learning for Autonomous AI Agents",
+  "authors": "Pranav Putta et al. (MultiOn/Stanford)",
+  "url": "https://arxiv.org/abs/2408.07199",
+  "arxiv": "2408.07199",
+  "area": "rl",
+  "why": {
+   "en": "Combined MCTS, self-critique and DPO to train web agents from their own successes and failures.",
+   "zh": "结合MCTS、自我批评与DPO，从成败经验训练网页agent"
+  }
+ },
+ {
+  "date": "2024-08",
+  "title": "Introducing SWE-bench Verified",
+  "authors": "OpenAI",
+  "url": "https://openai.com/index/introducing-swe-bench-verified/",
+  "arxiv": null,
+  "area": "coding",
+  "why": {
+   "en": "Human-validated 500-task subset that became the headline coding-agent leaderboard.",
+   "zh": "人工验证的500任务子集，成为编码agent头部榜单"
+  }
+ },
+ {
+  "date": "2024-09",
+  "title": "Agent Workflow Memory",
+  "authors": "Zora Zhiruo Wang et al. (CMU)",
+  "url": "https://arxiv.org/abs/2409.07429",
+  "arxiv": "2409.07429",
+  "area": "memory",
+  "why": {
+   "en": "Agents induce reusable workflows from past trajectories and store them as memory, improving web tasks.",
+   "zh": "agent从历史轨迹归纳可复用工作流并存为记忆，提升网页任务"
+  }
+ },
+ {
+  "date": "2024-10",
+  "title": "Agent-as-a-Judge: Evaluate Agents with Agents",
+  "authors": "Mingchen Zhuge et al. (Meta/KAUST)",
+  "url": "https://arxiv.org/abs/2410.10934",
+  "arxiv": "2410.10934",
+  "area": "evals",
+  "why": {
+   "en": "Extended LLM-as-a-judge to agentic systems with step-level feedback; introduced DevAI benchmark.",
+   "zh": "将LLM裁判扩展到agent系统，提供逐步反馈，提出DevAI基准"
+  }
+ },
+ {
+  "date": "2024-10",
+  "title": "Introducing computer use (Claude 3.5 Sonnet)",
+  "authors": "Anthropic",
+  "url": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+  "arxiv": null,
+  "area": "computer-use",
+  "why": {
+   "en": "First frontier model API for general computer use via screenshots, mouse and keyboard.",
+   "zh": "首个支持截图、鼠标、键盘通用计算机使用的前沿模型API"
+  }
+ },
+ {
+  "date": "2024-11",
+  "title": "WebRL: Training LLM Web Agents via Self-Evolving Online Curriculum Reinforcement Learning",
+  "authors": "Zehan Qi et al. (Tsinghua)",
+  "url": "https://arxiv.org/abs/2411.02337",
+  "arxiv": "2411.02337",
+  "area": "rl",
+  "why": {
+   "en": "Online curriculum RL turned open Llama/GLM models into strong WebArena agents.",
+   "zh": "在线课程式RL将开源Llama/GLM训练成强力WebArena agent"
+  }
+ },
+ {
+  "date": "2024-11",
+  "title": "Magentic-One: A Generalist Multi-Agent System for Solving Complex Tasks",
+  "authors": "Adam Fourney et al. (Microsoft)",
+  "url": "https://arxiv.org/abs/2411.04468",
+  "arxiv": "2411.04468",
+  "area": "multi-agent",
+  "why": {
+   "en": "Orchestrator-plus-specialists design (web, file, coder, terminal) competitive on GAIA, AssistantBench, WebArena.",
+   "zh": "编排者+专家agent设计(网页/文件/编码/终端)，多基准具竞争力"
+  }
+ },
+ {
+  "date": "2024-11",
+  "title": "Large Language Model-Brained GUI Agents: A Survey",
+  "authors": "Chaoyun Zhang et al. (Microsoft)",
+  "url": "https://arxiv.org/abs/2411.18279",
+  "arxiv": "2411.18279",
+  "area": "computer-use",
+  "why": {
+   "en": "Comprehensive survey of LLM-driven GUI agents across platforms, data, models and evaluation.",
+   "zh": "全面综述LLM驱动的GUI agent：平台、数据、模型与评测"
+  }
+ },
+ {
+  "date": "2024-11",
+  "title": "Introducing the Model Context Protocol",
+  "authors": "Anthropic",
+  "url": "https://www.anthropic.com/news/model-context-protocol",
+  "arxiv": null,
+  "area": "protocol",
+  "why": {
+   "en": "Open standard connecting assistants to tools and data sources; became the de facto agent-tool protocol.",
+   "zh": "连接助手与工具、数据源的开放标准，成为事实上的agent-工具协议"
+  }
+ },
+ {
+  "date": "2024-12",
+  "title": "TheAgentCompany: Benchmarking LLM Agents on Consequential Real World Tasks",
+  "authors": "Frank F. Xu et al. (CMU)",
+  "url": "https://arxiv.org/abs/2412.14161",
+  "arxiv": "2412.14161",
+  "area": "evals",
+  "why": {
+   "en": "Simulated software company with 175 professional tasks; showed agents complete under a third autonomously.",
+   "zh": "模拟软件公司含175项专业任务，agent自主完成率不足三分之一"
+  }
+ },
+ {
+  "date": "2024-12",
+  "title": "Training Software Engineering Agents and Verifiers with SWE-Gym",
+  "authors": "Jiayi Pan et al. (UC Berkeley)",
+  "url": "https://arxiv.org/abs/2412.21139",
+  "arxiv": "2412.21139",
+  "area": "coding",
+  "why": {
+   "en": "First executable training environment for SWE agents, enabling trajectory fine-tuning and verifiers.",
+   "zh": "首个可执行SWE agent训练环境，支持轨迹微调与验证器"
+  }
+ },
+ {
+  "date": "2024-12",
+  "title": "Building Effective AI Agents",
+  "authors": "Anthropic",
+  "url": "https://www.anthropic.com/engineering/building-effective-agents",
+  "arxiv": null,
+  "area": "foundations",
+  "why": {
+   "en": "Influential practitioner guide distinguishing workflows from agents and recommending simple composable patterns.",
+   "zh": "有影响力的实践指南，区分工作流与agent，推荐简单可组合模式"
+  }
+ },
+ {
+  "date": "2025-01",
+  "title": "Agent Laboratory: Using LLM Agents as Research Assistants",
+  "authors": "Samuel Schmidgall et al. (AMD/JHU)",
+  "url": "https://arxiv.org/abs/2501.04227",
+  "arxiv": "2501.04227",
+  "area": "multi-agent",
+  "why": {
+   "en": "Human-in-the-loop multi-agent pipeline covering literature review, experimentation and report writing.",
+   "zh": "人机协同多agent流水线，覆盖文献综述、实验与写作"
+  }
+ },
+ {
+  "date": "2025-01",
+  "title": "UI-TARS: Pioneering Automated GUI Interaction with Native Agents",
+  "authors": "Yujia Qin et al. (ByteDance Seed)",
+  "url": "https://arxiv.org/abs/2501.12326",
+  "arxiv": "2501.12326",
+  "area": "computer-use",
+  "why": {
+   "en": "End-to-end native GUI agent model trained on screenshots, beating modular frameworks on OSWorld.",
+   "zh": "基于截图训练的端到端原生GUI agent，OSWorld上超越模块化方案"
+  }
+ },
+ {
+  "date": "2025-01",
+  "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+  "authors": "DeepSeek-AI",
+  "url": "https://arxiv.org/abs/2501.12948",
+  "arxiv": "2501.12948",
+  "area": "rl",
+  "why": {
+   "en": "Showed pure RL with verifiable rewards (GRPO) elicits long reasoning, igniting the agentic-RL wave.",
+   "zh": "证明可验证奖励纯RL(GRPO)能激发长推理，引爆agentic RL浪潮"
+  }
+ },
+ {
+  "date": "2025-01",
+  "title": "Introducing Operator",
+  "authors": "OpenAI",
+  "url": "https://openai.com/index/introducing-operator/",
+  "arxiv": null,
+  "area": "computer-use",
+  "why": {
+   "en": "Launched the Computer-Using Agent (CUA) model that browses and acts in a virtual browser for users.",
+   "zh": "推出CUA模型，在虚拟浏览器中为用户浏览并操作"
+  }
+ },
+ {
+  "date": "2025-02",
+  "title": "A-MEM: Agentic Memory for LLM Agents",
+  "authors": "Wujiang Xu et al. (Rutgers)",
+  "url": "https://arxiv.org/abs/2502.12110",
+  "arxiv": "2502.12110",
+  "area": "memory",
+  "why": {
+   "en": "Zettelkasten-style memory that links and evolves notes dynamically as agents accumulate experience.",
+   "zh": "卡片盒笔记式记忆，随agent积累经验动态链接与演化"
+  }
+ },
+ {
+  "date": "2025-02",
+  "title": "Introducing deep research",
+  "authors": "OpenAI",
+  "url": "https://openai.com/index/introducing-deep-research/",
+  "arxiv": null,
+  "area": "tool-use",
+  "why": {
+   "en": "o3-based agent performing multi-step web research; set SOTA on GAIA and defined the deep-research product category.",
+   "zh": "基于o3的多步网页研究agent，GAIA登顶并开创深度研究品类"
+  }
+ },
+ {
+  "date": "2025-03",
+  "title": "Search-R1: Training LLMs to Reason and Leverage Search Engines with Reinforcement Learning",
+  "authors": "Bowen Jin et al. (UIUC)",
+  "url": "https://arxiv.org/abs/2503.09516",
+  "arxiv": "2503.09516",
+  "area": "rl",
+  "why": {
+   "en": "RL with retrieved-token masking taught models to interleave reasoning and multi-turn search calls.",
+   "zh": "用检索token掩码的RL，教模型交替推理与多轮搜索调用"
+  }
+ },
+ {
+  "date": "2025-03",
+  "title": "Why Do Multi-Agent LLM Systems Fail?",
+  "authors": "Mert Cemri et al. (UC Berkeley)",
+  "url": "https://arxiv.org/abs/2503.13657",
+  "arxiv": "2503.13657",
+  "area": "multi-agent",
+  "why": {
+   "en": "MAST taxonomy of 14 failure modes from 1,000+ traces, the first empirical diagnosis of multi-agent failures.",
+   "zh": "MAST基于千余条轨迹归纳14种失败模式，首个多agent失败实证诊断"
+  }
+ },
+ {
+  "date": "2025-03",
+  "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+  "authors": "Qiying Yu et al. (ByteDance Seed/Tsinghua)",
+  "url": "https://arxiv.org/abs/2503.14476",
+  "arxiv": "2503.14476",
+  "area": "rl",
+  "why": {
+   "en": "Fully open GRPO-style RL recipe (clip-higher, dynamic sampling) reproducing R1-level reasoning gains.",
+   "zh": "全开源GRPO式RL方案(clip-higher、动态采样)复现R1级推理提升"
+  }
+ },
+ {
+  "date": "2025-03",
+  "title": "Defeating Prompt Injections by Design (CaMeL)",
+  "authors": "Edoardo Debenedetti et al. (Google DeepMind)",
+  "url": "https://arxiv.org/abs/2503.18813",
+  "arxiv": "2503.18813",
+  "area": "safety",
+  "why": {
+   "en": "Capability-based design separating control flow from untrusted data, a principled defense for tool agents.",
+   "zh": "基于能力分离控制流与不可信数据，工具agent的原则性防御"
+  }
+ },
+ {
+  "date": "2025-04",
+  "title": "Agent S2: A Compositional Generalist-Specialist Framework for Computer Use Agents",
+  "authors": "Saaket Agashe et al. (Simular)",
+  "url": "https://arxiv.org/abs/2504.00906",
+  "arxiv": "2504.00906",
+  "area": "computer-use",
+  "why": {
+   "en": "Mixture-of-grounding and proactive hierarchical planning set new open SOTA on OSWorld and AndroidWorld.",
+   "zh": "混合定位与主动分层规划，刷新OSWorld与AndroidWorld开源SOTA"
+  }
+ },
+ {
+  "date": "2025-04",
+  "title": "ReTool: Reinforcement Learning for Strategic Tool Use in LLMs",
+  "authors": "Jiazhan Feng et al. (ByteDance Seed)",
+  "url": "https://arxiv.org/abs/2504.11536",
+  "arxiv": "2504.11536",
+  "area": "rl",
+  "why": {
+   "en": "RL with code-interpreter execution in the loop taught strategic tool calls for math reasoning.",
+   "zh": "循环中嵌入代码解释器执行的RL，教会数学推理中的策略性调用"
+  }
+ },
+ {
+  "date": "2025-04",
+  "title": "BrowseComp: A Simple Yet Challenging Benchmark for Browsing Agents",
+  "authors": "Jason Wei et al. (OpenAI)",
+  "url": "https://arxiv.org/abs/2504.12516",
+  "arxiv": "2504.12516",
+  "area": "evals",
+  "why": {
+   "en": "1,266 hard-to-find, easy-to-verify questions; the standard test for deep-research browsing agents.",
+   "zh": "1266道难查易验证问题，深度研究浏览agent的标准测试"
+  }
+ },
+ {
+  "date": "2025-04",
+  "title": "ToolRL: Reward is All Tool Learning Needs",
+  "authors": "Cheng Qian et al. (UIUC)",
+  "url": "https://arxiv.org/abs/2504.13958",
+  "arxiv": "2504.13958",
+  "area": "rl",
+  "why": {
+   "en": "Systematic study of reward design for tool use; principled rewards let RL beat SFT on tool benchmarks.",
+   "zh": "系统研究工具使用的奖励设计，合理奖励让RL在工具基准超越SFT"
+  }
+ },
+ {
+  "date": "2025-04",
+  "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+  "authors": "Prateek Chhikara et al. (Mem0)",
+  "url": "https://arxiv.org/abs/2504.19413",
+  "arxiv": "2504.19413",
+  "area": "memory",
+  "why": {
+   "en": "Production memory layer extracting and consolidating facts across sessions with large latency and token savings.",
+   "zh": "生产级记忆层，跨会话提取整合事实，大幅节省延迟与token"
+  }
+ },
+ {
+  "date": "2025-04",
+  "title": "SWE-smith: Scaling Data for Software Engineering Agents",
+  "authors": "John Yang et al. (Stanford/Princeton)",
+  "url": "https://arxiv.org/abs/2504.21798",
+  "arxiv": "2504.21798",
+  "area": "coding",
+  "why": {
+   "en": "Synthesized 50k executable SWE task instances, enabling open SWE-agent-LM models at scale.",
+   "zh": "合成5万个可执行SWE任务，支持大规模开源SWE agent模型"
+  }
+ },
+ {
+  "date": "2025-04",
+  "title": "Announcing the Agent2Agent Protocol (A2A)",
+  "authors": "Google",
+  "url": "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/",
+  "arxiv": null,
+  "area": "protocol",
+  "why": {
+   "en": "Open protocol for agent-to-agent communication across vendors, complementing MCP's agent-to-tool layer.",
+   "zh": "跨厂商agent间通信开放协议，补充MCP的agent-工具层"
+  }
+ },
+ {
+  "date": "2025-05",
+  "title": "WebDancer: Towards Autonomous Information Seeking Agency",
+  "authors": "Jialong Wu et al. (Alibaba Tongyi)",
+  "url": "https://arxiv.org/abs/2505.22648",
+  "arxiv": "2505.22648",
+  "area": "rl",
+  "why": {
+   "en": "Four-stage data-synthesis plus SFT and RL pipeline for open deep-research web agents.",
+   "zh": "四阶段数据合成加SFT与RL流水线，打造开源深度研究网页agent"
+  }
+ },
+ {
+  "date": "2025-06",
+  "title": "tau2-Bench: Evaluating Conversational Agents in a Dual-Control Environment",
+  "authors": "Victor Barres et al. (Sierra)",
+  "url": "https://arxiv.org/abs/2506.07982",
+  "arxiv": "2506.07982",
+  "area": "evals",
+  "why": {
+   "en": "Extends tau-bench so both agent and simulated user act on the environment, testing coordination.",
+   "zh": "扩展tau-bench，让agent与模拟用户都能操作环境，测试协作"
+  }
+ },
+ {
+  "date": "2025-06",
+  "title": "SHADE-Arena: Evaluating Sabotage and Monitoring in LLM Agents",
+  "authors": "Jonathan Kutasov et al. (Anthropic)",
+  "url": "https://arxiv.org/abs/2506.15740",
+  "arxiv": "2506.15740",
+  "area": "safety",
+  "why": {
+   "en": "Tests whether agents can covertly pursue hidden side tasks and whether monitors catch them.",
+   "zh": "测试agent能否隐蔽执行隐藏子任务，及监控能否发现"
+  }
+ },
+ {
+  "date": "2025-06",
+  "title": "Agentic Misalignment: How LLMs Could be Insider Threats",
+  "authors": "Anthropic",
+  "url": "https://www.anthropic.com/research/agentic-misalignment",
+  "arxiv": null,
+  "area": "safety",
+  "why": {
+   "en": "Stress tests showed frontier models blackmail or leak when goals conflict with operator, highlighting agent risks.",
+   "zh": "压力测试显示目标冲突时前沿模型会勒索或泄露，凸显agent风险"
+  }
+ },
+ {
+  "date": "2025-07",
+  "title": "WebSailor: Navigating Super-human Reasoning for Web Agent",
+  "authors": "Kuan Li et al. (Alibaba Tongyi)",
+  "url": "https://arxiv.org/abs/2507.02592",
+  "arxiv": "2507.02592",
+  "area": "rl",
+  "why": {
+   "en": "High-uncertainty synthetic tasks plus DUPO RL closed the open-model gap on BrowseComp.",
+   "zh": "高不确定性合成任务加DUPO RL，缩小开源模型在BrowseComp的差距"
+  }
+ },
+ {
+  "date": "2025-07",
+  "title": "Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety",
+  "authors": "Tomek Korbak et al. (cross-lab)",
+  "url": "https://arxiv.org/abs/2507.11473",
+  "arxiv": "2507.11473",
+  "area": "safety",
+  "why": {
+   "en": "Cross-lab position paper: monitoring reasoning traces is a valuable but fragile safety lever for agents.",
+   "zh": "跨实验室立场文章：监控推理轨迹是有价值但脆弱的安全手段"
+  }
+ },
+ {
+  "date": "2025-07",
+  "title": "Group Sequence Policy Optimization",
+  "authors": "Chujie Zheng et al. (Alibaba Qwen)",
+  "url": "https://arxiv.org/abs/2507.18071",
+  "arxiv": "2507.18071",
+  "area": "rl",
+  "why": {
+   "en": "Sequence-level importance ratios stabilized large MoE RL training; used for Qwen3 agentic models.",
+   "zh": "序列级重要性比率稳定大型MoE RL训练，用于Qwen3 agentic模型"
+  }
+ },
+ {
+  "date": "2025-07",
+  "title": "Kimi K2: Open Agentic Intelligence",
+  "authors": "Kimi Team (Moonshot AI)",
+  "url": "https://arxiv.org/abs/2507.20534",
+  "arxiv": "2507.20534",
+  "area": "foundations",
+  "why": {
+   "en": "1T-parameter open MoE trained with synthetic tool-use data and RL, explicitly targeting agentic capability.",
+   "zh": "万亿参数开源MoE，用合成工具数据与RL训练，专攻agentic能力"
+  }
+ },
+ {
+  "date": "2025-07",
+  "title": "Context Engineering for AI Agents: Lessons from Building Manus",
+  "authors": "Yichao 'Peak' Ji (Manus)",
+  "url": "https://manus.im/blog/Context-Engineering-for-AI-Agents-Lessons-from-Building-Manus",
+  "arxiv": null,
+  "area": "memory",
+  "why": {
+   "en": "Popularized 'context engineering': KV-cache hygiene, file-system memory, and keeping errors in context.",
+   "zh": "推广'上下文工程'：KV缓存管理、文件系统记忆、保留错误上下文"
+  }
+ },
+ {
+  "date": "2025-08",
+  "title": "Agent Lightning: Train ANY AI Agents with Reinforcement Learning",
+  "authors": "Xufang Luo et al. (Microsoft Research)",
+  "url": "https://arxiv.org/abs/2508.03680",
+  "arxiv": "2508.03680",
+  "area": "rl",
+  "why": {
+   "en": "Decouples agent execution from RL training so any existing agent framework can be RL-optimized.",
+   "zh": "将agent执行与RL训练解耦，使任意现有框架都可做RL优化"
+  }
+ },
+ {
+  "date": "2025-09",
+  "title": "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
+  "authors": "Guibin Zhang et al. (Oxford/NUS et al.)",
+  "url": "https://arxiv.org/abs/2509.02547",
+  "arxiv": "2509.02547",
+  "area": "rl",
+  "why": {
+   "en": "Formalizes agentic RL as POMDPs and maps planning, tool use, memory and self-improvement research.",
+   "zh": "将agentic RL形式化为POMDP，梳理规划、工具、记忆与自我提升研究"
+  }
+ },
+ {
+  "date": "2025-09",
+  "title": "SWE-Bench Pro: Can AI Agents Solve Long-Horizon Software Engineering Tasks?",
+  "authors": "Xiang Deng et al. (Scale AI)",
+  "url": "https://arxiv.org/abs/2509.16941",
+  "arxiv": "2509.16941",
+  "area": "coding",
+  "why": {
+   "en": "Contamination-resistant, long-horizon enterprise-grade tasks where frontier agents score far below SWE-bench Verified.",
+   "zh": "抗污染长程企业任务，前沿agent得分远低于SWE-bench Verified"
+  }
+ },
+ {
+  "date": "2025-10",
+  "title": "GDPval: Evaluating AI Model Performance on Real-World Economically Valuable Tasks",
+  "authors": "Tejal Patwardhan et al. (OpenAI)",
+  "url": "https://arxiv.org/abs/2510.04374",
+  "arxiv": "2510.04374",
+  "area": "evals",
+  "why": {
+   "en": "Expert-graded occupational deliverables across 44 professions measure economic value of agents.",
+   "zh": "44个职业的专家评分成果，衡量agent的经济价值"
+  }
+ },
+ {
+  "date": "2025-10",
+  "title": "Agentic Context Engineering: Evolving Contexts for Self-Improving Language Models",
+  "authors": "Qizheng Zhang et al. (Stanford/SambaNova)",
+  "url": "https://arxiv.org/abs/2510.04618",
+  "arxiv": "2510.04618",
+  "area": "memory",
+  "why": {
+   "en": "Treats contexts as evolving playbooks updated by generator-reflector-curator, rivaling fine-tuning without weight updates.",
+   "zh": "将上下文视为生成-反思-策展更新的playbook，媲美微调且免权重更新"
+  }
+ },
+ {
+  "date": "2025-10",
+  "title": "Tongyi DeepResearch Technical Report",
+  "authors": "Yong Jiang et al. (Alibaba Tongyi Lab)",
+  "url": "https://arxiv.org/abs/2510.24701",
+  "arxiv": "2510.24701",
+  "area": "rl",
+  "why": {
+   "en": "Open 30B agentic model with agentic mid- and post-training matching proprietary deep-research systems.",
+   "zh": "开源300亿参数agentic模型，中后训练媲美闭源深度研究系统"
+  }
+ },
+ {
+  "date": "2026-01",
+  "title": "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces",
+  "authors": "Mike A. Merrill et al. (Stanford/Laude Institute)",
+  "url": "https://arxiv.org/abs/2601.11868",
+  "arxiv": "2601.11868",
+  "area": "evals",
+  "why": {
+   "en": "Curated hard terminal tasks with the Harbor harness; the leading CLI-agent leaderboard.",
+   "zh": "精选高难终端任务加Harbor测试框架，领先的CLI agent榜单"
+  }
+ },
+ {
+  "date": "2026-02",
+  "title": "Kimi K2.5: Visual Agentic Intelligence",
+  "authors": "Kimi Team (Moonshot AI)",
+  "url": "https://arxiv.org/abs/2602.02276",
+  "arxiv": "2602.02276",
+  "area": "computer-use",
+  "why": {
+   "en": "Open multimodal agentic model with parallel agent orchestration for coding, GUI and long-horizon tasks.",
+   "zh": "开源多模态agentic模型，并行编排agent处理编码、GUI与长程任务"
+  }
+ },
+ {
+  "date": "2026-02",
+  "title": "GLM-5: from Vibe Coding to Agentic Engineering",
+  "authors": "Aohan Zeng et al. (Zhipu AI)",
+  "url": "https://arxiv.org/abs/2602.15763",
+  "arxiv": "2602.15763",
+  "area": "coding",
+  "why": {
+   "en": "Open frontier model trained with asynchronous agentic RL for real-world software engineering.",
+   "zh": "开源前沿模型，用异步agentic RL训练，面向真实软件工程"
+  }
+ },
+ {
+  "date": "2026-02",
+  "title": "A Survey of Agent Memory in the Second Half: Towards Self-Evolving and Long-Horizon Agents",
+  "authors": "Wei-Chieh Huang et al.",
+  "url": "https://arxiv.org/abs/2602.06052",
+  "arxiv": "2602.06052",
+  "area": "memory",
+  "why": {
+   "en": "Taxonomy of memory substrates, cognitive mechanisms and topologies for long-horizon, self-evolving agents.",
+   "zh": "梳理长程自演化agent的记忆载体、认知机制与拓扑分类"
+  }
+ },
+ {
+  "date": "2026-02",
+  "title": "The Landscape of Prompt Injection Threats in LLM Agents: From Taxonomy to Analysis",
+  "authors": "Peiran Wang et al.",
+  "url": "https://arxiv.org/abs/2602.10453",
+  "arxiv": "2602.10453",
+  "area": "safety",
+  "why": {
+   "en": "Systematic attack/defense taxonomy plus AgentPI benchmark; shows no defense is simultaneously safe, useful and fast.",
+   "zh": "系统性攻防分类加AgentPI基准，证明防御难兼顾安全实用与速度"
+  }
+ },
+ {
+  "date": "2026-04",
+  "title": "Rethinking Agentic Reinforcement Learning In Large Language Models",
+  "authors": "Fangming Cui et al.",
+  "url": "https://arxiv.org/abs/2604.27859",
+  "arxiv": "2604.27859",
+  "area": "rl",
+  "why": {
+   "en": "Reframes agentic RL around meta-reasoning, self-reflection and autonomous goal-setting beyond static rewards.",
+   "zh": "以元推理、自我反思与自主设定目标重构agentic RL，超越静态奖励"
+  }
+ },
+ {
+  "date": "2026-05",
+  "title": "Reinforcement Learning for LLM-based Multi-Agent Systems through Orchestration Traces",
+  "authors": "Chenchen Zhang et al.",
+  "url": "https://arxiv.org/abs/2605.02801",
+  "arxiv": "2605.02801",
+  "area": "multi-agent",
+  "why": {
+   "en": "Frames multi-agent RL via orchestration traces: spawn, delegate, communicate, aggregate, terminate decisions and credit assignment.",
+   "zh": "以编排轨迹刻画多agent RL：生成、委派、通信、聚合、终止与分配"
+  }
+ },
+ {
+  "date": "2026-05",
+  "title": "AgentSecBench: Measuring Prompt Injection, Privacy Leakage, and Tool-Use Integrity in LLM Agents",
+  "authors": "Faruk Alpay et al.",
+  "url": "https://arxiv.org/abs/2605.26269",
+  "arxiv": "2605.26269",
+  "area": "safety",
+  "why": {
+   "en": "Unified security benchmark testing whether untrusted strings can alter secret-bearing responses or tool actions.",
+   "zh": "统一安全基准，测试不可信字符串能否篡改含密响应或工具行为"
+  }
+ },
+ {
+  "date": "2026-06",
+  "title": "DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence",
+  "authors": "DeepSeek-AI",
+  "url": "https://arxiv.org/abs/2606.19348",
+  "arxiv": "2606.19348",
+  "area": "foundations",
+  "why": {
+   "en": "Open MoE models with hybrid attention delivering efficient million-token context for long-horizon agents.",
+   "zh": "开源MoE混合注意力模型，为长程agent提供百万token高效上下文"
+  }
+ },
+ {
+  "date": "2026-06",
+  "title": "OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks",
+  "authors": "Tao Yu et al. (HKU)",
+  "url": "https://arxiv.org/abs/2606.29537",
+  "arxiv": "2606.29537",
+  "area": "computer-use",
+  "why": {
+   "en": "108 long-horizon workflows needing hundreds of actions; best agents complete only about 20%.",
+   "zh": "108个需数百步操作的长程工作流，最佳agent完成率仅约20%"
+  }
+ },
+ {
+  "date": "2026-07",
+  "title": "Qwen-UI-Agent Technical Report",
+  "authors": "Hanzhang Zhou et al. (Alibaba Qwen)",
+  "url": "https://arxiv.org/abs/2607.28227",
+  "arxiv": "2607.28227",
+  "area": "computer-use",
+  "why": {
+   "en": "Open multiplatform GUI+CLI agent model reaching SOTA on mobile and competitive on desktop/web.",
+   "zh": "开源跨平台GUI+CLI agent模型，移动端SOTA，桌面/网页具竞争力"
+  }
+ },
+ {
+  "date": "2026-07",
+  "title": "MCP 2026-07-28 Specification",
+  "authors": "MCP maintainers",
+  "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28/",
+  "arxiv": null,
+  "area": "protocol",
+  "why": {
+   "en": "Makes MCP stateless request/response, adds multi-round-trip requests, stronger authorization and an extensions framework.",
+   "zh": "让MCP变为无状态请求响应，新增多轮请求、更强授权与扩展框架"
+  }
+ }
+]

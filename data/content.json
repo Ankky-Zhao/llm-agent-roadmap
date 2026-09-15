@@ -1,0 +1,1750 @@
+{
+ "stages": [
+  {
+   "id": "s0",
+   "name": {
+    "zh": "起点",
+    "en": "Foundations"
+   },
+   "weeks": {
+    "zh": "第 1 到 2 周",
+    "en": "Weeks 1–2"
+   },
+   "note": {
+    "zh": "理解 LLM 是什么、能做什么、不能做什么。已有 NLP 基础可以直接跳到下一阶段。",
+    "en": "Understand what an LLM is, what it can and cannot do. Skip ahead if you already have NLP basics."
+   },
+   "modules": [
+    "llm_foundations",
+    "zh_courses"
+   ]
+  },
+  {
+   "id": "s1",
+   "name": {
+    "zh": "Agent 入门",
+    "en": "Agent fundamentals"
+   },
+   "weeks": {
+    "zh": "第 3 到 5 周",
+    "en": "Weeks 3–5"
+   },
+   "note": {
+    "zh": "先不用框架，亲手写一个 agent 循环。这一阶段结束时应能解释 workflow 与 agent 的区别，并有一个能调用工具的小程序。",
+    "en": "Write an agent loop by hand before touching any framework. By the end you can explain workflows versus agents and have a small tool-using program."
+   },
+   "modules": [
+    "agent_from_scratch",
+    "agent_patterns",
+    "tool_calling"
+   ]
+  },
+  {
+   "id": "s2",
+   "name": {
+    "zh": "核心能力",
+    "en": "Core capabilities"
+   },
+   "weeks": {
+    "zh": "第 6 到 8 周",
+    "en": "Weeks 6–8"
+   },
+   "note": {
+    "zh": "协议、记忆、检索与编排框架。这是把玩具 agent 变成能处理真实任务的 agent 的三块积木。",
+    "en": "Protocols, memory, retrieval and orchestration frameworks: the three blocks that turn a toy agent into one that handles real tasks."
+   },
+   "modules": [
+    "mcp",
+    "memory_rag",
+    "frameworks"
+   ]
+  },
+  {
+   "id": "s3",
+   "name": {
+    "zh": "可靠性",
+    "en": "Reliability"
+   },
+   "weeks": {
+    "zh": "第 9 到 11 周",
+    "en": "Weeks 9–11"
+   },
+   "note": {
+    "zh": "失败模式、评估、可观测性与安全。大多数 agent 项目的差距不在能力，而在这里。",
+    "en": "Failure modes, evaluation, observability and security. Most agent projects fall short here, not on capability."
+   },
+   "modules": [
+    "failure_modes",
+    "evals",
+    "observability",
+    "agent_safety"
+   ]
+  },
+  {
+   "id": "s4",
+   "name": {
+    "zh": "生产化",
+    "en": "Production"
+   },
+   "weeks": {
+    "zh": "第 12 到 14 周（求职路线）",
+    "en": "Weeks 12–14 (industry track)"
+   },
+   "note": {
+    "zh": "把 agent 包成服务并部署。科研路线可以只读每个模块的「了解」层。",
+    "en": "Package the agent as a service and deploy it. Research-track readers can stop at the intro tier of each module."
+   },
+   "modules": [
+    "backend",
+    "deploy",
+    "prod_opt",
+    "realtime"
+   ]
+  },
+  {
+   "id": "s5",
+   "name": {
+    "zh": "前沿方向",
+    "en": "Frontiers"
+   },
+   "weeks": {
+    "zh": "第 12 周起（科研路线）",
+    "en": "From week 12 (research track)"
+   },
+   "note": {
+    "zh": "四个当前最活跃的方向，每个都附关键论文、基准、代码库和开放问题。求职路线选一个自己最感兴趣的深入即可。",
+    "en": "Four of the most active directions, each with key papers, benchmarks, codebases and open problems. Industry-track readers can pick one."
+   },
+   "modules": [
+    "agentic_rl",
+    "coding_agents",
+    "computer_use_agents",
+    "multi_agent_protocols",
+    "interpretability_auditing"
+   ]
+  },
+  {
+   "id": "s6",
+   "name": {
+    "zh": "做项目与持续成长",
+    "en": "Build and keep growing"
+   },
+   "weeks": {
+    "zh": "贯穿全程",
+    "en": "Throughout"
+   },
+   "note": {
+    "zh": "项目模板、科研入门方法、求职准备与社区。学习地图的终点是一个你自己的项目，而不是读完的清单。",
+    "en": "Project templates, how to start research, job preparation and community. The roadmap ends with a project of your own, not a finished reading list."
+   },
+   "modules": [
+    "project_ideas",
+    "research_howto",
+    "career_job",
+    "community_stay_current",
+    "open_problems_reading"
+   ]
+  }
+ ],
+ "modules": {
+  "llm_foundations": {
+   "title": {
+    "zh": "LLM 基础",
+    "en": "LLM foundations"
+   },
+   "track": "both",
+   "why": {
+    "zh": "Agent 的每个能力都建立在 LLM 的行为特性之上：上下文窗口、采样、指令遵循、幻觉。不需要会训练模型，但需要知道它为什么会犯错。",
+    "en": "Every agent capability rests on how LLMs behave: context windows, sampling, instruction following, hallucination. You do not need to train models, but you need to know why they fail."
+   },
+   "concepts": [
+    {
+     "zh": "token、上下文窗口、温度与采样",
+     "en": "Tokens, context window, temperature and sampling"
+    },
+    {
+     "zh": "预训练、SFT、RLHF 三个阶段各自带来什么",
+     "en": "What pretraining, SFT and RLHF each contribute"
+    },
+    {
+     "zh": "提示工程的基本技巧：示例、结构化、角色、思维链",
+     "en": "Prompting basics: examples, structure, roles, chain of thought"
+    },
+    {
+     "zh": "幻觉与知识截止的成因",
+     "en": "Where hallucination and knowledge cutoffs come from"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "为什么同一个提示两次输出不同？",
+     "en": "Why does the same prompt give different outputs?"
+    },
+    {
+     "zh": "上下文窗口填满后会发生什么？",
+     "en": "What happens when the context window fills up?"
+    },
+    {
+     "zh": "RLHF 解决了什么，没解决什么？",
+     "en": "What does RLHF solve, and what does it not?"
+    }
+   ],
+   "task": {
+    "zh": "用任意一家 API 写 50 行代码：读入一段文本，让模型输出结构化 JSON 摘要，并统计 token 与费用。",
+    "en": "Write 50 lines against any API: read a text, have the model return a structured JSON summary, and log tokens and cost."
+   }
+  },
+  "zh_courses": {
+   "title": {
+    "zh": "中文学习路径",
+    "en": "Chinese-language learning path"
+   },
+   "track": "both",
+   "why": {
+    "zh": "中文社区已有成体系的开源教程（Datawhale 系列、李宏毅课程）和国产模型的官方 agent 文档。以中文为母语的读者可以从这里起步，再进入英文一手资料。",
+    "en": "The Chinese community has systematic open tutorials (Datawhale series, Hung-yi Lee's course) and official agent docs for Chinese models. Native readers can start here and move to English primary sources."
+   },
+   "concepts": [
+    {
+     "zh": "hello-agents 的章节结构对应本地图的前三个阶段",
+     "en": "hello-agents' chapters map onto the first three stages of this roadmap"
+    },
+    {
+     "zh": "Qwen-Agent、MS-Agent 等国产框架与 LangGraph 的对应关系",
+     "en": "How Qwen-Agent and MS-Agent relate to LangGraph"
+    },
+    {
+     "zh": "国产模型 API 与 OpenAI 兼容接口",
+     "en": "Chinese model APIs and OpenAI-compatible endpoints"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "中文教程与英文官方文档说法不一致时以谁为准？",
+     "en": "When a Chinese tutorial and the English docs disagree, which wins?"
+    }
+   ],
+   "task": {
+    "zh": "跟完 hello-agents 前四章，把它的示例改成调用国产模型 API。",
+    "en": "Finish the first four chapters of hello-agents and port its example to a Chinese model API."
+   }
+  },
+  "agent_from_scratch": {
+   "title": {
+    "zh": "从零写一个 Agent",
+    "en": "An agent from scratch"
+   },
+   "track": "both",
+   "why": {
+    "zh": "一个 agent 循环只有几十行：调用模型、解析工具调用、执行、把结果放回上下文、重复。先手写一遍，之后所有框架都只是这个循环的封装。",
+    "en": "An agent loop is a few dozen lines: call the model, parse tool calls, execute, append results, repeat. Write it once by hand; every framework afterwards is a wrapper around this loop."
+   },
+   "concepts": [
+    {
+     "zh": "思考、行动、观察的循环",
+     "en": "The think, act, observe loop"
+    },
+    {
+     "zh": "停止条件与最大轮数",
+     "en": "Stop conditions and maximum turns"
+    },
+    {
+     "zh": "工具结果如何回到上下文",
+     "en": "How tool results re-enter the context"
+    },
+    {
+     "zh": "workflow 与 agent 的分界",
+     "en": "Where a workflow ends and an agent begins"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "你的 agent 什么时候停？",
+     "en": "When does your agent stop?"
+    },
+    {
+     "zh": "如果工具抛异常，循环怎么处理？",
+     "en": "What does the loop do when a tool throws?"
+    },
+    {
+     "zh": "哪些任务用固定流程比 agent 更好？",
+     "en": "Which tasks are better served by a fixed pipeline?"
+    }
+   ],
+   "task": {
+    "zh": "不用任何框架，写一个能读写文件、运行 shell 命令的 agent，让它修一个你故意埋的 bug。",
+    "en": "Without a framework, write an agent that reads and writes files and runs shell commands; have it fix a bug you planted."
+   }
+  },
+  "agent_patterns": {
+   "title": {
+    "zh": "Agent 设计模式",
+    "en": "Agent design patterns"
+   },
+   "track": "both",
+   "why": {
+    "zh": "路由、并行、编排者与执行者、评估者与优化者、反思。掌握这几个模式就能读懂大多数论文和产品的架构图，也能判断一个系统是否过度设计。",
+    "en": "Routing, parallelisation, orchestrator-worker, evaluator-optimiser, reflection. With these you can read most architecture diagrams in papers and products and spot over-engineering."
+   },
+   "concepts": [
+    {
+     "zh": "Anthropic 的 workflow 与 agent 分类",
+     "en": "Anthropic's workflow versus agent taxonomy"
+    },
+    {
+     "zh": "ReAct、plan-and-execute、reflection 各自适合什么",
+     "en": "When ReAct, plan-and-execute and reflection each fit"
+    },
+    {
+     "zh": "上下文工程：上下文是稀缺资源",
+     "en": "Context engineering: context as a scarce resource"
+    },
+    {
+     "zh": "工具描述的写法影响 agent 表现",
+     "en": "Tool descriptions shape agent behaviour"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "编排者与执行者模式的代价是什么？",
+     "en": "What does the orchestrator-worker pattern cost?"
+    },
+    {
+     "zh": "反思什么时候有用，什么时候只是多花钱？",
+     "en": "When does reflection help, and when does it just cost more?"
+    },
+    {
+     "zh": "如何压缩一个长对话的上下文？",
+     "en": "How would you compact a long conversation's context?"
+    }
+   ],
+   "task": {
+    "zh": "把你的手写 agent 改成两种模式（路由 + 评估者优化者），在同一组 10 个任务上比较成本和成功率。",
+    "en": "Refactor your hand-written agent into two patterns (routing plus evaluator-optimiser) and compare cost and success on the same 10 tasks."
+   }
+  },
+  "tool_calling": {
+   "title": {
+    "zh": "工具调用与结构化输出",
+    "en": "Tool calling and structured output"
+   },
+   "track": "both",
+   "why": {
+    "zh": "工具调用是 agent 与世界交互的接口，结构化输出是让程序可靠消费模型结果的手段。两者都依赖 JSON Schema，也都会失败，失败后的处理决定系统的稳定性。",
+    "en": "Tool calling is the agent's interface to the world; structured output lets programs consume model results reliably. Both rely on JSON Schema, both fail, and the handling of failure decides stability."
+   },
+   "concepts": [
+    {
+     "zh": "JSON Schema：required、enum、additionalProperties",
+     "en": "JSON Schema: required, enum, additionalProperties"
+    },
+    {
+     "zh": "tool_call 到 tool_result 的消息流",
+     "en": "The tool_call to tool_result message flow"
+    },
+    {
+     "zh": "Pydantic 校验与失败重试",
+     "en": "Pydantic validation and retry on failure"
+    },
+    {
+     "zh": "并行工具调用的安全性",
+     "en": "When parallel tool calls are safe"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "模型返回了 schema 之外的字段怎么办？",
+     "en": "The model returns a field outside the schema: what now?"
+    },
+    {
+     "zh": "工具描述里最重要的一句话是什么？",
+     "en": "What is the single most important sentence in a tool description?"
+    }
+   ],
+   "task": {
+    "zh": "给 agent 加三个工具，用 Pydantic 定义输入输出，故意让模型产生非法参数并实现校验后重试。",
+    "en": "Add three tools with Pydantic-typed inputs and outputs; provoke invalid arguments and implement validate-then-retry."
+   }
+  },
+  "mcp": {
+   "title": {
+    "zh": "MCP 与工具协议",
+    "en": "MCP and tool protocols"
+   },
+   "track": "both",
+   "why": {
+    "zh": "MCP 把「模型如何接入工具与数据」标准化，已成为事实标准；A2A 则处理 agent 之间的互操作。理解协议层能让你的 agent 接入现有生态，而不是重复造轮子。",
+    "en": "MCP standardises how models connect to tools and data and has become the de facto standard; A2A handles agent-to-agent interoperability. Knowing the protocol layer lets your agent plug into an ecosystem instead of rebuilding it."
+   },
+   "concepts": [
+    {
+     "zh": "host、client、server 三方关系",
+     "en": "Host, client and server roles"
+    },
+    {
+     "zh": "tools、resources、prompts 三类原语",
+     "en": "The three primitives: tools, resources, prompts"
+    },
+    {
+     "zh": "stdio 与 streamable HTTP 传输",
+     "en": "stdio versus streamable HTTP transports"
+    },
+    {
+     "zh": "安全边界：server 不可信、工具投毒",
+     "en": "Trust boundaries: untrusted servers, tool poisoning"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "MCP 解决了普通 function calling 解决不了的什么问题？",
+     "en": "What does MCP solve that plain function calling cannot?"
+    },
+    {
+     "zh": "延迟敏感的工具要不要放在 MCP 后面？",
+     "en": "Would you put a latency-critical tool behind MCP?"
+    }
+   ],
+   "task": {
+    "zh": "用官方 Python SDK 写一个 MCP server，暴露一个工具和一个资源，用 Inspector 调通后从你的 agent 里调用。",
+    "en": "Write an MCP server with the official Python SDK exposing one tool and one resource; test it in the Inspector, then call it from your agent."
+   }
+  },
+  "memory_rag": {
+   "title": {
+    "zh": "记忆与检索",
+    "en": "Memory and retrieval"
+   },
+   "track": "both",
+   "why": {
+    "zh": "上下文窗口有限，agent 需要在窗口之外存东西：跨会话的长期记忆、按需检索的知识。记忆的设计决定了 agent 是否能从经验中改进。",
+    "en": "Context windows are finite, so agents need storage beyond them: long-term memory across sessions and knowledge retrieved on demand. Memory design decides whether an agent improves from experience."
+   },
+   "concepts": [
+    {
+     "zh": "短期（线程内）与长期（跨会话）记忆",
+     "en": "Short-term (thread) versus long-term (cross-session) memory"
+    },
+    {
+     "zh": "语义、情景、程序性记忆",
+     "en": "Semantic, episodic and procedural memory"
+    },
+    {
+     "zh": "chunking、混合检索、重排序、contextual retrieval",
+     "en": "Chunking, hybrid search, reranking, contextual retrieval"
+    },
+    {
+     "zh": "记忆写入的时机与冲突处理",
+     "en": "When to write memory and how to resolve conflicts"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "什么该进系统提示，什么该进检索？",
+     "en": "What belongs in the system prompt versus retrieval?"
+    },
+    {
+     "zh": "记忆里的错误信息怎么被发现和纠正？",
+     "en": "How does wrong information in memory get caught and corrected?"
+    }
+   ],
+   "task": {
+    "zh": "给 agent 加一个跨会话的用户档案存储和一个文档检索工具；检索内容只进 tool_result，不进系统提示。",
+    "en": "Add a cross-session user profile store and a document retrieval tool; retrieved content goes only into tool_result, never the system prompt."
+   }
+  },
+  "frameworks": {
+   "title": {
+    "zh": "编排框架",
+    "en": "Orchestration frameworks"
+   },
+   "track": "both",
+   "why": {
+    "zh": "LangGraph、OpenAI Agents SDK、Pydantic AI、Google ADK 各有取舍。框架带来持久化、人在回路、递归上限等能力，也带来抽象泄漏。手写过循环之后再学框架，才知道它替你做了什么。",
+    "en": "LangGraph, OpenAI Agents SDK, Pydantic AI and Google ADK make different trade-offs. Frameworks add persistence, human-in-the-loop and recursion limits, and also leak abstractions. Learn them after writing the loop yourself so you know what they do for you."
+   },
+   "concepts": [
+    {
+     "zh": "state、node、edge、checkpoint、interrupt",
+     "en": "State, node, edge, checkpoint, interrupt"
+    },
+    {
+     "zh": "handoff 与 guardrail 原语",
+     "en": "Handoff and guardrail primitives"
+    },
+    {
+     "zh": "声明式与命令式编排",
+     "en": "Declarative versus imperative orchestration"
+    },
+    {
+     "zh": "选型标准：对上下文的控制力",
+     "en": "Selection criterion: how much control over context you keep"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "你会把手写 agent 迁到框架上吗？得到什么，失去什么？",
+     "en": "Would you move your hand-written agent to a framework? What do you gain and lose?"
+    },
+    {
+     "zh": "持久化状态对长任务意味着什么？",
+     "en": "What does persisted state mean for long-running tasks?"
+    }
+   ],
+   "task": {
+    "zh": "用 LangGraph 或 OpenAI Agents SDK 重写你的 agent，加上人在回路的确认节点，写 10 行对比笔记。",
+    "en": "Rewrite your agent in LangGraph or the OpenAI Agents SDK with a human-in-the-loop approval node; write ten lines of comparison notes."
+   }
+  },
+  "failure_modes": {
+   "title": {
+    "zh": "失败模式",
+    "en": "Failure modes"
+   },
+   "track": "both",
+   "why": {
+    "zh": "Agent 失败有规律：规格不清、工具循环、上下文污染、agent 之间错位、验证缺失。掌握分类学，才能从一次失败推广到一类修复。",
+    "en": "Agent failures follow patterns: unclear specification, tool loops, context poisoning, inter-agent misalignment, missing verification. A taxonomy lets you generalise one failure into a class of fixes."
+   },
+   "concepts": [
+    {
+     "zh": "MAST 的 14 类失败与三大类别",
+     "en": "MAST's 14 failure modes in three categories"
+    },
+    {
+     "zh": "max_turns 与 recursion_limit",
+     "en": "max_turns and recursion_limit"
+    },
+    {
+     "zh": "上下文失效：poisoning、distraction、confusion、clash",
+     "en": "Context failure: poisoning, distraction, confusion, clash"
+    },
+    {
+     "zh": "失败日志的最小字段集",
+     "en": "The minimum fields a failure log needs"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "怎么发现一个正在死循环的 agent？",
+     "en": "How do you detect an agent that is looping?"
+    },
+    {
+     "zh": "上一次失败是哪一类？防护加在哪一层？",
+     "en": "Which class was your last failure, and at which layer did you add the guard?"
+    }
+   ],
+   "task": {
+    "zh": "对照 MAST 给你的 agent 写一张表：每类失败是「发生过 / 有防护 / 无防护」。",
+    "en": "Against MAST, tabulate for your agent whether each failure class has occurred, is guarded, or is unguarded."
+   }
+  },
+  "evals": {
+   "title": {
+    "zh": "评估",
+    "en": "Evaluation"
+   },
+   "track": "both",
+   "why": {
+    "zh": "没有评估就没有迭代。工业界靠 golden dataset、自动打分和 LLM judge 的校准；研究界靠基准和可复现的协议。两边的共同点是先做错误分析，再决定量什么。",
+    "en": "No evaluation, no iteration. Industry relies on golden datasets, automated scorers and calibrated LLM judges; research relies on benchmarks and reproducible protocols. Both start with error analysis before deciding what to measure."
+   },
+   "concepts": [
+    {
+     "zh": "三层评估：断言、LLM judge、人工标注",
+     "en": "Three tiers: assertions, LLM judge, human labels"
+    },
+    {
+     "zh": "judge 的位置、冗长、自我偏好偏差",
+     "en": "Judge biases: position, verbosity, self-preference"
+    },
+    {
+     "zh": "轨迹评估与结果评估，pass@k 与 pass^k",
+     "en": "Trajectory versus outcome evals, pass@k versus pass^k"
+    },
+    {
+     "zh": "离线回归与在线 A/B 的衔接",
+     "en": "Connecting offline regression to online A/B"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "怎么知道新提示比旧提示好？",
+     "en": "How do you know a new prompt beats the old one?"
+    },
+    {
+     "zh": "怎么验证你的 LLM judge？",
+     "en": "How do you validate your LLM judge?"
+    },
+    {
+     "zh": "一个 agent 基准的分数能说明什么，不能说明什么？",
+     "en": "What does a benchmark score tell you, and what does it not?"
+    }
+   ],
+   "task": {
+    "zh": "建 30 条 golden 任务，写三个自动 scorer，跑一次基线并记录；之后每次改动都重跑。",
+    "en": "Build 30 golden tasks and three automated scorers; record a baseline and rerun after every change."
+   }
+  },
+  "observability": {
+   "title": {
+    "zh": "可观测性",
+    "en": "Observability"
+   },
+   "track": "both",
+   "why": {
+    "zh": "trace 是 agent 的显微镜。没有 trace，你只能靠猜；有了 trace，延迟、成本、路由决策和失败点都可以被定位。这也是求职时最容易展示工程成熟度的地方。",
+    "en": "Traces are the microscope for agents. Without them you guess; with them latency, cost, routing decisions and failure points become locatable. It is also the easiest place to show engineering maturity in interviews."
+   },
+   "concepts": [
+    {
+     "zh": "trace、span、attribute、event",
+     "en": "Trace, span, attribute, event"
+    },
+    {
+     "zh": "Langfuse、LangSmith、Phoenix 与 OTel 的关系",
+     "en": "How Langfuse, LangSmith and Phoenix relate to OpenTelemetry"
+    },
+    {
+     "zh": "OTel GenAI 语义约定",
+     "en": "OpenTelemetry GenAI semantic conventions"
+    },
+    {
+     "zh": "四个黄金信号与 cost per conversation",
+     "en": "The four golden signals and cost per conversation"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "一次对话在 trace 里长什么样？",
+     "en": "What does one conversation look like as a trace?"
+    },
+    {
+     "zh": "怎么把成本归到会话？",
+     "en": "How do you attribute cost to a session?"
+    }
+   ],
+   "task": {
+    "zh": "给 agent 接 Langfuse 或 Phoenix，每个模型和工具调用一个 span，找出最慢和最贵的一次调用。",
+    "en": "Instrument the agent with Langfuse or Phoenix, one span per model and tool call; find the slowest and the most expensive call."
+   }
+  },
+  "agent_safety": {
+   "title": {
+    "zh": "安全与防护",
+    "en": "Security and guardrails"
+   },
+   "track": "both",
+   "why": {
+    "zh": "能调工具的 agent 会读到不可信内容，prompt injection 因此从理论风险变成日常问题。安全不是过滤器，而是权限设计：私有数据、不可信内容、外发通道三者不能同时存在。",
+    "en": "A tool-using agent reads untrusted content, so prompt injection moves from theory to daily practice. Security is not a filter but a permission design: private data, untrusted content and an exfiltration channel must never coexist."
+   },
+   "concepts": [
+    {
+     "zh": "prompt injection 与 lethal trifecta",
+     "en": "Prompt injection and the lethal trifecta"
+    },
+    {
+     "zh": "OWASP LLM Top 10 与 agentic 威胁",
+     "en": "OWASP LLM Top 10 and agentic threats"
+    },
+    {
+     "zh": "最小权限、沙箱、人工确认",
+     "en": "Least privilege, sandboxes, human approval"
+    },
+    {
+     "zh": "红队测试与 AgentDojo 类基准",
+     "en": "Red-teaming and AgentDojo-style benchmarks"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "你的 agent 读到「忽略之前的指令」会发生什么？",
+     "en": "What happens when your agent reads 'ignore previous instructions'?"
+    },
+    {
+     "zh": "哪个工具的权限最应该被收窄？",
+     "en": "Which tool's permissions most need narrowing?"
+    }
+   ],
+   "task": {
+    "zh": "在你的 agent 检索的文档里埋一段注入指令，观察行为，然后用权限设计而不是提示词修复它。",
+    "en": "Plant an injected instruction in a document your agent retrieves, observe, then fix it with permission design rather than prompt wording."
+   }
+  },
+  "backend": {
+   "title": {
+    "zh": "后端与 API",
+    "en": "Backend and APIs"
+   },
+   "track": "job",
+   "why": {
+    "zh": "研究代码是脚本，产品代码是服务。把 agent 包成 HTTP 服务需要 FastAPI、async 并发模型和流式响应。",
+    "en": "Research code is scripts; product code is services. Wrapping an agent as an HTTP service needs FastAPI, the async concurrency model and streaming responses."
+   },
+   "concepts": [
+    {
+     "zh": "HTTP 方法、状态码、幂等性",
+     "en": "HTTP methods, status codes, idempotency"
+    },
+    {
+     "zh": "FastAPI 路由、依赖注入、Pydantic 校验",
+     "en": "FastAPI routing, dependency injection, Pydantic validation"
+    },
+    {
+     "zh": "asyncio：什么会阻塞事件循环",
+     "en": "asyncio: what blocks the event loop"
+    },
+    {
+     "zh": "SSE 与 WebSocket 流式输出",
+     "en": "Streaming with SSE and WebSockets"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "LLM 服务为什么用 async？",
+     "en": "Why async for an LLM service?"
+    },
+    {
+     "zh": "设计开启会话、发送回合、流式返回的三个接口。",
+     "en": "Design the three endpoints: open session, send turn, stream reply."
+    }
+   ],
+   "task": {
+    "zh": "把 agent 包成 FastAPI 服务，回合接口用 SSE 流式返回，写 pytest 把模型调用 mock 掉。",
+    "en": "Wrap the agent in FastAPI with an SSE-streaming turn endpoint; write pytest with the model call mocked."
+   }
+  },
+  "deploy": {
+   "title": {
+    "zh": "容器与部署",
+    "en": "Containers and deployment"
+   },
+   "track": "job",
+   "why": {
+    "zh": "能在别人的机器上跑起来才叫产品。Docker、云上的无服务器容器、CI/CD 和密钥管理是最小集合。",
+    "en": "It is a product only when it runs on someone else's machine. Docker, serverless containers, CI/CD and secret management are the minimum set."
+   },
+   "concepts": [
+    {
+     "zh": "Dockerfile、多阶段构建、层缓存",
+     "en": "Dockerfile, multi-stage builds, layer caching"
+    },
+    {
+     "zh": "Cloud Run 类平台的冷启动与并发",
+     "en": "Cold starts and concurrency on Cloud Run-style platforms"
+    },
+    {
+     "zh": "密钥不进代码",
+     "en": "Secrets never in code"
+    },
+    {
+     "zh": "GitHub Actions 自动测试与部署",
+     "en": "GitHub Actions for tests and deploys"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "第一个请求为什么慢三秒？",
+     "en": "Why is the first request three seconds slow?"
+    },
+    {
+     "zh": "API key 放在哪里？",
+     "en": "Where do the API keys live?"
+    }
+   ],
+   "task": {
+    "zh": "容器化 agent 服务并部署到任意云，push 到 main 自动跑测试并部署。",
+    "en": "Containerise the agent service, deploy to any cloud, and auto-test-and-deploy on push to main."
+   }
+  },
+  "prod_opt": {
+   "title": {
+    "zh": "延迟、成本与可靠性",
+    "en": "Latency, cost and reliability"
+   },
+   "track": "job",
+   "why": {
+    "zh": "生产 agent 的三个硬指标：首 token 延迟、每次对话成本、供应商故障时的表现。缓存、路由、退避与 fallback 是标准手段。",
+    "en": "Three hard numbers for production agents: time to first token, cost per conversation, behaviour when a provider fails. Caching, routing, backoff and fallbacks are the standard tools."
+   },
+   "concepts": [
+    {
+     "zh": "TTFT、流式、prompt caching",
+     "en": "TTFT, streaming, prompt caching"
+    },
+    {
+     "zh": "小模型路由到大模型",
+     "en": "Routing easy requests to smaller models"
+    },
+    {
+     "zh": "指数退避、熔断、供应商 fallback",
+     "en": "Exponential backoff, circuit breakers, provider fallbacks"
+    },
+    {
+     "zh": "按会话归集成本",
+     "en": "Attributing cost per conversation"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "供应商高峰期返回 429，你的服务做什么？",
+     "en": "The provider returns 429 at peak: what does your service do?"
+    },
+    {
+     "zh": "成本减半而质量不降，从哪里下手？",
+     "en": "Halve cost without losing quality: where do you start?"
+    }
+   ],
+   "task": {
+    "zh": "加 prompt caching、小模型路由和 fallback，对比改造前后的 TTFT 与每次对话成本。",
+    "en": "Add prompt caching, small-model routing and a fallback; compare TTFT and cost per conversation before and after."
+   }
+  },
+  "realtime": {
+   "title": {
+    "zh": "实时与语音",
+    "en": "Realtime and voice"
+   },
+   "track": "job",
+   "why": {
+    "zh": "语音和视频 agent 把延迟预算压到一秒以内，需要流式 STT、LLM、TTS 的级联或端到端语音模型。了解即可，除非目标岗位是实时系统。",
+    "en": "Voice and video agents squeeze the latency budget under a second, using cascaded streaming STT, LLM and TTS or end-to-end speech models. Awareness is enough unless the target role is realtime systems."
+   },
+   "concepts": [
+    {
+     "zh": "级联管道与 speech-to-speech 的取舍",
+     "en": "Cascaded pipelines versus speech-to-speech"
+    },
+    {
+     "zh": "语音回合的延迟预算拆分",
+     "en": "Breaking down a voice turn's latency budget"
+    },
+    {
+     "zh": "WebRTC 与 WebSocket 的角色",
+     "en": "Roles of WebRTC and WebSockets"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "一个语音回合的延迟花在哪里？",
+     "en": "Where does the latency go in one voice turn?"
+    }
+   ],
+   "task": {
+    "zh": "用 Pipecat 或 LiveKit 跑一个本地语音 demo，测一次端到端延迟并拆分到各阶段。",
+    "en": "Run a local voice demo with Pipecat or LiveKit; measure end-to-end latency and split it by stage."
+   }
+  },
+  "agentic_rl": {
+   "title": {
+    "zh": "Agentic RL 与后训练",
+    "en": "Agentic RL and post-training"
+   },
+   "track": "research",
+   "why": {
+    "zh": "DeepSeek-R1 之后，用可验证奖励的强化学习训练模型「学会使用工具和多轮行动」成为最热的研究线。它把 agent 从提示工程推向训练问题，也是研究入门的最佳切口之一。",
+    "en": "Since DeepSeek-R1, training models to use tools and act over multiple turns with verifiable-reward RL has become the hottest research line. It moves agents from prompt engineering to a training problem and is one of the best entry points for research."
+   },
+   "concepts": [
+    {
+     "zh": "PPO、GRPO、DAPO、GSPO 的关系",
+     "en": "How PPO, GRPO, DAPO and GSPO relate"
+    },
+    {
+     "zh": "可验证奖励与奖励设计",
+     "en": "Verifiable rewards and reward design"
+    },
+    {
+     "zh": "多轮工具调用的 rollout 与 token masking",
+     "en": "Multi-turn tool rollouts and token masking"
+    },
+    {
+     "zh": "训练框架：verl、OpenRLHF、SkyRL、rLLM、Agent Lightning",
+     "en": "Training frameworks: verl, OpenRLHF, SkyRL, rLLM, Agent Lightning"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "为什么 SFT 教不会模型「什么时候」调用工具？",
+     "en": "Why can't SFT alone teach a model when to call a tool?"
+    },
+    {
+     "zh": "奖励被 hack 时你会看到什么现象？",
+     "en": "What do you see when the reward gets hacked?"
+    }
+   ],
+   "open": [
+    {
+     "zh": "长时程任务的信用分配",
+     "en": "Credit assignment over long horizons"
+    },
+    {
+     "zh": "环境与奖励的可扩展构建",
+     "en": "Scalable construction of environments and rewards"
+    },
+    {
+     "zh": "训练后的泛化：新工具、新环境",
+     "en": "Generalisation after training to new tools and environments"
+    }
+   ],
+   "task": {
+    "zh": "在单卡上用 TRL 或 Unsloth 跑一次 GRPO，奖励函数是「工具调用格式正确且结果正确」，画出奖励曲线。",
+    "en": "Run GRPO on one GPU with TRL or Unsloth, rewarding correct tool-call format plus correct result; plot the reward curve."
+   }
+  },
+  "coding_agents": {
+   "title": {
+    "zh": "Coding agents",
+    "en": "Coding agents"
+   },
+   "track": "both",
+   "why": {
+    "zh": "编程是 agent 落地最成熟的领域：SWE-bench 定义了标准，Claude Code、Codex、OpenHands 等把它变成产品。读懂 100 行的 mini-swe-agent，就理解了这个领域的核心。",
+    "en": "Coding is the most mature agent domain: SWE-bench set the standard and Claude Code, Codex and OpenHands turned it into products. Reading the 100-line mini-swe-agent gets you to the core of the field."
+   },
+   "concepts": [
+    {
+     "zh": "agent-computer interface 的设计",
+     "en": "Agent-computer interface design"
+    },
+    {
+     "zh": "SWE-bench Verified、Pro 与 Terminal-Bench",
+     "en": "SWE-bench Verified, Pro and Terminal-Bench"
+    },
+    {
+     "zh": "上下文管理：CLAUDE.md、子 agent、压缩",
+     "en": "Context management: CLAUDE.md, subagents, compaction"
+    },
+    {
+     "zh": "训练数据合成：SWE-Gym、SWE-smith",
+     "en": "Training data synthesis: SWE-Gym, SWE-smith"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "为什么接口设计比模型大小对成绩影响更大？",
+     "en": "Why does interface design move the score more than model size?"
+    },
+    {
+     "zh": "长任务里 agent 最常在哪一步失败？",
+     "en": "Where do agents most often fail in long tasks?"
+    }
+   ],
+   "open": [
+    {
+     "zh": "跨仓库、长时程的软件工程任务",
+     "en": "Cross-repository, long-horizon engineering tasks"
+    },
+    {
+     "zh": "基准污染与真实生产力的差距",
+     "en": "Benchmark contamination versus real productivity"
+    },
+    {
+     "zh": "验证器与测试生成",
+     "en": "Verifiers and test generation"
+    }
+   ],
+   "task": {
+    "zh": "读完 mini-swe-agent 源码，在 SWE-bench Lite 的 20 个实例上跑通并分析失败原因。",
+    "en": "Read mini-swe-agent end to end, run it on 20 SWE-bench Lite instances and analyse the failures."
+   }
+  },
+  "computer_use_agents": {
+   "title": {
+    "zh": "Computer-use 与浏览器 agent",
+    "en": "Computer-use and browser agents"
+   },
+   "track": "both",
+   "why": {
+    "zh": "让 agent 直接操作屏幕、浏览器和手机，是通向通用助理的路径。OSWorld、WebArena 等基准显示成功率仍然很低，因此既是产品热点也是研究缺口。",
+    "en": "Letting agents operate screens, browsers and phones is the path to general assistants. Benchmarks such as OSWorld and WebArena show success rates are still low, so it is both a product hotspot and a research gap."
+   },
+   "concepts": [
+    {
+     "zh": "截图驱动与无障碍树驱动两条路线",
+     "en": "Screenshot-driven versus accessibility-tree approaches"
+    },
+    {
+     "zh": "grounding：从指令到坐标",
+     "en": "Grounding: from instruction to coordinates"
+    },
+    {
+     "zh": "原生 GUI 模型（UI-TARS）与模块化框架（Agent S）",
+     "en": "Native GUI models (UI-TARS) versus modular frameworks (Agent S)"
+    },
+    {
+     "zh": "安全：不可逆动作与确认",
+     "en": "Safety: irreversible actions and confirmation"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "为什么网页 agent 在真实网站上远比在沙箱里差？",
+     "en": "Why do web agents do far worse on real sites than in sandboxes?"
+    },
+    {
+     "zh": "什么动作必须要人确认？",
+     "en": "Which actions must require human confirmation?"
+    }
+   ],
+   "open": [
+    {
+     "zh": "长时程、上百步的任务",
+     "en": "Long-horizon tasks with hundreds of steps"
+    },
+    {
+     "zh": "跨应用的状态追踪",
+     "en": "State tracking across applications"
+    },
+    {
+     "zh": "对抗性网页内容",
+     "en": "Adversarial web content"
+    }
+   ],
+   "task": {
+    "zh": "用 browser-use 或 Playwright MCP 写一个能完成三步网页任务的 agent，记录每一步的截图和决策。",
+    "en": "With browser-use or Playwright MCP, build an agent that completes a three-step web task; log screenshot and decision per step."
+   }
+  },
+  "multi_agent_protocols": {
+   "title": {
+    "zh": "多智能体与协议",
+    "en": "Multi-agent systems and protocols"
+   },
+   "track": "both",
+   "why": {
+    "zh": "多 agent 系统在研究里热、在生产里争议大：Anthropic 的研究系统证明它有用，Cognition 的文章提醒它容易失败。MAST 给出了失败分类，MCP 与 A2A 给出了互操作协议。",
+    "en": "Multi-agent systems are hot in research and contested in production: Anthropic's research system shows they work, Cognition's essay shows how they fail. MAST classifies the failures; MCP and A2A provide interoperability."
+   },
+   "concepts": [
+    {
+     "zh": "编排者与子 agent 的上下文分配",
+     "en": "Context allocation between orchestrator and subagents"
+    },
+    {
+     "zh": "何时不该用多 agent",
+     "en": "When not to use multiple agents"
+    },
+    {
+     "zh": "MCP（agent 到工具）与 A2A（agent 到 agent）",
+     "en": "MCP (agent to tool) versus A2A (agent to agent)"
+    },
+    {
+     "zh": "MAST 的三大失败类别",
+     "en": "MAST's three failure categories"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "两个 agent 共享多少上下文才够？",
+     "en": "How much context must two agents share?"
+    },
+    {
+     "zh": "什么任务真的需要并行 agent？",
+     "en": "Which tasks truly need parallel agents?"
+    }
+   ],
+   "open": [
+    {
+     "zh": "多 agent 的信用分配与联合训练",
+     "en": "Credit assignment and joint training for multi-agent systems"
+    },
+    {
+     "zh": "通信拓扑的选择",
+     "en": "Choosing communication topologies"
+    },
+    {
+     "zh": "跨组织 agent 的信任与身份",
+     "en": "Trust and identity for agents across organisations"
+    }
+   ],
+   "task": {
+    "zh": "把你的 agent 拆成编排者加两个子 agent，在同一任务集上和单 agent 对比成本与成功率，并用 MAST 标注失败。",
+    "en": "Split your agent into an orchestrator plus two subagents; compare cost and success with the single agent on the same tasks and label failures with MAST."
+   }
+  },
+  "interpretability_auditing": {
+   "title": {
+    "zh": "安全、对齐与可解释",
+    "en": "Safety, alignment and interpretability"
+   },
+   "track": "research",
+   "why": {
+    "zh": "Agent 会自主行动，因此「它为什么这么做」从学术问题变成审计需求。推理链不一定忠实，监控它是一个脆弱但宝贵的机会；trace 与审计记录是工程侧的对应物。",
+    "en": "Agents act autonomously, so 'why did it do that' turns from an academic question into an audit requirement. Reasoning traces are not always faithful; monitoring them is a fragile but valuable opportunity, and traces plus audit logs are the engineering counterpart."
+   },
+   "concepts": [
+    {
+     "zh": "思维链忠实性与可监控性",
+     "en": "Chain-of-thought faithfulness and monitorability"
+    },
+    {
+     "zh": "agentic misalignment 与 sabotage 评估",
+     "en": "Agentic misalignment and sabotage evaluations"
+    },
+    {
+     "zh": "机制可解释性入门：TransformerLens、attribution graphs",
+     "en": "Mechanistic interpretability basics: TransformerLens, attribution graphs"
+    },
+    {
+     "zh": "审计记录：OTel GenAI 约定、AgentOps",
+     "en": "Audit trails: OTel GenAI conventions, AgentOps"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "模型说的理由和真实原因不一致时，审计还能依赖什么？",
+     "en": "When the stated reason differs from the real cause, what can an audit still rely on?"
+    },
+    {
+     "zh": "哪些 agent 行为必须留下不可篡改的记录？",
+     "en": "Which agent actions must leave tamper-proof records?"
+    }
+   ],
+   "open": [
+    {
+     "zh": "面向 agent 的可解释性方法",
+     "en": "Interpretability methods designed for agents"
+    },
+    {
+     "zh": "监控推理链的长期有效性",
+     "en": "Long-term viability of reasoning-trace monitoring"
+    },
+    {
+     "zh": "法规对可解释性的具体要求（EU AI Act）",
+     "en": "Concrete regulatory requirements for explainability (EU AI Act)"
+    }
+   ],
+   "task": {
+    "zh": "给你的 agent 设计一份审计记录格式，能回答「谁在何时因为什么证据做了什么」，并用一次真实运行填满它。",
+    "en": "Design an audit-record format for your agent that answers who did what, when, on what evidence; fill it from one real run."
+   }
+  },
+  "project_ideas": {
+   "title": {
+    "zh": "项目模板与起点",
+    "en": "Project templates and starting points"
+   },
+   "track": "both",
+   "why": {
+    "zh": "最好的学习是改一个能跑的东西。这里是官方快速启动、开源 deep research、语音 agent 和课程结课项目，每个都能在一天内跑起来。",
+    "en": "The best learning is modifying something that runs. Here are official quickstarts, open deep-research agents, voice agents and course capstones, each runnable within a day."
+   },
+   "concepts": [
+    {
+     "zh": "先跑通再改动",
+     "en": "Run it first, then change it"
+    },
+    {
+     "zh": "每个项目至少加一个评估",
+     "en": "Every project gets at least one evaluation"
+    },
+    {
+     "zh": "写一篇复盘博客",
+     "en": "Write a retrospective post"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "你改动了什么，指标变了多少？",
+     "en": "What did you change, and how much did the metric move?"
+    }
+   ],
+   "task": {
+    "zh": "从下方项目阶梯选一个，两周内交付并公开。",
+    "en": "Pick one rung from the project ladder below; deliver and publish it within two weeks."
+   }
+  },
+  "research_howto": {
+   "title": {
+    "zh": "科研入门方法",
+    "en": "How to start research"
+   },
+   "track": "research",
+   "why": {
+    "zh": "Agent 研究进展快、噪音大。读论文的方法、选题的判断、复现的习惯和写作的训练，比任何一篇具体论文都更持久。",
+    "en": "Agent research moves fast and is noisy. Methods for reading, judgement in choosing problems, the habit of reproduction and training in writing outlast any single paper."
+   },
+   "concepts": [
+    {
+     "zh": "三遍读论文法",
+     "en": "The three-pass paper reading method"
+    },
+    {
+     "zh": "目标驱动与问题驱动的研究",
+     "en": "Goal-driven versus problem-driven research"
+    },
+    {
+     "zh": "复现一篇论文作为入门仪式",
+     "en": "Reproducing a paper as the rite of passage"
+    },
+    {
+     "zh": "会议与投稿节奏：NeurIPS、ICLR、ICML、ACL、COLM",
+     "en": "Venues and cycles: NeurIPS, ICLR, ICML, ACL, COLM"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "这篇论文的主张靠哪一个实验支撑？",
+     "en": "Which single experiment carries this paper's claim?"
+    },
+    {
+     "zh": "如果结果不可复现，你的下一步是什么？",
+     "en": "If the result does not reproduce, what is your next step?"
+    }
+   ],
+   "task": {
+    "zh": "复现 ReAct 在 HotpotQA 上的结果，写一页复现报告，包括与原文的差异。",
+    "en": "Reproduce ReAct on HotpotQA and write a one-page report including deviations from the original."
+   }
+  },
+  "career_job": {
+   "title": {
+    "zh": "求职准备",
+    "en": "Job preparation"
+   },
+   "track": "job",
+   "why": {
+    "zh": "Agent 工程师岗位看三样：一个能打开的项目、讲清楚故障与修复的能力、以及 LLM 应用的系统设计。刷题是次要的。",
+    "en": "Agent engineering roles look for three things: a project one can open, the ability to explain a failure and its fix, and system design for LLM applications. Algorithm drills are secondary."
+   },
+   "concepts": [
+    {
+     "zh": "AI Engineer 岗位画像",
+     "en": "The AI Engineer role profile"
+    },
+    {
+     "zh": "STAR 故事库：至少三个来自自己的项目",
+     "en": "A STAR story bank with at least three from your own projects"
+    },
+    {
+     "zh": "LLM 应用系统设计的答题框架",
+     "en": "A framework for LLM system design questions"
+    },
+    {
+     "zh": "公开写作作为作品集",
+     "en": "Public writing as portfolio"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "你的项目在生产里出过什么故障，怎么发现的？",
+     "en": "What broke in your project, and how did you find it?"
+    },
+    {
+     "zh": "设计一个带评估与追踪的 agent 服务。",
+     "en": "Design an agent service with evaluation and tracing."
+    }
+   ],
+   "task": {
+    "zh": "为你的项目写一篇「故障、诊断、度量」的博客，并准备一个 10 分钟的系统设计白板答案。",
+    "en": "Write a failure-diagnosis-measurement post about your project and prepare a 10-minute system-design whiteboard answer."
+   }
+  },
+  "community_stay_current": {
+   "title": {
+    "zh": "社区与持续跟进",
+    "en": "Community and staying current"
+   },
+   "track": "both",
+   "why": {
+    "zh": "这个领域每月都有新东西。固定两三个高信噪比的信息源，比订阅二十个更有效。",
+    "en": "Something new lands every month. Two or three high-signal sources beat twenty subscriptions."
+   },
+   "concepts": [
+    {
+     "zh": "一手来源优先：实验室博客、论文、代码",
+     "en": "Primary sources first: lab blogs, papers, code"
+    },
+    {
+     "zh": "每周固定一小时的跟进节奏",
+     "en": "A fixed weekly hour for catching up"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "上个月最重要的一篇文章是什么，为什么？",
+     "en": "What was the most important piece last month, and why?"
+    }
+   ],
+   "task": {
+    "zh": "选三个信息源，连续四周每周写三句话的跟进笔记。",
+    "en": "Pick three sources and write three-sentence notes weekly for four weeks."
+   }
+  },
+  "open_problems_reading": {
+   "title": {
+    "zh": "全局视角与开放问题",
+    "en": "The big picture and open problems"
+   },
+   "track": "both",
+   "why": {
+    "zh": "读几篇高质量的总览，再看课程与 METR 这类评测机构的报告，能帮你判断哪些方向是趋势、哪些是噪音。",
+    "en": "A few high-quality overviews, plus university courses and reports from evaluators such as METR, help you separate trends from noise."
+   },
+   "concepts": [
+    {
+     "zh": "Software 3.0 与部分自治",
+     "en": "Software 3.0 and partial autonomy"
+    },
+    {
+     "zh": "任务时程作为能力指标",
+     "en": "Task horizon as a capability metric"
+    },
+    {
+     "zh": "长时程部署的真实失败（Project Vend）",
+     "en": "Real failures of long-horizon deployment (Project Vend)"
+    }
+   ],
+   "questions": [
+    {
+     "zh": "你认为未来两年 agent 领域最可能被解决的问题是什么？",
+     "en": "Which agent problem do you expect to be solved within two years?"
+    }
+   ],
+   "task": {
+    "zh": "写一页你自己的「agent 领域地图」，和本页的地图比较差异。",
+    "en": "Write your own one-page map of the agent field and compare it with the one on this page."
+   }
+  }
+ },
+ "landscape": {
+  "intro": {
+   "zh": "把 agent 领域看成五层：底层是模型能力，中间是单个 agent 的核心机制，再往上是多 agent 与协议，顶层是应用领域，旁边贯穿的是保障层。点击节点跳到对应模块。",
+   "en": "Think of the field as five layers: model capability at the bottom, the core mechanisms of a single agent above it, then multi-agent systems and protocols, application domains on top, with an assurance layer running alongside. Click a node to jump to its module."
+  },
+  "layers": [
+   {
+    "name": {
+     "zh": "应用领域",
+     "en": "Application domains"
+    },
+    "nodes": [
+     {
+      "label": {
+       "zh": "Coding agents",
+       "en": "Coding agents"
+      },
+      "mod": "coding_agents"
+     },
+     {
+      "label": {
+       "zh": "Computer-use / 浏览器",
+       "en": "Computer-use / browser"
+      },
+      "mod": "computer_use_agents"
+     },
+     {
+      "label": {
+       "zh": "Deep research",
+       "en": "Deep research"
+      },
+      "mod": "project_ideas"
+     },
+     {
+      "label": {
+       "zh": "对话与语音助理",
+       "en": "Conversational and voice assistants"
+      },
+      "mod": "realtime"
+     },
+     {
+      "label": {
+       "zh": "科学与数据分析",
+       "en": "Science and data analysis"
+      },
+      "mod": "open_problems_reading"
+     }
+    ]
+   },
+   {
+    "name": {
+     "zh": "系统层",
+     "en": "Systems layer"
+    },
+    "nodes": [
+     {
+      "label": {
+       "zh": "多 agent 编排",
+       "en": "Multi-agent orchestration"
+      },
+      "mod": "multi_agent_protocols"
+     },
+     {
+      "label": {
+       "zh": "协议：MCP、A2A",
+       "en": "Protocols: MCP, A2A"
+      },
+      "mod": "mcp"
+     },
+     {
+      "label": {
+       "zh": "编排框架",
+       "en": "Orchestration frameworks"
+      },
+      "mod": "frameworks"
+     },
+     {
+      "label": {
+       "zh": "服务化与部署",
+       "en": "Services and deployment"
+      },
+      "mod": "deploy"
+     }
+    ]
+   },
+   {
+    "name": {
+     "zh": "单 agent 核心机制",
+     "en": "Single-agent core"
+    },
+    "nodes": [
+     {
+      "label": {
+       "zh": "规划与推理",
+       "en": "Planning and reasoning"
+      },
+      "mod": "agent_patterns"
+     },
+     {
+      "label": {
+       "zh": "工具调用",
+       "en": "Tool use"
+      },
+      "mod": "tool_calling"
+     },
+     {
+      "label": {
+       "zh": "记忆与检索",
+       "en": "Memory and retrieval"
+      },
+      "mod": "memory_rag"
+     },
+     {
+      "label": {
+       "zh": "上下文工程",
+       "en": "Context engineering"
+      },
+      "mod": "agent_patterns"
+     },
+     {
+      "label": {
+       "zh": "反思与自我改进",
+       "en": "Reflection and self-improvement"
+      },
+      "mod": "agentic_rl"
+     }
+    ]
+   },
+   {
+    "name": {
+     "zh": "模型层",
+     "en": "Model layer"
+    },
+    "nodes": [
+     {
+      "label": {
+       "zh": "预训练与指令微调",
+       "en": "Pretraining and instruction tuning"
+      },
+      "mod": "llm_foundations"
+     },
+     {
+      "label": {
+       "zh": "推理模型与 RLVR",
+       "en": "Reasoning models and RLVR"
+      },
+      "mod": "agentic_rl"
+     },
+     {
+      "label": {
+       "zh": "Agentic 后训练",
+       "en": "Agentic post-training"
+      },
+      "mod": "agentic_rl"
+     },
+     {
+      "label": {
+       "zh": "原生 GUI 与工具模型",
+       "en": "Native GUI and tool models"
+      },
+      "mod": "computer_use_agents"
+     }
+    ]
+   },
+   {
+    "name": {
+     "zh": "保障层（贯穿）",
+     "en": "Assurance (cross-cutting)"
+    },
+    "side": true,
+    "nodes": [
+     {
+      "label": {
+       "zh": "评估与基准",
+       "en": "Evaluation and benchmarks"
+      },
+      "mod": "evals"
+     },
+     {
+      "label": {
+       "zh": "可观测性",
+       "en": "Observability"
+      },
+      "mod": "observability"
+     },
+     {
+      "label": {
+       "zh": "失败模式",
+       "en": "Failure modes"
+      },
+      "mod": "failure_modes"
+     },
+     {
+      "label": {
+       "zh": "安全与注入防护",
+       "en": "Security and injection defence"
+      },
+      "mod": "agent_safety"
+     },
+     {
+      "label": {
+       "zh": "对齐与可解释",
+       "en": "Alignment and interpretability"
+      },
+      "mod": "interpretability_auditing"
+     }
+    ]
+   }
+  ]
+ },
+ "projects": [
+  {
+   "level": {
+    "zh": "第 1 级 · 一个周末",
+    "en": "Rung 1 · One weekend"
+   },
+   "name": {
+    "zh": "手写工具 agent",
+    "en": "Hand-written tool agent"
+   },
+   "desc": {
+    "zh": "不用框架，写一个能读写文件和执行 shell 的 agent，让它修一个你埋的 bug。",
+    "en": "No framework: an agent that reads and writes files and runs shell commands; it fixes a bug you planted."
+   },
+   "learn": {
+    "zh": "agent 循环、工具调用、停止条件",
+    "en": "The agent loop, tool calling, stop conditions"
+   },
+   "mods": [
+    "agent_from_scratch",
+    "tool_calling"
+   ]
+  },
+  {
+   "level": {
+    "zh": "第 2 级 · 一周",
+    "en": "Rung 2 · One week"
+   },
+   "name": {
+    "zh": "带记忆与检索的个人助理",
+    "en": "Personal assistant with memory and retrieval"
+   },
+   "desc": {
+    "zh": "接入你自己的笔记或文档，跨会话记住偏好，接一个 MCP server。",
+    "en": "Connect your own notes or documents, remember preferences across sessions, plug in one MCP server."
+   },
+   "learn": {
+    "zh": "记忆划分、检索、MCP",
+    "en": "Memory tiers, retrieval, MCP"
+   },
+   "mods": [
+    "memory_rag",
+    "mcp"
+   ]
+  },
+  {
+   "level": {
+    "zh": "第 3 级 · 两周",
+    "en": "Rung 3 · Two weeks"
+   },
+   "name": {
+    "zh": "带评估与追踪的 deep research agent",
+    "en": "Deep research agent with evals and tracing"
+   },
+   "desc": {
+    "zh": "多步搜索与综述，30 条 golden 问题，三个自动 scorer，每次调用都有 trace。",
+    "en": "Multi-step search and synthesis, 30 golden questions, three automated scorers, a trace for every call."
+   },
+   "learn": {
+    "zh": "评估闭环、可观测性、失败分析",
+    "en": "The eval loop, observability, failure analysis"
+   },
+   "mods": [
+    "evals",
+    "observability",
+    "failure_modes"
+   ]
+  },
+  {
+   "level": {
+    "zh": "第 4 级 · 三周（求职）",
+    "en": "Rung 4 · Three weeks (industry)"
+   },
+   "name": {
+    "zh": "上线的 agent 服务",
+    "en": "A deployed agent service"
+   },
+   "desc": {
+    "zh": "FastAPI 流式接口、容器化、云部署、CI/CD、prompt caching 与 fallback、cost per conversation 看板。",
+    "en": "FastAPI streaming API, containerised, cloud deployed, CI/CD, prompt caching and fallbacks, a cost-per-conversation dashboard."
+   },
+   "learn": {
+    "zh": "生产化全链路",
+    "en": "The full production path"
+   },
+   "mods": [
+    "backend",
+    "deploy",
+    "prod_opt"
+   ]
+  },
+  {
+   "level": {
+    "zh": "第 4 级 · 三周（科研）",
+    "en": "Rung 4 · Three weeks (research)"
+   },
+   "name": {
+    "zh": "复现并改进一个基准结果",
+    "en": "Reproduce and improve a benchmark result"
+   },
+   "desc": {
+    "zh": "在 SWE-bench Lite、WebArena 子集或 tau-bench 上复现一个开源 agent，做一处改动并做消融。",
+    "en": "Reproduce an open agent on SWE-bench Lite, a WebArena subset or tau-bench; make one change and run an ablation."
+   },
+   "learn": {
+    "zh": "基准协议、可复现性、消融",
+    "en": "Benchmark protocols, reproducibility, ablations"
+   },
+   "mods": [
+    "coding_agents",
+    "computer_use_agents",
+    "research_howto"
+   ]
+  },
+  {
+   "level": {
+    "zh": "第 5 级 · 一到两个月",
+    "en": "Rung 5 · One to two months"
+   },
+   "name": {
+    "zh": "用 RL 训练一个小 agent",
+    "en": "Train a small agent with RL"
+   },
+   "desc": {
+    "zh": "单卡 GRPO 训练一个 1.5B 到 7B 模型学会多轮工具调用，报告奖励曲线、泛化测试与失败案例。",
+    "en": "Single-GPU GRPO training of a 1.5B to 7B model for multi-turn tool use; report reward curves, generalisation tests and failure cases."
+   },
+   "learn": {
+    "zh": "agentic RL 全流程",
+    "en": "The agentic RL pipeline end to end"
+   },
+   "mods": [
+    "agentic_rl",
+    "evals"
+   ]
+  },
+  {
+   "level": {
+    "zh": "第 5 级 · 一到两个月",
+    "en": "Rung 5 · One to two months"
+   },
+   "name": {
+    "zh": "多 agent 系统与失败分析",
+    "en": "Multi-agent system with failure analysis"
+   },
+   "desc": {
+    "zh": "编排者加子 agent 完成一个复杂任务，用 MAST 标注 100 条 trace，提出并验证一项修复。",
+    "en": "An orchestrator plus subagents on a complex task; label 100 traces with MAST, propose and validate one fix."
+   },
+   "learn": {
+    "zh": "多 agent 设计、失败分类、实证研究",
+    "en": "Multi-agent design, failure taxonomy, empirical study"
+   },
+   "mods": [
+    "multi_agent_protocols",
+    "failure_modes"
+   ]
+  }
+ ],
+ "research_path": [
+  {
+   "zh": "读三篇综述建立坐标系：Wang et al. 2023、CoALA、Agentic RL survey。",
+   "en": "Read three surveys to build coordinates: Wang et al. 2023, CoALA, the agentic RL survey."
+  },
+  {
+   "zh": "复现一篇经典（ReAct 或 Reflexion），写复现报告。",
+   "en": "Reproduce one classic (ReAct or Reflexion) and write a reproduction report."
+  },
+  {
+   "zh": "选一个基准，跑通一个开源 agent 的完整评估。",
+   "en": "Pick a benchmark and run a full evaluation of one open agent."
+  },
+  {
+   "zh": "从失败案例里找问题：读 100 条 trace 比读 100 篇论文更快找到选题。",
+   "en": "Find problems in failures: reading 100 traces finds a topic faster than reading 100 papers."
+  },
+  {
+   "zh": "做一处最小改动加消融，写成 4 页 workshop 论文投稿。",
+   "en": "Make one minimal change with an ablation; write it as a 4-page workshop paper."
+  },
+  {
+   "zh": "在 alphaXiv、HF Daily Papers 上跟进，每周固定时间。",
+   "en": "Follow alphaXiv and HF Daily Papers at a fixed weekly time."
+  }
+ ],
+ "tracks": {
+  "job": {
+   "zh": "求职路线：以第 1 到 4 阶段和项目阶梯第 4 级（求职）为主，前沿方向选一个；重点是可打开的项目、评估与追踪、系统设计表达。",
+   "en": "Industry track: focus on stages 1 to 4 and project rung 4 (industry); pick one frontier. What matters is an openable project, evals and tracing, and system-design articulation."
+  },
+  "research": {
+   "zh": "科研路线：第 1 到 3 阶段打底，第 4 阶段只看「了解」层，重心放在前沿方向、论文时间线、复现与项目阶梯第 5 级。",
+   "en": "Research track: stages 1 to 3 as foundation, only the intro tier of stage 4, then the frontiers, the paper timeline, reproduction and project rung 5."
+  }
+ },
+ "checklist": [
+  {
+   "zh": "能不看资料手写一个带工具调用的 agent 循环",
+   "en": "Can write a tool-calling agent loop from memory"
+  },
+  {
+   "zh": "能解释 workflow 与 agent 的区别并举出各自适用的任务",
+   "en": "Can explain workflows versus agents with tasks that fit each"
+  },
+  {
+   "zh": "有一个公开的项目，附评估结果与 trace 截图",
+   "en": "Have a public project with eval results and a trace screenshot"
+  },
+  {
+   "zh": "能讲一个自己项目的故障、诊断与度量",
+   "en": "Can tell one failure, its diagnosis and its measurement from your own project"
+  },
+  {
+   "zh": "读过 MAST，能给自己的系统做失败分类",
+   "en": "Have read MAST and can classify your own system's failures"
+  },
+  {
+   "zh": "能说出 MCP 与 A2A 分别解决什么",
+   "en": "Can state what MCP and A2A each solve"
+  },
+  {
+   "zh": "跟进过近三个月至少五篇前沿工作",
+   "en": "Have followed at least five frontier works from the last three months"
+  },
+  {
+   "zh": "选定了一个前沿方向并跑通了它的一个基准",
+   "en": "Have chosen one frontier and run one of its benchmarks"
+  }
+ ]
+}

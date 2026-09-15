@@ -1,0 +1,4157 @@
+[
+ {
+  "topic": "llm_foundations",
+  "level": "intro",
+  "type": "video",
+  "lang": "en",
+  "track": "both",
+  "title": "[1hr Talk] Intro to Large Language Models — Andrej Karpathy",
+  "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "2023 one-hour overview of how LLMs are trained, scaled and used.",
+   "zh": "2023年，一小时讲解LLM训练、扩展与应用"
+  }
+ },
+ {
+  "topic": "llm_foundations",
+  "level": "intro",
+  "type": "video",
+  "lang": "en",
+  "track": "both",
+  "title": "Transformers, the tech behind LLMs — 3Blue1Brown",
+  "url": "https://www.youtube.com/watch?v=wjZofJX0v4M",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "2024 visual intuition for tokens, embeddings and attention.",
+   "zh": "2024年直观讲解：token、嵌入、注意力机制"
+  }
+ },
+ {
+  "topic": "llm_foundations",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "The Illustrated Transformer — Jay Alammar",
+  "url": "https://jalammar.github.io/illustrated-transformer/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Classic 2018 illustrated walkthrough of transformer architecture.",
+   "zh": "2018年，经典图解Transformer架构"
+  }
+ },
+ {
+  "topic": "llm_foundations",
+  "level": "core",
+  "type": "video",
+  "lang": "en",
+  "track": "both",
+  "title": "Deep Dive into LLMs like ChatGPT — Andrej Karpathy",
+  "url": "https://www.youtube.com/watch?v=7xTGNNLPyMI",
+  "hours": 3.5,
+  "must": true,
+  "why": {
+   "en": "2025 3.5h tour: pretraining, tokenization, SFT, RLHF, sampling, hallucinations.",
+   "zh": "2025年3.5小时详解：预训练、SFT、RLHF等"
+  }
+ },
+ {
+  "topic": "llm_foundations",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Prompt engineering overview — Claude Platform Docs",
+  "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview",
+  "hours": 2,
+  "must": true,
+  "why": {
+   "en": "Anthropic's official prompting techniques: clarity, examples, CoT, XML, roles.",
+   "zh": "Anthropic官方提示工程技巧指南"
+  }
+ },
+ {
+  "topic": "llm_foundations",
+  "level": "core",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "Hugging Face LLM Course",
+  "url": "https://huggingface.co/learn/llm-course/chapter1/1",
+  "hours": 20,
+  "must": false,
+  "why": {
+   "en": "Free hands-on course on transformers, tokenizers, fine-tuning; updated 2025.",
+   "zh": "2025年更新的免费transformer实战课程"
+  }
+ },
+ {
+  "topic": "llm_foundations",
+  "level": "core",
+  "type": "course",
+  "lang": "en",
+  "track": "job",
+  "title": "Anthropic Academy (skilljar) courses",
+  "url": "https://anthropic.skilljar.com/",
+  "hours": 6,
+  "must": false,
+  "why": {
+   "en": "Free official courses: Claude API, MCP, prompt engineering, AI fluency.",
+   "zh": "官方免费课程：Claude API、MCP、提示工程"
+  }
+ },
+ {
+  "topic": "llm_foundations",
+  "level": "deep",
+  "type": "blog",
+  "lang": "en",
+  "track": "research",
+  "title": "Prompt Engineering — Lilian Weng",
+  "url": "https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "2023 research-grade survey of prompting methods with citations.",
+   "zh": "2023年，提示工程方法学术综述"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "intro",
+  "type": "course",
+  "lang": "zh",
+  "track": "both",
+  "title": "Datawhale llm-cookbook（吴恩达大模型课程中文版）",
+  "url": "https://github.com/datawhalechina/llm-cookbook",
+  "hours": 15,
+  "must": false,
+  "why": {
+   "en": "Chinese port of Andrew Ng LLM courses: prompting, RAG, agents",
+   "zh": "吴恩达LLM课程中文版：提示、RAG、agent"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "intro",
+  "type": "code",
+  "lang": "zh",
+  "track": "both",
+  "title": "Datawhale Agent-Learning-Hub 学习路线",
+  "url": "https://github.com/datawhalechina/Agent-Learning-Hub",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Curated Chinese agent roadmap and resource todo-list",
+   "zh": "精选中文agent学习路线与资源清单"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "intro",
+  "type": "course",
+  "lang": "zh",
+  "track": "both",
+  "title": "李宏毅《生成式AI时代下的机器学习》2025 课程官网",
+  "url": "https://speech.ee.ntu.edu.tw/~hylee/ml/2025-spring.php",
+  "hours": 20,
+  "must": false,
+  "why": {
+   "en": "NTU 2025 course page with slides and videos; agent-focused lectures",
+   "zh": "台大2025课程官网，含agent专题讲座"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "intro",
+  "type": "video",
+  "lang": "zh",
+  "track": "both",
+  "title": "李宏毅：一堂课搞懂 AI Agent 的原理（Bilibili）",
+  "url": "https://www.bilibili.com/video/BV1BWRhYFE8y/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Single lecture covering experience, tool use and planning in agents",
+   "zh": "单集讲解agent的经验、工具使用与规划"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "intro",
+  "type": "official",
+  "lang": "zh",
+  "track": "job",
+  "title": "LangChain 中文网文档",
+  "url": "https://www.langchain.com.cn/docs/introduction/",
+  "hours": 6,
+  "must": false,
+  "why": {
+   "en": "Chinese translation of LangChain docs, tutorials and concepts",
+   "zh": "LangChain文档、教程与概念中文翻译"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "intro",
+  "type": "official",
+  "lang": "zh",
+  "track": "job",
+  "title": "DeepSeek API 中文文档",
+  "url": "https://api-docs.deepseek.com/zh-cn/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Official DeepSeek docs; OpenAI/Anthropic-compatible APIs, function calling",
+   "zh": "DeepSeek官方文档，兼容OpenAI API"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "core",
+  "type": "code",
+  "lang": "zh",
+  "track": "both",
+  "title": "Datawhale hello-agents《从零开始构建智能体》",
+  "url": "https://github.com/datawhalechina/hello-agents",
+  "hours": 30,
+  "must": true,
+  "why": {
+   "en": "16-chapter Chinese agent tutorial, theory to practice, actively maintained",
+   "zh": "16章中文agent教程，理论到实践，持续维护"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "core",
+  "type": "code",
+  "lang": "zh",
+  "track": "both",
+  "title": "Datawhale self-llm 开源大模型食用指南",
+  "url": "https://github.com/datawhalechina/self-llm",
+  "hours": 20,
+  "must": false,
+  "why": {
+   "en": "Deploy and fine-tune open LLMs on Linux, Chinese step-by-step",
+   "zh": "中文教程，Linux部署与微调开源大模型"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "core",
+  "type": "code",
+  "lang": "zh",
+  "track": "both",
+  "title": "Datawhale tiny-universe（手搓 TinyAgent）",
+  "url": "https://github.com/datawhalechina/tiny-universe",
+  "hours": 8,
+  "must": false,
+  "why": {
+   "en": "White-box minimal implementations including a hand-written agent loop",
+   "zh": "白盒极简实现，含手写agent循环"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "core",
+  "type": "course",
+  "lang": "zh",
+  "track": "job",
+  "title": "Datawhale llm-universe 动手学大模型应用开发",
+  "url": "https://github.com/datawhalechina/llm-universe",
+  "hours": 15,
+  "must": false,
+  "why": {
+   "en": "No-GPU LLM app dev course: RAG, LangChain, knowledge-base assistant",
+   "zh": "无需GPU的大模型应用开发课：RAG、LangChain"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "core",
+  "type": "official",
+  "lang": "zh",
+  "track": "job",
+  "title": "Qwen-Agent 官方框架",
+  "url": "https://github.com/QwenLM/Qwen-Agent",
+  "hours": 6,
+  "must": false,
+  "why": {
+   "en": "Alibaba Qwen agent framework: function calling, RAG, MCP, code interpreter",
+   "zh": "阿里Qwen agent框架：函数调用、RAG、MCP"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "core",
+  "type": "official",
+  "lang": "zh",
+  "track": "job",
+  "title": "阿里云百炼 Model Studio 文档",
+  "url": "https://help.aliyun.com/zh/model-studio/",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "Official Qwen platform docs; OpenAI-compatible API and agent apps",
+   "zh": "官方Qwen平台文档，兼容OpenAI API"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "core",
+  "type": "code",
+  "lang": "zh",
+  "track": "job",
+  "title": "ModelScope MS-Agent 框架",
+  "url": "https://github.com/modelscope/ms-agent",
+  "hours": 6,
+  "must": false,
+  "why": {
+   "en": "ModelScope agent framework with deep research, MCP and skills",
+   "zh": "魔搭agent框架，含深度研究、MCP与技能"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "core",
+  "type": "official",
+  "lang": "zh",
+  "track": "job",
+  "title": "Claude 平台文档（简体中文）：工具使用",
+  "url": "https://platform.claude.com/docs/zh-CN/agents-and-tools/tool-use/overview",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Official Anthropic tool-use docs in Simplified Chinese",
+   "zh": "Anthropic官方工具使用文档简体中文版"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "deep",
+  "type": "book",
+  "lang": "zh",
+  "track": "research",
+  "title": "Datawhale happy-llm《从零开始构建大模型》",
+  "url": "https://github.com/datawhalechina/happy-llm",
+  "hours": 40,
+  "must": false,
+  "why": {
+   "en": "Build an LLM from scratch in PyTorch; ends with RAG and agents",
+   "zh": "PyTorch从零构建大模型，含RAG与agent"
+  }
+ },
+ {
+  "topic": "zh_courses",
+  "level": "deep",
+  "type": "course",
+  "lang": "zh",
+  "track": "both",
+  "title": "Datawhale hugging-multi-agent（MetaGPT 多智能体教程）",
+  "url": "https://github.com/datawhalechina/hugging-multi-agent",
+  "hours": 15,
+  "must": false,
+  "why": {
+   "en": "Multi-agent development with MetaGPT, debate and software-team cases",
+   "zh": "基于MetaGPT的多agent开发，含辩论与团队案例"
+  }
+ },
+ {
+  "topic": "agent_from_scratch",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Building Effective AI Agents — Anthropic",
+  "url": "https://www.anthropic.com/engineering/building-effective-agents",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "Dec 2024 essay: workflows vs agents, composable patterns, keep it simple.",
+   "zh": "2024年12月，工作流与agent可组合模式"
+  }
+ },
+ {
+  "topic": "agent_from_scratch",
+  "level": "intro",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "Hugging Face Agents Course — Unit 1: Introduction to Agents",
+  "url": "https://huggingface.co/learn/agents-course/unit1/introduction",
+  "hours": 3,
+  "must": true,
+  "why": {
+   "en": "Free 2025 course unit on the thought-action-observation loop.",
+   "zh": "2025年课程讲解：思考、行动、观察循环"
+  }
+ },
+ {
+  "topic": "agent_from_scratch",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "How to Build an Agent — Thorsten Ball (Amp)",
+  "url": "https://ampcode.com/how-to-build-an-agent",
+  "hours": 2,
+  "must": true,
+  "why": {
+   "en": "April 2025: a working code-editing agent in ~300 lines of Go.",
+   "zh": "2025年4月，约300行Go代码实现编码agent"
+  }
+ },
+ {
+  "topic": "agent_from_scratch",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "both",
+  "title": "Anthropic Cookbook (patterns/agents)",
+  "url": "https://github.com/anthropics/anthropic-cookbook",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "Reference notebooks for routing, parallelization, orchestrator-worker, evaluator loops.",
+   "zh": "示例：路由、并行、编排者-worker、评估循环"
+  }
+ },
+ {
+  "topic": "agent_from_scratch",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "smolagents documentation",
+  "url": "https://huggingface.co/docs/smolagents/index",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Minimal code-agent library; good to read source after building your own loop.",
+   "zh": "极简代码agent库，适合读源码学习"
+  }
+ },
+ {
+  "topic": "agent_from_scratch",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "job",
+  "title": "12-Factor Agents — HumanLayer",
+  "url": "https://github.com/humanlayer/12-factor-agents",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "2025 principles for production agents: own your prompts, context, control flow.",
+   "zh": "2025年，生产级agent设计十二原则"
+  }
+ },
+ {
+  "topic": "agent_from_scratch",
+  "level": "core",
+  "type": "course",
+  "lang": "en",
+  "track": "job",
+  "title": "LangChain Academy: Ambient Agents with LangGraph",
+  "url": "https://academy.langchain.com/courses/ambient-agents",
+  "hours": 6,
+  "must": false,
+  "why": {
+   "en": "Free 2025 project course building an email agent with HITL and memory.",
+   "zh": "2025年免费实战课：邮件agent、人工干预、记忆"
+  }
+ },
+ {
+  "topic": "agent_from_scratch",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "LLM 0.26: tools in your terminal — Simon Willison",
+  "url": "https://simonwillison.net/2025/May/27/llm-tools/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "May 2025: minimal CLI agent tool loop, shows how little code is needed.",
+   "zh": "2025年5月，极简CLI工具调用循环示例"
+  }
+ },
+ {
+  "topic": "agent_patterns",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "A Practical Guide to Building Agents (OpenAI PDF)",
+  "url": "https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "2025; concise design principles, single vs multi-agent, guardrails, when agents are worth it.",
+   "zh": "2025年简明设计原则：单/多agent、护栏、适用场景"
+  }
+ },
+ {
+  "topic": "agent_patterns",
+  "level": "intro",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "Hugging Face Agents Course",
+  "url": "https://huggingface.co/learn/agents-course/unit0/introduction",
+  "hours": 15,
+  "must": false,
+  "why": {
+   "en": "2025; free hands-on course covering agent loop, tools, smolagents/LangGraph/LlamaIndex, evaluation.",
+   "zh": "2025年免费实战课，涵盖agent循环与多框架"
+  }
+ },
+ {
+  "topic": "agent_patterns",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Writing Effective Tools for Agents (Anthropic)",
+  "url": "https://www.anthropic.com/engineering/writing-tools-for-agents",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "2025; tool naming, descriptions, response design, evaluation-driven tool iteration.",
+   "zh": "2025年：工具命名、描述与响应设计迭代"
+  }
+ },
+ {
+  "topic": "agent_patterns",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Agents (Chip Huyen)",
+  "url": "https://huyenchip.com/2025/01/07/agents.html",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "2025; tool selection, planning, reflection, failure modes and evaluation from AI Engineering book.",
+   "zh": "2025年节选：工具选择、规划、反思与评测"
+  }
+ },
+ {
+  "topic": "agent_patterns",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Zero to One: Learning Agentic Patterns (Phil Schmid)",
+  "url": "https://www.philschmid.de/agentic-pattern",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "2025; code examples for reflection, tool use, planning, multi-agent patterns; fast practical primer.",
+   "zh": "2025年代码示例：反思、工具、规划等模式速览"
+  }
+ },
+ {
+  "topic": "agent_patterns",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "both",
+  "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+  "url": "https://arxiv.org/abs/2210.03629",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "2022; the thought-action-observation loop underlying almost every tool-using agent.",
+   "zh": "2022年论文，奠定思考-行动-观察循环基础"
+  }
+ },
+ {
+  "topic": "agent_patterns",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "both",
+  "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+  "url": "https://arxiv.org/abs/2303.11366",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "2023; self-reflection with episodic memory; basis for reflection/critic patterns.",
+   "zh": "2023年，结合情景记忆的自我反思机制"
+  }
+ },
+ {
+  "topic": "agent_patterns",
+  "level": "deep",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "Berkeley LLM Agents MOOC (Fall 2024)",
+  "url": "https://llmagents-learning.org/f24",
+  "hours": 20,
+  "must": false,
+  "why": {
+   "en": "2024; free lecture series from Berkeley on agent reasoning, tools, multi-agent, safety.",
+   "zh": "2024年伯克利免费课程：推理、工具、多agent、安全"
+  }
+ },
+ {
+  "topic": "tool_calling",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "OpenAI Function Calling Guide",
+  "url": "https://developers.openai.com/api/docs/guides/function-calling",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "Official reference: tool schemas, tool_choice, parallel calls, handling tool results in the loop.",
+   "zh": "官方函数调用参考：schema、并行调用等"
+  }
+ },
+ {
+  "topic": "tool_calling",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Claude Tool Use Overview",
+  "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Official Anthropic docs on client vs server tools, tool_result flow, best practices for descriptions.",
+   "zh": "官方工具使用文档：客户端与服务端工具区别"
+  }
+ },
+ {
+  "topic": "tool_calling",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "JSON Schema: Getting Started Step-By-Step",
+  "url": "https://json-schema.org/learn/getting-started-step-by-step",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Learn the schema language every tool definition and structured output relies on.",
+   "zh": "学习工具定义与结构化输出依赖的schema语言"
+  }
+ },
+ {
+  "topic": "tool_calling",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Pydantic Models Concepts",
+  "url": "https://pydantic.dev/docs/validation/latest/concepts/models/",
+  "hours": 2,
+  "must": true,
+  "why": {
+   "en": "BaseModel, validation, model_json_schema; Pydantic is the lingua franca of Python agent tooling.",
+   "zh": "Python agent工具开发通用的Pydantic基础"
+  }
+ },
+ {
+  "topic": "tool_calling",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "OpenAI Structured Outputs",
+  "url": "https://developers.openai.com/api/docs/guides/structured-outputs",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Schema-constrained JSON generation, Pydantic integration, refusal handling; core reliability technique.",
+   "zh": "schema约束的JSON生成，核心可靠性技术"
+  }
+ },
+ {
+  "topic": "tool_calling",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Claude Structured Outputs",
+  "url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "Guaranteed-valid JSON and tool parameters on Claude; compare with OpenAI approach.",
+   "zh": "Claude保证有效JSON输出，对比OpenAI方案"
+  }
+ },
+ {
+  "topic": "tool_calling",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "both",
+  "title": "Instructor Library Docs",
+  "url": "https://python.useinstructor.com/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Pydantic-typed extraction across providers with validation-driven retries; widely used pattern.",
+   "zh": "跨厂商的Pydantic类型化提取，广泛使用"
+  }
+ },
+ {
+  "topic": "tool_calling",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "both",
+  "title": "Instructor: Retrying with Tenacity",
+  "url": "https://python.useinstructor.com/concepts/retrying/",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "Validation errors fed back to the LLM for self-correction; production robustness pattern.",
+   "zh": "校验错误反馈给LLM自我纠正的生产模式"
+  }
+ },
+ {
+  "topic": "mcp",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "What is MCP? (modelcontextprotocol.io)",
+  "url": "https://modelcontextprotocol.io/docs/getting-started/intro",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "Official intro: MCP as USB-C for AI apps, hosts/clients/servers.",
+   "zh": "官方简介：MCP是AI应用的USB-C接口"
+  }
+ },
+ {
+  "topic": "mcp",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Introducing the Model Context Protocol (Anthropic)",
+  "url": "https://www.anthropic.com/news/model-context-protocol",
+  "hours": 0.3,
+  "must": false,
+  "why": {
+   "en": "2024 launch post; motivation and ecosystem framing for interview context.",
+   "zh": "2024年发布文章，阐述动机与生态定位"
+  }
+ },
+ {
+  "topic": "mcp",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "MCP Architecture Overview",
+  "url": "https://modelcontextprotocol.io/docs/learn/architecture",
+  "hours": 1.5,
+  "must": true,
+  "why": {
+   "en": "Data vs transport layers, JSON-RPC lifecycle, tools/resources/prompts, sampling/elicitation with worked examples.",
+   "zh": "数据、传输层与JSON-RPC生命周期详解"
+  }
+ },
+ {
+  "topic": "mcp",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "both",
+  "title": "MCP Python SDK (GitHub)",
+  "url": "https://github.com/modelcontextprotocol/python-sdk",
+  "hours": 3,
+  "must": true,
+  "why": {
+   "en": "Build servers/clients with FastMCP-style decorators; README has runnable examples.",
+   "zh": "用FastMCP风格装饰器构建服务端、客户端"
+  }
+ },
+ {
+  "topic": "mcp",
+  "level": "core",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "Anthropic Academy: Introduction to MCP",
+  "url": "https://anthropic.skilljar.com/introduction-to-model-context-protocol",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "Free official course building MCP servers and clients from scratch in Python.",
+   "zh": "免费官方课程，用Python从零构建MCP"
+  }
+ },
+ {
+  "topic": "mcp",
+  "level": "core",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "DeepLearning.AI: MCP – Build Rich-Context AI Apps with Anthropic",
+  "url": "https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "2025; short hands-on course wiring MCP servers into a chatbot.",
+   "zh": "2025年短课，将MCP服务接入聊天机器人"
+  }
+ },
+ {
+  "topic": "mcp",
+  "level": "deep",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "MCP Specification (latest)",
+  "url": "https://modelcontextprotocol.io/specification/latest",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "Authoritative protocol requirements, security principles, extensions (Tasks, Apps).",
+   "zh": "权威协议要求、安全原则与扩展"
+  }
+ },
+ {
+  "topic": "memory_rag",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "LlamaIndex: Understanding RAG",
+  "url": "https://developers.llamaindex.ai/python/framework/understanding/rag/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Five RAG stages (load, index, store, query, evaluate); vocabulary of nodes, embeddings, retrievers.",
+   "zh": "RAG五阶段与节点、嵌入、检索器术语"
+  }
+ },
+ {
+  "topic": "memory_rag",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Anthropic: Introducing Contextual Retrieval",
+  "url": "https://www.anthropic.com/news/contextual-retrieval",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "2024; contextual embeddings + BM25 hybrid + reranking cut retrieval failures ~67%.",
+   "zh": "2024年，上下文检索使失败率降约67%"
+  }
+ },
+ {
+  "topic": "memory_rag",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "LangGraph Memory Concepts",
+  "url": "https://docs.langchain.com/oss/python/langgraph/memory",
+  "hours": 1.5,
+  "must": true,
+  "why": {
+   "en": "Short-term (thread) vs long-term (store/namespaces) memory; semantic/episodic/procedural framing.",
+   "zh": "短期与长期记忆概念，含语义、情景、程序性"
+  }
+ },
+ {
+  "topic": "memory_rag",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Pinecone: Chunking Strategies",
+  "url": "https://www.pinecone.io/learn/chunking-strategies/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Fixed, recursive, semantic and contextual chunking tradeoffs; a classic interview question.",
+   "zh": "固定、递归、语义分块权衡，经典面试题"
+  }
+ },
+ {
+  "topic": "memory_rag",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Pinecone: Rerankers and Two-Stage Retrieval",
+  "url": "https://www.pinecone.io/learn/series/rag/rerankers/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Why cross-encoder reranking after vector recall improves RAG quality.",
+   "zh": "交叉编码器重排如何提升RAG质量"
+  }
+ },
+ {
+  "topic": "memory_rag",
+  "level": "core",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "Pinecone Learning Center: RAG Series",
+  "url": "https://www.pinecone.io/learn/series/rag/",
+  "hours": 5,
+  "must": false,
+  "why": {
+   "en": "Free series on advanced RAG techniques incl. hybrid search and evaluation.",
+   "zh": "免费系列：高级RAG技术，含混合检索"
+  }
+ },
+ {
+  "topic": "memory_rag",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Mem0 Documentation",
+  "url": "https://docs.mem0.ai/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Persistent memory layer API; practical alternative to hand-rolled memory stores.",
+   "zh": "持久记忆层API，替代自建记忆存储"
+  }
+ },
+ {
+  "topic": "memory_rag",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "both",
+  "title": "MemGPT: Towards LLMs as Operating Systems (Letta)",
+  "url": "https://arxiv.org/abs/2310.08560",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "2023; virtual context management, tiered memory; the reference design for agent memory.",
+   "zh": "2023年，虚拟上下文管理，agent记忆参考设计"
+  }
+ },
+ {
+  "topic": "memory_rag",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "both",
+  "title": "A Survey on the Memory Mechanism of LLM-based Agents",
+  "url": "https://arxiv.org/abs/2404.13501",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "2024; systematic taxonomy of memory sources, forms, operations for agents.",
+   "zh": "2024年，agent记忆来源、形式与操作综述"
+  }
+ },
+ {
+  "topic": "frameworks",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "LangGraph Overview",
+  "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "Low-level stateful orchestration runtime: durable execution, HITL, memory.",
+   "zh": "底层有状态编排运行时：持久执行、人工干预"
+  }
+ },
+ {
+  "topic": "frameworks",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "CrewAI Introduction",
+  "url": "https://docs.crewai.com/en/introduction",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "Crews (role-based agent teams) vs Flows (structured workflows); know it for comparisons.",
+   "zh": "角色化crew与结构化flow的对比认知"
+  }
+ },
+ {
+  "topic": "frameworks",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "AI Agent Frameworks Compared (Turing)",
+  "url": "https://www.turing.com/resources/ai-agent-frameworks",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Side-by-side LangGraph, CrewAI, AutoGen and others: features, limitations, fit.",
+   "zh": "LangGraph、CrewAI、AutoGen等框架对比"
+  }
+ },
+ {
+  "topic": "frameworks",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "LangGraph: Workflows and Agents",
+  "url": "https://docs.langchain.com/oss/python/langgraph/workflows-agents",
+  "hours": 2,
+  "must": true,
+  "why": {
+   "en": "Code for prompt chaining, parallelization, routing, orchestrator-worker, evaluator-optimizer.",
+   "zh": "提示链、并行、路由等模式的代码实现"
+  }
+ },
+ {
+  "topic": "frameworks",
+  "level": "core",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "LangChain Academy: Introduction to LangGraph",
+  "url": "https://academy.langchain.com/courses/intro-to-langgraph",
+  "hours": 8,
+  "must": false,
+  "why": {
+   "en": "Free official course: state, memory, HITL, deployment; the quickest path to LangGraph fluency.",
+   "zh": "免费官方课程，快速掌握LangGraph"
+  }
+ },
+ {
+  "topic": "frameworks",
+  "level": "core",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "DeepLearning.AI: AI Agents in LangGraph",
+  "url": "https://www.deeplearning.ai/short-courses/ai-agents-in-langgraph/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "2024; build a ReAct agent from scratch then in LangGraph with persistence and agentic search.",
+   "zh": "2024年，构建ReAct agent后转用LangGraph"
+  }
+ },
+ {
+  "topic": "frameworks",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "OpenAI Agents SDK",
+  "url": "https://openai.github.io/openai-agents-python/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Minimal primitives: agents, handoffs, guardrails, sessions, tracing; production-ready SDK.",
+   "zh": "极简原语的生产级agent SDK"
+  }
+ },
+ {
+  "topic": "frameworks",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Pydantic AI Overview",
+  "url": "https://pydantic.dev/docs/ai/overview/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Typed agent loop, structured outputs, dependency injection, OTel integration; Python-native.",
+   "zh": "Python原生的类型化agent循环与依赖注入"
+  }
+ },
+ {
+  "topic": "frameworks",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Google Agent Development Kit (ADK)",
+  "url": "https://adk.dev/",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "Google's multi-language agent framework with workflow agents and deployment story.",
+   "zh": "谷歌多语言agent框架，含部署方案"
+  }
+ },
+ {
+  "topic": "frameworks",
+  "level": "deep",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "How to Think About Agent Frameworks (Harrison Chase)",
+  "url": "https://www.langchain.com/blog/how-to-think-about-agent-frameworks",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "2025; workflows vs agents, declarative vs imperative, context control; strong interview framing.",
+   "zh": "2025年：工作流与agent、声明式与命令式对比"
+  }
+ },
+ {
+  "topic": "failure_modes",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Prompt Injection Attacks Against GPT-3 (Simon Willison)",
+  "url": "https://simonwillison.net/2022/Sep/12/prompt-injection/",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "2022; the post that named prompt injection; explains why it is not solvable by prompting.",
+   "zh": "2022年，提出提示注入概念的原始文章"
+  }
+ },
+ {
+  "topic": "failure_modes",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "How Long Contexts Fail (Drew Breunig)",
+  "url": "https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html",
+  "hours": 0.5,
+  "must": true,
+  "why": {
+   "en": "2025; context poisoning, distraction, confusion, clash; why context overflow degrades agents.",
+   "zh": "2025年：上下文中毒、干扰、混淆致agent变差"
+  }
+ },
+ {
+  "topic": "failure_modes",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "OWASP Top 10 for LLM Applications",
+  "url": "https://genai.owasp.org/llm-top-10/",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "2025 list: prompt injection, excessive agency, insecure output handling; standard security vocabulary.",
+   "zh": "2025年标准安全清单：提示注入、越权等"
+  }
+ },
+ {
+  "topic": "failure_modes",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "OpenAI Agents SDK: Running Agents (max_turns)",
+  "url": "https://openai.github.io/openai-agents-python/running_agents/",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "Shows loop guards: max_turns, MaxTurnsExceeded, guardrail exceptions; production runaway-loop protection.",
+   "zh": "max_turns等循环防护，防止失控运行"
+  }
+ },
+ {
+  "topic": "failure_modes",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "LangGraph Graph API (recursion_limit)",
+  "url": "https://docs.langchain.com/oss/python/langgraph/graph-api",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "State/nodes/edges plus recursion_limit super-step cap to stop infinite tool loops.",
+   "zh": "recursion_limit防止工具无限循环"
+  }
+ },
+ {
+  "topic": "evals",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Your AI Product Needs Evals (Hamel Husain)",
+  "url": "https://hamel.dev/blog/posts/evals/",
+  "hours": 1.5,
+  "must": true,
+  "why": {
+   "en": "2024; unit tests, human review, LLM judges, error analysis loop; the standard evals primer.",
+   "zh": "2024年评测入门：单测、人审、LLM裁判"
+  }
+ },
+ {
+  "topic": "evals",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Claude Docs: Define Success and Develop Tests",
+  "url": "https://platform.claude.com/docs/en/test-and-evaluate/develop-tests",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Exact-match to LLM-graded rubric examples; how to write eval sets.",
+   "zh": "从精确匹配到LLM评分的评测集写法"
+  }
+ },
+ {
+  "topic": "evals",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Beyond Vibe Checks: A PM's Guide to Evals (Aman Khan, Lenny's)",
+  "url": "https://www.lennysnewsletter.com/p/beyond-vibe-checks-a-pms-complete",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "2025; product-level eval strategy, A/B testing and metrics framing.",
+   "zh": "2025年产品级评测策略：A/B测试与指标框架"
+  }
+ },
+ {
+  "topic": "evals",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Creating a LLM-as-a-Judge That Drives Business Results (Hamel Husain)",
+  "url": "https://hamel.dev/blog/posts/llm-judge/",
+  "hours": 1.5,
+  "must": true,
+  "why": {
+   "en": "2024; build a judge, validate against human labels, critique-shadowing method.",
+   "zh": "2024年，构建LLM裁判并对齐人工标注"
+  }
+ },
+ {
+  "topic": "evals",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Demystifying Evals for AI Agents (Anthropic)",
+  "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "2026; graders, trajectory vs outcome evals, pass@k, agent-specific eval design.",
+   "zh": "2026年agent评测设计：轨迹评测与pass@k"
+  }
+ },
+ {
+  "topic": "evals",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Task-Specific LLM Evals that Do & Don't Work (Eugene Yan)",
+  "url": "https://eugeneyan.com/writing/evals/",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "2024; concrete metrics per task type and calibrating eval rigor to risk.",
+   "zh": "2024年，按任务类型设计具体评测指标"
+  }
+ },
+ {
+  "topic": "evals",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "OpenAI Cookbook: Getting Started with OpenAI Evals",
+  "url": "https://developers.openai.com/cookbook/examples/evaluation/getting_started_with_openai_evals",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Notebook running an eval end-to-end on SQL generation with the Evals API.",
+   "zh": "SQL生成任务的端到端评测示例notebook"
+  }
+ },
+ {
+  "topic": "evals",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Langfuse Evaluation Overview",
+  "url": "https://langfuse.com/docs/evaluation/overview",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Scores, LLM-as-judge evaluators, datasets/experiments, human annotation in an OSS tool.",
+   "zh": "开源工具的评分、LLM裁判与人工标注"
+  }
+ },
+ {
+  "topic": "evals",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "LangSmith Evaluation",
+  "url": "https://docs.langchain.com/langsmith/evaluation",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "Datasets, evaluators, experiments, online evals for LangGraph agents.",
+   "zh": "LangGraph agent的数据集与在线评测"
+  }
+ },
+ {
+  "topic": "evals",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Braintrust Evals Guide",
+  "url": "https://www.braintrust.dev/docs/guides/evals",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Task/scorer/dataset model, offline experiments vs online monitoring.",
+   "zh": "任务、评分、数据集模型，离线与在线监控"
+  }
+ },
+ {
+  "topic": "evals",
+  "level": "core",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "DeepLearning.AI: Evaluating AI Agents",
+  "url": "https://www.deeplearning.ai/short-courses/evaluating-ai-agents/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "2025; traces, evaluators, experiments with Arize Phoenix; hands-on agent eval loop.",
+   "zh": "2025年实战课，用Phoenix做agent评测"
+  }
+ },
+ {
+  "topic": "evals",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "both",
+  "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+  "url": "https://arxiv.org/abs/2306.05685",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "2023; position, verbosity, self-enhancement judge biases and agreement with humans.",
+   "zh": "2023年，研究LLM裁判偏见及与人类一致性"
+  }
+ },
+ {
+  "topic": "evals",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "both",
+  "title": "tau-bench: Tool-Agent-User Interaction Benchmark",
+  "url": "https://arxiv.org/abs/2406.12045",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "2024; simulated users, policy compliance, pass^k reliability metric for agents.",
+   "zh": "2024年，模拟用户测试agent策略合规性"
+  }
+ },
+ {
+  "topic": "observability",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "OpenTelemetry Observability Primer",
+  "url": "https://opentelemetry.io/docs/concepts/observability-primer/",
+  "hours": 0.5,
+  "must": true,
+  "why": {
+   "en": "Defines traces, spans, metrics, logs; the vocabulary behind every LLM tracing tool.",
+   "zh": "定义trace、span、指标、日志等核心术语"
+  }
+ },
+ {
+  "topic": "observability",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Langfuse Observability Overview",
+  "url": "https://langfuse.com/docs/observability/overview",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "OSS LLM tracing: prompts, tokens, latency, tool/retrieval steps.",
+   "zh": "开源LLM追踪：提示、token、延迟与工具步骤"
+  }
+ },
+ {
+  "topic": "observability",
+  "level": "intro",
+  "type": "book",
+  "lang": "en",
+  "track": "both",
+  "title": "Google SRE Book: Monitoring Distributed Systems",
+  "url": "https://sre.google/sre-book/monitoring-distributed-systems/",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "The four golden signals (latency, traffic, errors, saturation); interview-standard monitoring vocabulary.",
+   "zh": "四大黄金指标：延迟、流量、错误、饱和度"
+  }
+ },
+ {
+  "topic": "observability",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Langfuse: Get Started (first trace)",
+  "url": "https://langfuse.com/docs/observability/get-started",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "Ingest a first trace via integrations or decorators; quick practical win.",
+   "zh": "通过集成或装饰器接入首个追踪"
+  }
+ },
+ {
+  "topic": "observability",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "OpenTelemetry Traces Concepts",
+  "url": "https://opentelemetry.io/docs/concepts/signals/traces/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Span context, attributes, events, context propagation; needed to reason about agent traces.",
+   "zh": "span上下文、属性与传播，理解agent追踪必备"
+  }
+ },
+ {
+  "topic": "observability",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "OpenTelemetry Python Getting Started",
+  "url": "https://opentelemetry.io/docs/languages/python/getting-started/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Instrument a Python app and export traces in minutes; hands-on OTel basics.",
+   "zh": "几分钟为Python应用接入追踪导出"
+  }
+ },
+ {
+  "topic": "observability",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "LangSmith Observability",
+  "url": "https://docs.langchain.com/langsmith/observability",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Tracing and monitoring for LangGraph/LangChain agents in production.",
+   "zh": "生产环境LangGraph agent追踪监控"
+  }
+ },
+ {
+  "topic": "observability",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Arize Phoenix Docs",
+  "url": "https://arize.com/docs/phoenix",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "OSS tracing + evals + experiments platform; OpenInference conventions.",
+   "zh": "开源追踪+评测+实验平台，遵循OpenInference"
+  }
+ },
+ {
+  "topic": "observability",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "both",
+  "title": "OpenLLMetry (Traceloop)",
+  "url": "https://github.com/traceloop/openllmetry",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "OTel-native auto-instrumentation for LLM/vector DB calls; vendor-neutral observability.",
+   "zh": "OTel原生自动埋点，厂商中立可观测性"
+  }
+ },
+ {
+  "topic": "agent_safety",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "OWASP Top 10 for LLM Applications 2025",
+  "url": "https://genai.owasp.org/resource/owasp-top-10-for-llm-applications-2025/",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "Standard risk list: prompt injection, excessive agency, data leakage.",
+   "zh": "标准风险清单：提示注入、越权、数据泄露"
+  }
+ },
+ {
+  "topic": "agent_safety",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "The lethal trifecta for AI agents — Simon Willison",
+  "url": "https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/",
+  "hours": 0.5,
+  "must": true,
+  "why": {
+   "en": "June 2025: private data + untrusted content + exfiltration = danger.",
+   "zh": "2025年6月：私有数据+不可信内容+外泄=危险"
+  }
+ },
+ {
+  "topic": "agent_safety",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "research",
+  "title": "Measuring AI Ability to Complete Long Software Tasks — METR",
+  "url": "https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "March 2025 task-horizon doubling every ~7 months; key capability metric.",
+   "zh": "2025年3月，任务时长每约7个月翻倍"
+  }
+ },
+ {
+  "topic": "agent_safety",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Prompt injection series — Simon Willison",
+  "url": "https://simonwillison.net/series/prompt-injection/",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "Running 2022-2025 series on attacks and why filters don't work.",
+   "zh": "2022-2025年系列，讲攻击及过滤器为何无效"
+  }
+ },
+ {
+  "topic": "agent_safety",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "OWASP Agentic AI – Threats and Mitigations",
+  "url": "https://genai.owasp.org/resource/agentic-ai-threats-and-mitigations/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Feb 2025 threat model specific to autonomous agents and tools.",
+   "zh": "2025年2月，自主agent与工具专属威胁模型"
+  }
+ },
+ {
+  "topic": "agent_safety",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Inspect — UK AI Security Institute",
+  "url": "https://inspect.aisi.org.uk/",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "Open eval framework with agent, sandbox and tool-use support.",
+   "zh": "开源评测框架，支持agent、沙箱与工具调用"
+  }
+ },
+ {
+  "topic": "agent_safety",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "How to red team LLM agents — Promptfoo",
+  "url": "https://www.promptfoo.dev/docs/red-team/agents/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Practical open-source red-teaming setup for tool-using agents.",
+   "zh": "工具调用agent的开源红队实践方案"
+  }
+ },
+ {
+  "topic": "agent_safety",
+  "level": "deep",
+  "type": "blog",
+  "lang": "en",
+  "track": "research",
+  "title": "Agentic Misalignment: How LLMs could be insider threats — Anthropic",
+  "url": "https://www.anthropic.com/research/agentic-misalignment",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "June 2025 stress test: 16 models blackmail under goal conflict.",
+   "zh": "2025年6月压力测试：16个模型目标冲突下勒索"
+  }
+ },
+ {
+  "topic": "agent_safety",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "AgentDojo",
+  "url": "https://github.com/ethz-spylab/agentdojo",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "NeurIPS 2024 dynamic benchmark for prompt-injection attacks and defenses.",
+   "zh": "NeurIPS 2024，提示注入攻防动态基准"
+  }
+ },
+ {
+  "topic": "agent_safety",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "research",
+  "title": "Defeating Prompt Injections by Design (CaMeL) — Google DeepMind",
+  "url": "https://arxiv.org/abs/2503.18813",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "March 2025 capability-based design separating control and data flow.",
+   "zh": "2025年3月，基于能力分离控制与数据流"
+  }
+ },
+ {
+  "topic": "agent_safety",
+  "level": "deep",
+  "type": "blog",
+  "lang": "en",
+  "track": "research",
+  "title": "SHADE-Arena: Evaluating sabotage and monitoring in LLM agents",
+  "url": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "June 2025 benchmark for hidden side-tasks and monitor detection.",
+   "zh": "2025年6月，隐藏子任务与监控检测基准"
+  }
+ },
+ {
+  "topic": "agent_safety",
+  "level": "deep",
+  "type": "official",
+  "lang": "en",
+  "track": "research",
+  "title": "Claude's New Constitution — Anthropic",
+  "url": "https://www.anthropic.com/news/claude-new-constitution",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Jan 2026 statement of values and priorities guiding Claude's behavior.",
+   "zh": "2026年1月，Claude行为准则与价值声明"
+  }
+ },
+ {
+  "topic": "backend",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "FastAPI Tutorial - User Guide",
+  "url": "https://fastapi.tiangolo.com/tutorial/",
+  "hours": 8,
+  "must": true,
+  "why": {
+   "en": "Official step-by-step guide: routing, Pydantic models, validation, responses; the core service framework.",
+   "zh": "官方分步指南：路由、Pydantic模型与校验"
+  }
+ },
+ {
+  "topic": "backend",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "MDN: An overview of HTTP",
+  "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Overview",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Client-server model, methods, status codes, headers; baseline vocabulary for any backend interview.",
+   "zh": "客户端-服务器模型与状态码等基础知识"
+  }
+ },
+ {
+  "topic": "backend",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "FastAPI: Concurrency and async/await",
+  "url": "https://fastapi.tiangolo.com/async/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "When to use async def vs def; explains I/O-bound concurrency for LLM/API-heavy services.",
+   "zh": "何时用async def，解释IO密集型并发"
+  }
+ },
+ {
+  "topic": "backend",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "FastAPI: Dependencies (Dependency Injection)",
+  "url": "https://fastapi.tiangolo.com/tutorial/dependencies/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Depends() for DB sessions, auth, config; how production FastAPI code is structured.",
+   "zh": "Depends()实现依赖注入，生产代码结构"
+  }
+ },
+ {
+  "topic": "backend",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "Real Python: Async IO in Python: A Complete Walkthrough",
+  "url": "https://realpython.com/async-io-python/",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "Readable end-to-end asyncio tutorial with event loop mental model and pitfalls.",
+   "zh": "通俗易懂的asyncio教程，含事件循环模型"
+  }
+ },
+ {
+  "topic": "backend",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Pydantic Validation docs (v2) - Get Started",
+  "url": "https://pydantic.dev/docs/validation/latest/get-started/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Pydantic v2 models, validators, settings; used for request/response schemas and LLM structured output.",
+   "zh": "Pydantic v2模型与校验器，用于请求响应schema"
+  }
+ },
+ {
+  "topic": "backend",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "HTTPX: Async Support",
+  "url": "https://www.python-httpx.org/async/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "AsyncClient for calling LLM/TTS APIs concurrently without blocking the event loop.",
+   "zh": "AsyncClient实现LLM、TTS API并发调用"
+  }
+ },
+ {
+  "topic": "backend",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Azure Architecture Center: RESTful web API design",
+  "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Resource naming, HTTP methods, pagination, versioning, async operations; canonical REST design guide.",
+   "zh": "资源命名、分页、版本控制等REST设计指南"
+  }
+ },
+ {
+  "topic": "backend",
+  "level": "deep",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "MDN: Using server-sent events",
+  "url": "https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "SSE protocol and event format; foundation for streaming LLM tokens to clients.",
+   "zh": "SSE协议与事件格式，是流式输出token基础"
+  }
+ },
+ {
+  "topic": "backend",
+  "level": "deep",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "FastAPI: WebSockets",
+  "url": "https://fastapi.tiangolo.com/advanced/websockets/",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "Bidirectional real-time endpoints, ConnectionManager pattern; needed for voice/video sessions.",
+   "zh": "双向实时端点，语音/视频场景所需"
+  }
+ },
+ {
+  "topic": "deploy",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Docker: Get started",
+  "url": "https://docs.docker.com/get-started/",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "Official intro to images, containers, Compose; entry point to containerizing services.",
+   "zh": "官方入门：镜像、容器与Compose"
+  }
+ },
+ {
+  "topic": "deploy",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "Docker Curriculum (docker-curriculum.com)",
+  "url": "https://docker-curriculum.com/",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "Hands-on tutorial from Dockerfiles to multi-container apps and deployment.",
+   "zh": "实战教程，从Dockerfile到多容器部署"
+  }
+ },
+ {
+  "topic": "deploy",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Cloud Run quickstart: Deploy a Python service",
+  "url": "https://docs.cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Build and deploy a Python web service to Cloud Run from source in one command.",
+   "zh": "一条命令，将Python服务部署至Cloud Run"
+  }
+ },
+ {
+  "topic": "deploy",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "GitHub Actions: Quickstart",
+  "url": "https://docs.github.com/en/actions/quickstart",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "First workflow in minutes; CI/CD vocabulary (jobs, steps, runners).",
+   "zh": "几分钟上手首个workflow，CI/CD入门"
+  }
+ },
+ {
+  "topic": "deploy",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Docker: Python language-specific guide",
+  "url": "https://docs.docker.com/guides/python/",
+  "hours": 2,
+  "must": true,
+  "why": {
+   "en": "Containerize a Python app, dev containers, CI; directly applicable to FastAPI services.",
+   "zh": "Python应用容器化，适用于FastAPI服务"
+  }
+ },
+ {
+  "topic": "deploy",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Docker: Building best practices",
+  "url": "https://docs.docker.com/build/building/best-practices/",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "Multi-stage builds, layer caching, small images; faster Cloud Run cold starts.",
+   "zh": "多阶段构建与缓存，加快冷启动"
+  }
+ },
+ {
+  "topic": "deploy",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "uv: Using uv in Docker",
+  "url": "https://docs.astral.sh/uv/guides/integration/docker/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Modern Python dependency management in Dockerfiles with lockfiles and cache mounts.",
+   "zh": "Dockerfile中用uv管理Python依赖"
+  }
+ },
+ {
+  "topic": "deploy",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Cloud Run: General development tips (cold starts, startup)",
+  "url": "https://docs.cloud.google.com/run/docs/tips/general",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "Startup latency, CPU boost, min instances, statelessness; the canonical cold-start guidance.",
+   "zh": "冷启动延迟、CPU加速等经典优化指南"
+  }
+ },
+ {
+  "topic": "deploy",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Cloud Run: Configure secrets for services",
+  "url": "https://docs.cloud.google.com/run/docs/configuring/services/secrets",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "Mount Secret Manager secrets as env vars or volumes in Cloud Run.",
+   "zh": "在Cloud Run中挂载Secret Manager密钥"
+  }
+ },
+ {
+  "topic": "deploy",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "GitHub Actions: Workflow syntax",
+  "url": "https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Reference for triggers, matrices, secrets, environments used in real pipelines.",
+   "zh": "触发器、矩阵、密钥等workflow语法参考"
+  }
+ },
+ {
+  "topic": "deploy",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "job",
+  "title": "google-github-actions/deploy-cloudrun",
+  "url": "https://github.com/google-github-actions/deploy-cloudrun",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Official action to deploy images or source to Cloud Run from GitHub Actions.",
+   "zh": "GitHub Actions部署Cloud Run的官方插件"
+  }
+ },
+ {
+  "topic": "deploy",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "HashiCorp: Get Started - Terraform on Google Cloud",
+  "url": "https://developer.hashicorp.com/terraform/tutorials/gcp-get-started",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "Init/plan/apply on GCP; infrastructure-as-code fundamentals with the google provider.",
+   "zh": "GCP上的Terraform基础设施即代码入门"
+  }
+ },
+ {
+  "topic": "prod_opt",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "OpenAI: Latency optimization guide",
+  "url": "https://developers.openai.com/api/docs/guides/latency-optimization",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "Seven principles: fewer tokens, streaming, parallel requests; TTFT-focused thinking for chat/voice.",
+   "zh": "七条降延迟原则，聚焦首token时间"
+  }
+ },
+ {
+  "topic": "prod_opt",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Claude API: Prompt caching",
+  "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-caching",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "cache_control on shared prefixes cuts cost and TTFT for repeated role-play system prompts.",
+   "zh": "缓存共享前缀，降低成本与首token延迟"
+  }
+ },
+ {
+  "topic": "prod_opt",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Claude API: Streaming Messages",
+  "url": "https://platform.claude.com/docs/en/build-with-claude/streaming",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "SSE event types and deltas; how to stream tokens to reduce perceived latency.",
+   "zh": "SSE事件类型与增量，降低感知延迟"
+  }
+ },
+ {
+  "topic": "prod_opt",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "OpenAI: Prompt caching",
+  "url": "https://developers.openai.com/api/docs/guides/prompt-caching",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "Automatic prefix caching rules; structure prompts static-first to save cost and latency.",
+   "zh": "自动前缀缓存规则，静态内容前置省成本"
+  }
+ },
+ {
+  "topic": "prod_opt",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "OpenAI Cookbook: How to handle rate limits",
+  "url": "https://developers.openai.com/cookbook/examples/how_to_handle_rate_limits",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Worked retry/backoff and batching code; practical fallback strategies.",
+   "zh": "重试退避与批处理代码，实用限流应对"
+  }
+ },
+ {
+  "topic": "prod_opt",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Tenacity: retrying library docs",
+  "url": "https://tenacity.readthedocs.io/en/latest/",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "Decorators for retries with exponential backoff and jitter in Python.",
+   "zh": "Python指数退避重试装饰器库"
+  }
+ },
+ {
+  "topic": "prod_opt",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "LiteLLM: Fallbacks (provider failover)",
+  "url": "https://docs.litellm.ai/docs/proxy/reliability",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Automatic model/provider fallbacks incl. context-window and content-policy fallbacks.",
+   "zh": "自动模型、厂商故障转移机制"
+  }
+ },
+ {
+  "topic": "prod_opt",
+  "level": "deep",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "Martin Fowler: CircuitBreaker",
+  "url": "https://martinfowler.com/bliki/CircuitBreaker.html",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "Closed/open/half-open states to stop cascading failures when a provider degrades.",
+   "zh": "熔断器三态设计，防止级联故障"
+  }
+ },
+ {
+  "topic": "prod_opt",
+  "level": "deep",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "LiteLLM: Caching (Redis and semantic)",
+  "url": "https://docs.litellm.ai/docs/proxy/caching",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Exact and semantic response caching to cut cost and latency.",
+   "zh": "精确与语义响应缓存，降低成本延迟"
+  }
+ },
+ {
+  "topic": "prod_opt",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "job",
+  "title": "GPTCache (semantic cache for LLMs)",
+  "url": "https://github.com/zilliztech/GPTCache",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Embedding-based semantic caching architecture; reference for cache design tradeoffs.",
+   "zh": "基于嵌入的语义缓存架构参考"
+  }
+ },
+ {
+  "topic": "prod_opt",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "job",
+  "title": "RouteLLM: Learning to Route LLMs with Preference Data",
+  "url": "https://arxiv.org/abs/2406.18665",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Router models send easy queries to cheap models; cost/quality routing theory.",
+   "zh": "路由模型将简单查询导向廉价模型"
+  }
+ },
+ {
+  "topic": "realtime",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "MDN: WebRTC API",
+  "url": "https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Peer connections, media capture, signaling; transport basis of voice/video role-play.",
+   "zh": "点对点连接、媒体采集与信令基础"
+  }
+ },
+ {
+  "topic": "realtime",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "OpenAI: Realtime API guide (voice agents)",
+  "url": "https://developers.openai.com/api/docs/guides/realtime",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Speech-to-speech over WebRTC/WebSocket, turn detection; the native low-latency path.",
+   "zh": "WebRTC/WebSocket语音到语音，原生低延迟"
+  }
+ },
+ {
+  "topic": "realtime",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Pipecat docs",
+  "url": "https://docs.pipecat.ai/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Open-source pipeline framework for voice/multimodal agents; frames, processors, transports.",
+   "zh": "开源语音、多模态agent流水线框架"
+  }
+ },
+ {
+  "topic": "realtime",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Pipecat Quickstart",
+  "url": "https://docs.pipecat.ai/getting-started/quickstart",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "Run a Deepgram+OpenAI+Cartesia voice bot locally then deploy.",
+   "zh": "本地运行语音机器人，并部署实践"
+  }
+ },
+ {
+  "topic": "realtime",
+  "level": "deep",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "Daily: How to build the world's fastest voice bot (500ms voice-to-voice)",
+  "url": "https://www.daily.co/blog/the-worlds-fastest-voice-bot/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Latency budget breakdown across network, STT, LLM, TTS and colocation.",
+   "zh": "网络、STT、LLM、TTS各环节延迟预算拆解"
+  }
+ },
+ {
+  "topic": "realtime",
+  "level": "deep",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "Hamming AI: Best voice agent stack selection framework",
+  "url": "https://hamming.ai/resources/best-voice-agent-stack",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Latency targets, cascaded vs speech-to-speech, per-minute STT/LLM/TTS cost breakdown.",
+   "zh": "延迟目标，级联vs语音到语音架构对比"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "intro",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "Hugging Face Deep Reinforcement Learning Course",
+  "url": "https://huggingface.co/learn/deep-rl-course/unit0/introduction",
+  "hours": 30,
+  "must": false,
+  "why": {
+   "en": "Free course covering RL fundamentals, policy gradients, PPO.",
+   "zh": "免费课程：强化学习基础、策略梯度、PPO"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "intro",
+  "type": "video",
+  "lang": "en",
+  "track": "both",
+  "title": "[GRPO Explained] DeepSeekMath — Yannic Kilcher",
+  "url": "https://www.youtube.com/watch?v=bAWV_yrqx4w",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "2025 explainer of GRPO, PPO, KL and advantages from the DeepSeekMath paper.",
+   "zh": "2025年，讲解DeepSeekMath论文中的GRPO"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "core",
+  "type": "book",
+  "lang": "en",
+  "track": "both",
+  "title": "RLHF Book — Nathan Lambert",
+  "url": "https://rlhfbook.com/",
+  "hours": 15,
+  "must": true,
+  "why": {
+   "en": "Free 2025 textbook on RLHF, reward models, DPO, GRPO and RLVR.",
+   "zh": "2025年免费教材：RLHF、DPO、GRPO、RLVR"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "core",
+  "type": "paper",
+  "lang": "en",
+  "track": "both",
+  "title": "DeepSeek-R1: Incentivizing Reasoning Capability via RL",
+  "url": "https://arxiv.org/abs/2501.12948",
+  "hours": 2,
+  "must": true,
+  "why": {
+   "en": "Jan 2025 paper that made GRPO/RLVR the standard reasoning recipe.",
+   "zh": "2025年1月论文，确立GRPO、RLVR推理范式"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "TRL GRPO Trainer docs",
+  "url": "https://huggingface.co/docs/trl/grpo_trainer",
+  "hours": 2,
+  "must": true,
+  "why": {
+   "en": "Official Hugging Face trainer reference for GRPO with reward functions.",
+   "zh": "HF官方GRPO训练器文档，含奖励函数"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Unsloth Reinforcement Learning (GRPO) Guide",
+  "url": "https://unsloth.ai/docs/get-started/reinforcement-learning-rl-guide",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Practical 2025 guide plus free Colab notebooks for GRPO on one GPU.",
+   "zh": "2025年GRPO实操指南，含单GPU Colab代码"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "research",
+  "title": "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
+  "url": "https://arxiv.org/abs/2509.02547",
+  "hours": 4,
+  "must": true,
+  "why": {
+   "en": "Sept 2025 survey of algorithms, environments, benchmarks and frameworks.",
+   "zh": "2025年9月，agentic RL算法与框架综述"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "verl (volcengine) — RL framework for LLMs",
+  "url": "https://github.com/volcengine/verl",
+  "hours": 10,
+  "must": false,
+  "why": {
+   "en": "Widely used 2025 HybridFlow RL trainer; PPO/GRPO, multi-turn tool agents.",
+   "zh": "2025年主流RL训练框架，支持多轮工具agent"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "deep",
+  "type": "official",
+  "lang": "en",
+  "track": "research",
+  "title": "verl documentation",
+  "url": "https://verl.readthedocs.io/en/latest/",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "Install, config and agentic/multi-turn rollout guides for verl.",
+   "zh": "verl安装、配置与多轮rollout指南"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "OpenRLHF",
+  "url": "https://github.com/OpenRLHF/OpenRLHF",
+  "hours": 6,
+  "must": false,
+  "why": {
+   "en": "Ray + vLLM agentic RL framework; readable reference implementation.",
+   "zh": "Ray+vLLM的agentic RL框架，代码易读"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "SkyRL (NovaSky)",
+  "url": "https://github.com/NovaSky-AI/SkyRL",
+  "hours": 6,
+  "must": false,
+  "why": {
+   "en": "2025 full-stack RL library targeting long-horizon multi-turn agents.",
+   "zh": "2025年，全栈RL库面向长程多轮agent"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "rLLM (Agentica)",
+  "url": "https://github.com/rllm-org/rllm",
+  "hours": 6,
+  "must": false,
+  "why": {
+   "en": "2025 framework: train any agent code with RL across sandboxes/backends.",
+   "zh": "2025年框架，跨沙箱用RL训练任意agent代码"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "AReaL (inclusionAI)",
+  "url": "https://github.com/inclusionAI/AReaL",
+  "hours": 6,
+  "must": false,
+  "why": {
+   "en": "2025 fully asynchronous RL system for agentic and reasoning training.",
+   "zh": "2025年，全异步RL系统用于agent与推理训练"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "both",
+  "title": "Agent Lightning (Microsoft)",
+  "url": "https://github.com/microsoft/agent-lightning",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "2025: RL-train agents from any framework with near-zero code change.",
+   "zh": "2025年，几乎零改动为任意框架做RL训练"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "Search-R1",
+  "url": "https://github.com/PeterGriffinJin/Search-R1",
+  "hours": 5,
+  "must": false,
+  "why": {
+   "en": "2025 reference for RL-training LLMs to interleave reasoning and search calls.",
+   "zh": "2025年参考实现，RL训练推理与检索交替"
+  }
+ },
+ {
+  "topic": "agentic_rl",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "SWE-smith",
+  "url": "https://github.com/SWE-bench/SWE-smith",
+  "hours": 5,
+  "must": false,
+  "why": {
+   "en": "2025 toolkit to synthesize thousands of SWE tasks for training agents.",
+   "zh": "2025年工具，批量合成SWE训练任务"
+  }
+ },
+ {
+  "topic": "coding_agents",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet",
+  "url": "https://www.anthropic.com/engineering/swe-bench-sonnet",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "Jan 2025 post: minimal bash+edit scaffold explained end to end.",
+   "zh": "2025年1月，极简bash+编辑脚手架详解"
+  }
+ },
+ {
+  "topic": "coding_agents",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "SWE-bench Leaderboards",
+  "url": "https://www.swebench.com/",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "Canonical benchmark site for issue-resolving coding agents.",
+   "zh": "编码agent解决issue的权威榜单"
+  }
+ },
+ {
+  "topic": "coding_agents",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "both",
+  "title": "mini-swe-agent",
+  "url": "https://github.com/SWE-agent/mini-swe-agent",
+  "hours": 2,
+  "must": true,
+  "why": {
+   "en": "100-line agent scoring 70%+ on SWE-bench; ideal to read fully.",
+   "zh": "百行代码agent，SWE-bench超70%，适合精读"
+  }
+ },
+ {
+  "topic": "coding_agents",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "SWE-agent",
+  "url": "https://github.com/SWE-agent/SWE-agent",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "Princeton 2024 agent-computer-interface design for GitHub issue fixing.",
+   "zh": "普林斯顿2024年，agent计算机接口设计"
+  }
+ },
+ {
+  "topic": "coding_agents",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Claude Code documentation",
+  "url": "https://code.claude.com/docs/en/overview",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "Official docs: CLAUDE.md, hooks, subagents, MCP, headless mode.",
+   "zh": "官方文档：CLAUDE.md、hooks、子agent、MCP"
+  }
+ },
+ {
+  "topic": "coding_agents",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Claude Code best practices",
+  "url": "https://code.claude.com/docs/en/best-practices",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Anthropic's agentic-coding workflow tips: verify, plan, manage context.",
+   "zh": "Anthropic官方agentic编码工作流建议"
+  }
+ },
+ {
+  "topic": "coding_agents",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Codex CLI — OpenAI Developers",
+  "url": "https://developers.openai.com/codex/cli",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Official docs for OpenAI's open-source terminal coding agent (2025).",
+   "zh": "OpenAI开源终端编码agent官方文档(2025)"
+  }
+ },
+ {
+  "topic": "coding_agents",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Aider documentation",
+  "url": "https://aider.chat/docs/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Mature open-source pair-programming agent; repo-map and edit formats.",
+   "zh": "成熟开源结对编程agent，含repo-map"
+  }
+ },
+ {
+  "topic": "coding_agents",
+  "level": "deep",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "OpenHands documentation",
+  "url": "https://docs.openhands.dev/overview/introduction.md",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "Open platform for autonomous software agents; sandboxed runtime.",
+   "zh": "开源自主软件agent平台，沙箱运行"
+  }
+ },
+ {
+  "topic": "coding_agents",
+  "level": "deep",
+  "type": "official",
+  "lang": "en",
+  "track": "research",
+  "title": "Terminal-Bench",
+  "url": "https://www.tbench.ai/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "2025 benchmark for agents in real terminal environments; leaderboard.",
+   "zh": "2025年，真实终端环境agent基准榜单"
+  }
+ },
+ {
+  "topic": "computer_use_agents",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Computer use tool — Claude Platform Docs",
+  "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/computer-use-tool",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "Official screenshot/mouse/keyboard tool docs and safety notes.",
+   "zh": "官方截图、鼠标、键盘工具文档与安全说明"
+  }
+ },
+ {
+  "topic": "computer_use_agents",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Computer use — OpenAI API",
+  "url": "https://developers.openai.com/api/docs/guides/tools-computer-use",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "CUA model docs for browser/desktop control via Responses API (2025).",
+   "zh": "2025年，CUA模型浏览器/桌面控制文档"
+  }
+ },
+ {
+  "topic": "computer_use_agents",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "job",
+  "title": "browser-use",
+  "url": "https://github.com/browser-use/browser-use",
+  "hours": 3,
+  "must": true,
+  "why": {
+   "en": "Popular 2025 Python library making websites accessible to agents.",
+   "zh": "2025年热门Python库，让agent访问网页"
+  }
+ },
+ {
+  "topic": "computer_use_agents",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "job",
+  "title": "Playwright MCP (Microsoft)",
+  "url": "https://github.com/microsoft/playwright-mcp",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Accessibility-tree browser automation via MCP, no vision needed.",
+   "zh": "基于无障碍树的MCP浏览器自动化，无需视觉"
+  }
+ },
+ {
+  "topic": "computer_use_agents",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "job",
+  "title": "Stagehand (Browserbase)",
+  "url": "https://github.com/browserbase/stagehand",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "SDK mixing Playwright code with act/extract/observe AI primitives.",
+   "zh": "融合Playwright与AI操作原语的SDK"
+  }
+ },
+ {
+  "topic": "computer_use_agents",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "research",
+  "title": "OSWorld benchmark",
+  "url": "https://osworld-v1.xlang.ai/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "2024 real-OS benchmark for multimodal agents; key research metric.",
+   "zh": "2024年，真实操作系统多模态agent基准"
+  }
+ },
+ {
+  "topic": "computer_use_agents",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "research",
+  "title": "WebArena",
+  "url": "https://webarena.dev/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "2023 realistic self-hosted web environments for agent evaluation.",
+   "zh": "2023年，自建真实网页环境评测agent"
+  }
+ },
+ {
+  "topic": "computer_use_agents",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "research",
+  "title": "BrowseComp: a benchmark for browsing agents — OpenAI",
+  "url": "https://openai.com/index/browsecomp/",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "April 2025 hard-to-find-information benchmark for browsing agents.",
+   "zh": "2025年4月，难检索信息浏览agent基准"
+  }
+ },
+ {
+  "topic": "computer_use_agents",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "UI-TARS (ByteDance)",
+  "url": "https://github.com/bytedance/UI-TARS",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "2025 open native GUI agent model for desktop, mobile and web.",
+   "zh": "2025年开源原生GUI agent模型"
+  }
+ },
+ {
+  "topic": "computer_use_agents",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "Agent S (Simular)",
+  "url": "https://github.com/simular-ai/Agent-S",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "Open agentic framework for computer use with experience memory (2024-25).",
+   "zh": "2024-25年开源计算机操作agent框架，含经验记忆"
+  }
+ },
+ {
+  "topic": "computer_use_agents",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "research",
+  "title": "GUI Agents with Foundation Models: A Comprehensive Survey",
+  "url": "https://arxiv.org/abs/2411.04890",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "Nov 2024 survey of (M)LLM GUI agents, datasets and benchmarks.",
+   "zh": "2024年11月，GUI agent综述，含数据与基准"
+  }
+ },
+ {
+  "topic": "multi_agent_protocols",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Don't Build Multi-Agents — Cognition",
+  "url": "https://cognition.com/blog/dont-build-multi-agents",
+  "hours": 0.5,
+  "must": true,
+  "why": {
+   "en": "June 2025 contrarian take: share context, avoid conflicting decisions.",
+   "zh": "2025年6月，反主流观点：共享上下文，避免冲突"
+  }
+ },
+ {
+  "topic": "multi_agent_protocols",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "How we built our multi-agent research system — Anthropic",
+  "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "June 2025 orchestrator-subagent architecture, prompting and eval lessons.",
+   "zh": "2025年6月，编排者-子agent架构与评测经验"
+  }
+ },
+ {
+  "topic": "multi_agent_protocols",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "A2A Protocol specification",
+  "url": "https://a2a-protocol.org/latest/specification/",
+  "hours": 2,
+  "must": true,
+  "why": {
+   "en": "Linux Foundation agent-to-agent interoperability spec (2025).",
+   "zh": "Linux基金会agent互操作协议(2025)"
+  }
+ },
+ {
+  "topic": "multi_agent_protocols",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Model Context Protocol specification (2025-06-18)",
+  "url": "https://modelcontextprotocol.io/specification/2025-06-18",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "Authoritative spec for tool/resource/prompt integration via JSON-RPC.",
+   "zh": "工具、资源、提示集成的权威JSON-RPC规范"
+  }
+ },
+ {
+  "topic": "multi_agent_protocols",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Multi-agent — LangChain/LangGraph docs",
+  "url": "https://docs.langchain.com/oss/python/langchain/multi-agent",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Supervisor, swarm and handoff patterns implemented as graphs.",
+   "zh": "用图实现的supervisor、swarm、handoff模式"
+  }
+ },
+ {
+  "topic": "multi_agent_protocols",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Handoffs — OpenAI Agents SDK",
+  "url": "https://openai.github.io/openai-agents-python/handoffs/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Minimal handoff primitive for delegating between agents (2025).",
+   "zh": "2025年，agent间委托的极简handoff原语"
+  }
+ },
+ {
+  "topic": "multi_agent_protocols",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "AutoGen documentation (Microsoft)",
+  "url": "https://microsoft.github.io/autogen/stable/",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "Event-driven multi-agent framework; conversation patterns reference.",
+   "zh": "事件驱动多agent框架，对话模式参考"
+  }
+ },
+ {
+  "topic": "multi_agent_protocols",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "Microsoft Agent Framework overview",
+  "url": "https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "2025 successor merging AutoGen and Semantic Kernel; workflows, A2A, MCP.",
+   "zh": "2025年，融合AutoGen与SK的新框架"
+  }
+ },
+ {
+  "topic": "multi_agent_protocols",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "CrewAI documentation",
+  "url": "https://docs.crewai.com/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Role-based crews and flows; popular in industry prototypes.",
+   "zh": "基于角色的crew与flow，业界原型常用"
+  }
+ },
+ {
+  "topic": "multi_agent_protocols",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "research",
+  "title": "Why Do Multi-Agent LLM Systems Fail? (MAST)",
+  "url": "https://arxiv.org/abs/2503.13657",
+  "hours": 2,
+  "must": true,
+  "why": {
+   "en": "March 2025 taxonomy of 14 failure modes from 1000+ annotated traces.",
+   "zh": "2025年3月，基于千余条轨迹的14种失败模式"
+  }
+ },
+ {
+  "topic": "multi_agent_protocols",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "MetaGPT",
+  "url": "https://github.com/FoundationAgents/MetaGPT",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "SOP-driven multi-agent software company; ICLR 2024 oral.",
+   "zh": "SOP驱动的多agent软件公司，ICLR 2024"
+  }
+ },
+ {
+  "topic": "multi_agent_protocols",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "MAST — Multi-Agent Systems Failure Taxonomy repo",
+  "url": "https://github.com/multi-agent-systems-failure-taxonomy/MAST",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Annotated traces and LLM-annotator pipeline accompanying the paper.",
+   "zh": "论文配套标注轨迹与LLM标注流水线"
+  }
+ },
+ {
+  "topic": "interpretability_auditing",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Reasoning models don't always say what they think — Anthropic",
+  "url": "https://www.anthropic.com/research/reasoning-models-dont-say-think",
+  "hours": 0.5,
+  "must": true,
+  "why": {
+   "en": "April 2025: CoT faithfulness is low; implications for auditing.",
+   "zh": "2025年4月：思维链忠实度低，影响审计"
+  }
+ },
+ {
+  "topic": "interpretability_auditing",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Tracing the thoughts of a large language model — Anthropic",
+  "url": "https://www.anthropic.com/research/tracing-thoughts-language-model",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "March 2025 accessible summary of circuit tracing results.",
+   "zh": "2025年3月，电路追踪成果通俗解读"
+  }
+ },
+ {
+  "topic": "interpretability_auditing",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "AI Agent Observability — OpenTelemetry blog",
+  "url": "https://opentelemetry.io/blog/2025/ai-agent-observability/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "March 2025 standards for tracing agent runs, tools and costs.",
+   "zh": "2025年3月，agent运行、工具与成本追踪标准"
+  }
+ },
+ {
+  "topic": "interpretability_auditing",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "OpenTelemetry GenAI semantic conventions",
+  "url": "https://github.com/open-telemetry/semantic-conventions-genai",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Spans, metrics and events for LLM calls, agents and MCP.",
+   "zh": "LLM调用、agent与MCP的span、指标规范"
+  }
+ },
+ {
+  "topic": "interpretability_auditing",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "TransformerLens",
+  "url": "https://github.com/TransformerLensOrg/TransformerLens",
+  "hours": 6,
+  "must": false,
+  "why": {
+   "en": "Standard library for mechanistic interpretability of GPT-style models.",
+   "zh": "GPT类模型机制可解释性标准库"
+  }
+ },
+ {
+  "topic": "interpretability_auditing",
+  "level": "core",
+  "type": "course",
+  "lang": "en",
+  "track": "research",
+  "title": "ARENA — AI Safety Education",
+  "url": "https://www.arena.education/",
+  "hours": 40,
+  "must": false,
+  "why": {
+   "en": "Free hands-on curriculum: transformer interp, RL, evals.",
+   "zh": "免费实战课程：transformer可解释性、RL、评测"
+  }
+ },
+ {
+  "topic": "interpretability_auditing",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "research",
+  "title": "On the Biology of a Large Language Model — Transformer Circuits",
+  "url": "https://transformer-circuits.pub/2025/attribution-graphs/biology.html",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "March 2025 attribution-graph case studies on Claude 3.5 Haiku.",
+   "zh": "2025年3月，Claude 3.5 Haiku归因图案例研究"
+  }
+ },
+ {
+  "topic": "interpretability_auditing",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "research",
+  "title": "Chain of Thought Monitorability: A New and Fragile Opportunity",
+  "url": "https://arxiv.org/abs/2507.11473",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "July 2025 cross-lab position paper on monitoring agent reasoning traces.",
+   "zh": "2025年7月，跨实验室监控agent推理轨迹"
+  }
+ },
+ {
+  "topic": "interpretability_auditing",
+  "level": "deep",
+  "type": "paper",
+  "lang": "en",
+  "track": "both",
+  "title": "AgentOps: Enabling Observability of LLM Agents",
+  "url": "https://arxiv.org/abs/2411.05285",
+  "hours": 1.5,
+  "must": false,
+  "why": {
+   "en": "Nov 2024 taxonomy of traceable artifacts across the agent lifecycle.",
+   "zh": "2024年11月，agent生命周期可追踪产物分类"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "intro",
+  "type": "code",
+  "lang": "en",
+  "track": "job",
+  "title": "LangGraph ReAct Agent Template",
+  "url": "https://github.com/langchain-ai/react-agent",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "Minimal LangGraph Studio template to extend with your own tools",
+   "zh": "极简LangGraph Studio模板，可自行扩展工具"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "LiveKit Agents Voice AI Quickstart",
+  "url": "https://docs.livekit.io/agents/start/voice-ai/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Deploy a voice assistant in 10 minutes, Python or Node",
+   "zh": "10分钟部署语音助手，支持Python、Node"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "intro",
+  "type": "course",
+  "lang": "en",
+  "track": "job",
+  "title": "Kaggle 5-Day AI Agents Intensive (with Google)",
+  "url": "https://www.kaggle.com/learn-guide/5-day-agents",
+  "hours": 15,
+  "must": false,
+  "why": {
+   "en": "Free hands-on agents course with capstone and community",
+   "zh": "免费实战agent课程，含结业项目与社区"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "intro",
+  "type": "course",
+  "lang": "en",
+  "track": "job",
+  "title": "DeepLearning.AI Short Courses (agent tracks)",
+  "url": "https://www.deeplearning.ai/short-courses/",
+  "hours": 10,
+  "must": false,
+  "why": {
+   "en": "Catalog of 1-2 hour courses: Agentic AI, crewAI, LangGraph, evals",
+   "zh": "1-2小时短课集合：agentic AI、crewAI等"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "lablab.ai AI hackathons",
+  "url": "https://lablab.ai/",
+  "hours": 20,
+  "must": false,
+  "why": {
+   "en": "Free recurring AI hackathons; deadlines and teams to ship projects",
+   "zh": "免费常态化AI黑客松，组队限时出项目"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "job",
+  "title": "Anthropic Quickstarts (customer support, computer use, coding agent)",
+  "url": "https://github.com/anthropics/anthropic-quickstarts",
+  "hours": 10,
+  "must": true,
+  "why": {
+   "en": "Clonable Claude reference apps: support agent, computer/browser use, autonomous coder",
+   "zh": "可克隆的Claude示例应用：客服、计算机使用、编码"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "core",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "HF Agents Course Unit 4: Final Project (GAIA)",
+  "url": "https://huggingface.co/learn/agents-course/unit4/introduction",
+  "hours": 15,
+  "must": true,
+  "why": {
+   "en": "Build an agent, score 30 percent on GAIA, earn certificate",
+   "zh": "构建agent，GAIA得分30%可获证书"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "job",
+  "title": "Claude Agent SDK for Python",
+  "url": "https://github.com/anthropics/claude-agent-sdk-python",
+  "hours": 6,
+  "must": false,
+  "why": {
+   "en": "Build Claude Code-style agents with tools, hooks and MCP in Python",
+   "zh": "用Python构建Claude Code风格agent"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "job",
+  "title": "OpenAI Agents SDK (with examples directory)",
+  "url": "https://github.com/openai/openai-agents-python",
+  "hours": 8,
+  "must": false,
+  "why": {
+   "en": "Lightweight multi-agent framework; examples folder covers handoffs, guardrails, voice",
+   "zh": "轻量多agent框架，含handoff、护栏、语音示例"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "job",
+  "title": "OpenAI Customer Service Agents Demo",
+  "url": "https://github.com/openai/openai-cs-agents-demo",
+  "hours": 6,
+  "must": false,
+  "why": {
+   "en": "Six-agent airline support system with triage, guardrails and Next.js UI",
+   "zh": "六agent航空客服系统，含分诊与护栏"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "both",
+  "title": "smolagents",
+  "url": "https://github.com/huggingface/smolagents",
+  "hours": 6,
+  "must": false,
+  "why": {
+   "en": "1k-line code-agent library; sandboxed execution, MCP, many examples",
+   "zh": "千行代码agent库，支持沙箱执行与MCP"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "deep",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "Deep Research From Scratch (LangChain)",
+  "url": "https://github.com/langchain-ai/deep_research_from_scratch",
+  "hours": 12,
+  "must": false,
+  "why": {
+   "en": "Five notebooks: scoping, research agent, MCP, multi-agent, full system",
+   "zh": "五个notebook：范围界定到完整研究系统"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "deep",
+  "type": "code",
+  "lang": "en",
+  "track": "both",
+  "title": "GPT Researcher",
+  "url": "https://github.com/assafelovic/gpt-researcher",
+  "hours": 8,
+  "must": false,
+  "why": {
+   "en": "Popular open deep-research agent to study, fork and extend",
+   "zh": "热门开源深度研究agent，可学习与扩展"
+  }
+ },
+ {
+  "topic": "project_ideas",
+  "level": "deep",
+  "type": "blog",
+  "lang": "en",
+  "track": "research",
+  "title": "Open-source DeepResearch (Hugging Face)",
+  "url": "https://huggingface.co/blog/open-deep-research",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "24-hour reproduction of Deep Research with smolagents; GAIA results",
+   "zh": "24小时用smolagents复现Deep Research"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "intro",
+  "type": "paper",
+  "lang": "en",
+  "track": "research",
+  "title": "How to Read a Paper (S. Keshav)",
+  "url": "https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "Classic three-pass method for reading research papers efficiently",
+   "zh": "经典三遍法，高效阅读研究论文"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "research",
+  "title": "You and Your Research (Richard Hamming)",
+  "url": "https://www.cs.virginia.edu/~robins/YouAndYourResearch.html",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Timeless talk on choosing important problems and doing great work",
+   "zh": "经典演讲：如何选择重要问题，做出好工作"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "intro",
+  "type": "paper",
+  "lang": "en",
+  "track": "research",
+  "title": "How to Do Research at the MIT AI Lab",
+  "url": "https://dspace.mit.edu/handle/1721.1/41487",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Classic MIT guide on advisors, reading, writing, and research taste",
+   "zh": "MIT经典指南：导师、阅读、写作与研究品味"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "research",
+  "title": "alphaXiv",
+  "url": "https://www.alphaxiv.org/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Discuss and track trending arXiv papers and researchers",
+   "zh": "讨论与追踪arXiv热门论文和研究者"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Hugging Face Daily Papers",
+  "url": "https://huggingface.co/papers",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Community-curated daily feed of trending AI papers",
+   "zh": "社区精选的每日AI热门论文"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "research",
+  "title": "Semantic Scholar",
+  "url": "https://www.semanticscholar.org/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "AI-powered literature search, citation graphs and alerts",
+   "zh": "AI驱动的文献检索、引用图谱与提醒"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "intro",
+  "type": "code",
+  "lang": "en",
+  "track": "both",
+  "title": "awesome-ai-agents (e2b-dev)",
+  "url": "https://github.com/e2b-dev/awesome-ai-agents",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "29k-star catalog of autonomous agent projects and products",
+   "zh": "2.9万star的自主agent项目产品目录"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "research",
+  "title": "An Opinionated Guide to ML Research (John Schulman)",
+  "url": "http://joschu.net/blog/opinionated-guide-ml-research.html",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "Problem selection, goal-driven research, notebooks, reimplementing papers",
+   "zh": "选题、目标驱动研究、复现论文的心得"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "research",
+  "title": "How to Become a Mechanistic Interpretability Researcher (Neel Nanda)",
+  "url": "https://www.lesswrong.com/posts/jP9KDyMkchuv6tHwm/how-to-become-a-mechanistic-interpretability-researcher",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Learn-by-doing research roadmap; transferable to agent research",
+   "zh": "边做边学的研究路线，可迁移到agent研究"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "core",
+  "type": "video",
+  "lang": "en",
+  "track": "research",
+  "title": "How to Write a Great Research Paper (Simon Peyton Jones)",
+  "url": "https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Seven concrete suggestions plus slides and talk video",
+   "zh": "写好论文的七条建议，含幻灯片与视频"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "ReAct official code (ysymyth/ReAct)",
+  "url": "https://github.com/ysymyth/ReAct",
+  "hours": 8,
+  "must": false,
+  "why": {
+   "en": "Reproduce ReAct on HotpotQA, FEVER, AlfWorld, WebShop as practice",
+   "zh": "在多个数据集上复现ReAct的实践代码"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "research",
+  "title": "LLMAgentPapers (zjunlp)",
+  "url": "https://github.com/zjunlp/LLMAgentPapers",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "Must-read agent paper list: memory, planning, tools, multi-agent, benchmarks",
+   "zh": "agent必读论文清单：记忆、规划、工具、多agent"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "core",
+  "type": "code",
+  "lang": "en",
+  "track": "both",
+  "title": "awesome-llm-agents (kaushikb11)",
+  "url": "https://github.com/kaushikb11/awesome-llm-agents",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Updated 2026 list of 60+ agent frameworks and tools",
+   "zh": "2026年更新，60余个agent框架与工具列表"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "deep",
+  "type": "official",
+  "lang": "en",
+  "track": "research",
+  "title": "COLM 2026 Conference on Language Modeling",
+  "url": "https://colm.eventhosts.cc/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "LM-focused venue; key target for agent papers alongside NeurIPS/ICLR",
+   "zh": "语言模型专属会议，agent论文重要投稿地"
+  }
+ },
+ {
+  "topic": "research_howto",
+  "level": "deep",
+  "type": "official",
+  "lang": "en",
+  "track": "research",
+  "title": "NeurIPS 2026",
+  "url": "https://neurips.cc/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Flagship ML venue; check agent workshops and datasets-benchmarks track",
+   "zh": "顶级ML会议，关注agent workshop与基准赛道"
+  }
+ },
+ {
+  "topic": "career_job",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "roadmap.sh AI Agents Roadmap",
+  "url": "https://roadmap.sh/ai-agents",
+  "hours": 2,
+  "must": true,
+  "why": {
+   "en": "Step-by-step roadmap to design, build and ship agents",
+   "zh": "分步路线图：设计、构建、上线agent"
+  }
+ },
+ {
+  "topic": "career_job",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "The Rise of the AI Engineer (Latent Space)",
+  "url": "https://www.latent.space/p/ai-engineer",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "Defines the AI Engineer role versus ML engineer",
+   "zh": "界定AI工程师与ML工程师角色差异"
+  }
+ },
+ {
+  "topic": "career_job",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "roadmap.sh AI Engineer Roadmap",
+  "url": "https://roadmap.sh/ai-engineer",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Skill map for AI engineers using pre-trained models and tools",
+   "zh": "AI工程师技能地图，聚焦预训练模型与工具"
+  }
+ },
+ {
+  "topic": "career_job",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "Behavioral Interviews (Tech Interview Handbook)",
+  "url": "https://www.techinterviewhandbook.org/behavioral-interview/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "STAR method and story prep for behavioral rounds",
+   "zh": "行为面试：STAR法则与故事准备"
+  }
+ },
+ {
+  "topic": "career_job",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "NeetCode Roadmap",
+  "url": "https://neetcode.io/roadmap",
+  "hours": 40,
+  "must": false,
+  "why": {
+   "en": "Light structured DSA practice path for coding screens",
+   "zh": "轻量结构化算法练习路径，应对笔试"
+  }
+ },
+ {
+  "topic": "career_job",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "How to Write a Great Technical Blog Post (freeCodeCamp)",
+  "url": "https://www.freecodecamp.org/news/how-to-write-a-great-technical-blog-post-414c414b67f6/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Five steps to write up a project for your portfolio",
+   "zh": "五步撰写项目博客，充实作品集"
+  }
+ },
+ {
+  "topic": "career_job",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "Learn in Public (swyx)",
+  "url": "https://www.swyx.io/learn-in-public",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Why sharing projects publicly builds a portfolio and network",
+   "zh": "公开分享项目，如何建立作品集与人脉"
+  }
+ },
+ {
+  "topic": "career_job",
+  "level": "core",
+  "type": "book",
+  "lang": "en",
+  "track": "job",
+  "title": "Introduction to Machine Learning Interviews Book (Chip Huyen)",
+  "url": "https://huyenchip.com/ml-interviews-book/",
+  "hours": 10,
+  "must": false,
+  "why": {
+   "en": "Free book: ML interview process, 200+ questions, systems design",
+   "zh": "免费书籍：ML面试流程、200+题目与系统设计"
+  }
+ },
+ {
+  "topic": "career_job",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "Building a Generative AI Platform (Chip Huyen)",
+  "url": "https://huyenchip.com/2024/07/25/genai-platform.html",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "Reference architecture for LLM system design interviews",
+   "zh": "大模型系统设计面试参考架构"
+  }
+ },
+ {
+  "topic": "career_job",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "Patterns for Building LLM-based Systems (Eugene Yan)",
+  "url": "https://eugeneyan.com/writing/llm-patterns/",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "Evals, RAG, caching, guardrails, UX patterns for production LLM apps",
+   "zh": "生产级LLM应用的评测、RAG、缓存等模式"
+  }
+ },
+ {
+  "topic": "career_job",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "Generative AI System Design Interview Guide (System Design Handbook)",
+  "url": "https://www.systemdesignhandbook.com/guides/generative-ai-system-design-interview/",
+  "hours": 2,
+  "must": false,
+  "why": {
+   "en": "9-step framework: orchestration, RAG, cost, safety, observability",
+   "zh": "九步框架：编排、RAG、成本、安全、可观测"
+  }
+ },
+ {
+  "topic": "career_job",
+  "level": "core",
+  "type": "video",
+  "lang": "en",
+  "track": "job",
+  "title": "AI Engineer (World's Fair) YouTube channel",
+  "url": "https://www.youtube.com/@aiDotEngineer",
+  "hours": 10,
+  "must": false,
+  "why": {
+   "en": "Conference talks from practitioners building agents in production",
+   "zh": "从业者分享生产环境agent构建的会议演讲"
+  }
+ },
+ {
+  "topic": "career_job",
+  "level": "deep",
+  "type": "course",
+  "lang": "en",
+  "track": "job",
+  "title": "AI Evals for Engineers & PMs (Maven, Hamel & Shreya; paid)",
+  "url": "https://maven.com/parlance-labs/evals",
+  "hours": 30,
+  "must": false,
+  "why": {
+   "en": "Paid 6-week live course on agent evals, error analysis, regression tests",
+   "zh": "付费六周直播课：agent评测、错误分析"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "job",
+  "title": "Latent Space newsletter and podcast",
+  "url": "https://www.latent.space/",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "Top AI engineer newsletter and podcast on agents and infra",
+   "zh": "顶尖AI工程师通讯与播客，聚焦agent与基础设施"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Simon Willison's Weblog",
+  "url": "https://simonwillison.net/",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "Daily hands-on notes on LLMs, coding agents and tools",
+   "zh": "每日实战笔记：LLM、编码agent与工具"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "The Batch (DeepLearning.AI)",
+  "url": "https://www.deeplearning.ai/the-batch/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Weekly accessible AI news digest from Andrew Ng's team",
+   "zh": "吴恩达团队出品的每周AI新闻摘要"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "LangChain Blog",
+  "url": "https://www.langchain.com/blog",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Tutorials and case studies on LangGraph, Deep Agents, LangSmith",
+   "zh": "LangGraph、Deep Agents教程案例"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "Hugging Face Discord",
+  "url": "https://hf.co/join/discord",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Large open-source ML community; agents course channels",
+   "zh": "大型开源ML社区，含agent课程频道"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "LangChain Forum",
+  "url": "https://forum.langchain.com/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Official Q&A community for LangChain and agent apps",
+   "zh": "LangChain及agent应用官方问答社区"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "intro",
+  "type": "official",
+  "lang": "en",
+  "track": "job",
+  "title": "AI Engineer conferences (World's Fair, Summit)",
+  "url": "https://www.ai.engineer/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Practitioner conference series with free talk recordings",
+   "zh": "从业者会议系列，提供免费演讲录像"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "intro",
+  "type": "blog",
+  "lang": "zh",
+  "track": "both",
+  "title": "机器之心 (Synced)",
+  "url": "https://www.jiqizhixin.com/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Leading Chinese AI news and research coverage",
+   "zh": "中文领先AI新闻与研究报道"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "intro",
+  "type": "blog",
+  "lang": "zh",
+  "track": "both",
+  "title": "量子位 (QbitAI)",
+  "url": "https://www.qbitai.com/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Chinese AI industry news and product coverage",
+   "zh": "中文AI产业新闻与产品报道"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "intro",
+  "type": "official",
+  "lang": "zh",
+  "track": "both",
+  "title": "通往AGI之路 (WaytoAGI)",
+  "url": "https://www.waytoagi.com/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Largest Chinese open AI wiki and community knowledge base",
+   "zh": "最大的中文开源AI维基与社区知识库"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "research",
+  "title": "Interconnects (Nathan Lambert)",
+  "url": "https://www.interconnects.ai/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Insider analysis of frontier models, RL and open models",
+   "zh": "前沿模型、RL与开源模型的内部人视角分析"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "research",
+  "title": "Import AI (Jack Clark)",
+  "url": "https://importai.substack.com/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Weekly research-focused newsletter with policy context",
+   "zh": "每周科研向通讯，兼顾政策背景"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "both",
+  "title": "OpenAI Research news",
+  "url": "https://openai.com/news/research/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Official research and model announcements",
+   "zh": "官方研究与模型发布动态"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "core",
+  "type": "official",
+  "lang": "en",
+  "track": "research",
+  "title": "Google DeepMind Blog",
+  "url": "https://deepmind.google/discover/blog/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Research breakthroughs and model releases from DeepMind",
+   "zh": "DeepMind研究突破与模型发布"
+  }
+ },
+ {
+  "topic": "community_stay_current",
+  "level": "core",
+  "type": "official",
+  "lang": "zh",
+  "track": "research",
+  "title": "智源社区 (BAAI Hub)",
+  "url": "https://hub.baai.ac.cn/",
+  "hours": 1,
+  "must": false,
+  "why": {
+   "en": "Chinese academic AI community with talks and paper digests",
+   "zh": "中文学术AI社区，含讲座与论文摘要"
+  }
+ },
+ {
+  "topic": "open_problems_reading",
+  "level": "intro",
+  "type": "video",
+  "lang": "en",
+  "track": "both",
+  "title": "Andrej Karpathy: Software Is Changing (Again) — YC AI Startup School",
+  "url": "https://www.youtube.com/watch?v=LCEmiRjPEtQ",
+  "hours": 0.75,
+  "must": true,
+  "why": {
+   "en": "June 2025 Software 3.0 talk: LLM OS, partial autonomy, agent-native software.",
+   "zh": "2025年6月演讲：LLM操作系统与软件3.0"
+  }
+ },
+ {
+  "topic": "open_problems_reading",
+  "level": "intro",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "LLM Powered Autonomous Agents — Lilian Weng",
+  "url": "https://lilianweng.github.io/posts/2023-06-23-agent/",
+  "hours": 1.5,
+  "must": true,
+  "why": {
+   "en": "June 2023 canonical framing: planning, memory, tool use.",
+   "zh": "2023年6月经典框架：规划、记忆、工具使用"
+  }
+ },
+ {
+  "topic": "open_problems_reading",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Effective context engineering for AI agents — Anthropic",
+  "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+  "hours": 1,
+  "must": true,
+  "why": {
+   "en": "Sept 2025 guidance on managing context for long-horizon agents.",
+   "zh": "2025年9月，长程agent上下文管理指南"
+  }
+ },
+ {
+  "topic": "open_problems_reading",
+  "level": "core",
+  "type": "book",
+  "lang": "en",
+  "track": "job",
+  "title": "AI Engineering — Chip Huyen (O'Reilly)",
+  "url": "https://www.oreilly.com/library/view/ai-engineering/9781098166298/",
+  "hours": 25,
+  "must": false,
+  "why": {
+   "en": "Dec 2024 book on evals, RAG, agents, finetuning and inference optimization.",
+   "zh": "2024年12月著作：评测、RAG、agent、微调"
+  }
+ },
+ {
+  "topic": "open_problems_reading",
+  "level": "core",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Anthropic Engineering blog",
+  "url": "https://www.anthropic.com/engineering",
+  "hours": 4,
+  "must": false,
+  "why": {
+   "en": "Index of agent-building posts: context engineering, tools, multi-agent.",
+   "zh": "agent构建文章索引：上下文工程、工具、多agent"
+  }
+ },
+ {
+  "topic": "open_problems_reading",
+  "level": "core",
+  "type": "course",
+  "lang": "en",
+  "track": "both",
+  "title": "Berkeley Agentic AI MOOC, Fall 2025",
+  "url": "https://agenticai-learning.org/f25",
+  "hours": 30,
+  "must": false,
+  "why": {
+   "en": "Free lecture series with leading researchers on agentic AI.",
+   "zh": "顶尖学者讲授的免费agentic AI课程"
+  }
+ },
+ {
+  "topic": "open_problems_reading",
+  "level": "deep",
+  "type": "course",
+  "lang": "en",
+  "track": "research",
+  "title": "Berkeley Advanced LLM Agents MOOC, Spring 2025",
+  "url": "https://llmagents-learning.org/sp25",
+  "hours": 30,
+  "must": false,
+  "why": {
+   "en": "Research-oriented lectures on reasoning, code agents, theorem proving.",
+   "zh": "面向科研的推理、编码agent、定理证明课程"
+  }
+ },
+ {
+  "topic": "open_problems_reading",
+  "level": "deep",
+  "type": "course",
+  "lang": "en",
+  "track": "research",
+  "title": "Stanford CS329A: Self-Improving AI Agents",
+  "url": "https://cs329a.stanford.edu/",
+  "hours": 20,
+  "must": false,
+  "why": {
+   "en": "Graduate course with reading list on agent self-improvement.",
+   "zh": "研究生课程，含agent自我提升阅读清单"
+  }
+ },
+ {
+  "topic": "open_problems_reading",
+  "level": "deep",
+  "type": "official",
+  "lang": "en",
+  "track": "research",
+  "title": "METR Research",
+  "url": "https://metr.org/research",
+  "hours": 3,
+  "must": false,
+  "why": {
+   "en": "Reports on autonomous capability, task horizons and developer productivity.",
+   "zh": "自主能力、任务时长与开发者生产力报告"
+  }
+ },
+ {
+  "topic": "open_problems_reading",
+  "level": "deep",
+  "type": "blog",
+  "lang": "en",
+  "track": "both",
+  "title": "Project Vend: Can Claude run a small shop? — Anthropic",
+  "url": "https://www.anthropic.com/research/project-vend-1",
+  "hours": 0.5,
+  "must": false,
+  "why": {
+   "en": "June 2025 real-world long-horizon agent deployment and its failure modes.",
+   "zh": "2025年6月，真实长程agent部署与失败案例"
+  }
+ }
+]
