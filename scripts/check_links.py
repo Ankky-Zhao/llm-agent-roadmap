@@ -20,7 +20,9 @@ def check(item):
             with urllib.request.urlopen(req, timeout=20, context=ctx) as r:
                 return item, r.status, 'ok'
         except urllib.error.HTTPError as e:
-            if method == 'HEAD' and e.code in (403, 405, 400, 501):
+            # Some servers (e.g. kaggle.com) answer HEAD with 404 but GET with 200,
+            # so a HEAD error is never trusted on its own: always confirm with GET.
+            if method == 'HEAD':
                 continue
             if e.code in (404, 410):
                 return item, e.code, 'broken'
